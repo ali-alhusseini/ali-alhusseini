@@ -1,0 +1,32 @@
+:root {
+    --color-pitch-black: #0a0a0a;
+    --color-lemon-yellow: #faff00;
+    --color-snow-white: #ffffff;
+    --font-family: sans-serif;
+}
+
+body {
+    color-scheme: dark;
+    --color-back-main: var(--color-pitch-black);
+    --color-text: var(--color-snow-white);
+}
+
+body.dark {
+    color-scheme: dark;
+    --color-back-main: var(--color-pitch-black);
+    --color-text: var(--color-snow-white);
+}
+
+body.light {
+    color-scheme: light;
+    --color-back-main: var(--color-lemon-yellow);
+    --color-text: var(--color-pitch-black);
+}
+
+body, html {
+    padding: 0;
+    margin: 0;
+    background-color: var(--color-back-main);
+    color: var(--color-text);
+    cursor: crosshair;
+}
