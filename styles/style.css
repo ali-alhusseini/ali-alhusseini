@@ -4,7 +4,7 @@
     --color-carbon-black: #1f1f1f;
     --color-cream-white: #f9f5e7;
     --color-snow-white: #ffffff;
-    --font-family: 'Roboto';
+    --font-family: "Roboto", sans-serif;
 }
 
 body {
@@ -35,17 +35,10 @@ body, html {
 
 #title {
     position: absolute;
-    width: 707px;
-    height: 113px;
-    left: 46px;
-    top: 35px;
-
-    font-style: normal;
+    left: 50px;
+    top: 20px;
+    font-family: var(--font-family);
     font-weight: 500;
-    font-size: 96px;
-    line-height: 112px;
-
-    text-align: center;
-
+    font-size: 80px;
     color: var(--color-cream-white);
 }
