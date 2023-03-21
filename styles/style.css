@@ -1,26 +1,26 @@
 :root {
-    --color-pitch-black: #0a0a0a;
-    --color-lemon-yellow: #faff00;
+    --color-carbon-black: #1f1f1f;
+    --color-cream-white: #f9f5e7;
     --color-snow-white: #ffffff;
     --font-family: sans-serif;
 }
 
 body {
     color-scheme: dark;
-    --color-back-main: var(--color-pitch-black);
-    --color-text: var(--color-snow-white);
+    --color-back-main: var(--color-carbon-black);
+    --color-text: var(--color-cream-white);
 }
 
 body.dark {
     color-scheme: dark;
     --color-back-main: var(--color-pitch-black);
-    --color-text: var(--color-snow-white);
+    --color-text: var(--color-cream-white);
 }
 
 body.light {
     color-scheme: light;
-    --color-back-main: var(--color-lemon-yellow);
-    --color-text: var(--color-pitch-black);
+    --color-back-main: var(--color-cream-yellow);
+    --color-text: var(--color-carbon-black);
 }
 
 body, html {
