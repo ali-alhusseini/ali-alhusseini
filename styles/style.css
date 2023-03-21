@@ -2,7 +2,7 @@
     --color-carbon-black: #1f1f1f;
     --color-cream-white: #f9f5e7;
     --color-snow-white: #ffffff;
-    --font-family: sans-serif;
+    --font-family: 'Roboto';
 }
 
 body {
@@ -29,4 +29,21 @@ body, html {
     background-color: var(--color-back-main);
     color: var(--color-text);
     cursor: crosshair;
+}
+
+#title {
+    position: absolute;
+    width: 707px;
+    height: 113px;
+    left: 46px;
+    top: 35px;
+
+    font-style: normal;
+    font-weight: 500;
+    font-size: 96px;
+    line-height: 112px;
+
+    text-align: center;
+
+    color: var(--color-cream-white);
 }
