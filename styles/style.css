@@ -30,22 +30,3 @@ body, html {
     color: var(--color-text);
     cursor: crosshair;
 }
-
-.pointer_mouse-pointer {
-    position: fixed;
-    opacity: 1;
-    text-transform: none !important;
-    left: -2.5px;
-    top: -2.5px;
-    pointer-events: none;
-    z-index: 1000 !important;
-    width: 5px;
-    height: 5px;
-    border-radius:500px
-}
-
-.pointer_mouse-pointer {
-    transition: width .35s, height .35s, top .35s, left .35s, transform .1s var(--transition-ease), -webkit-backdrop-filter .3s var(--transition-ease);
-    transition: width .35s, height .35s, top .35s, left .35s, transform .1s var(--transition-ease), backdrop-filter .3s var(--transition-ease);
-    transition:width .35s, height .35s, top .35s, left .35s, transform .1s var(--transition-ease), backdrop-filter .3s var(--transition-ease), -webkit-backdrop-filter .3s var(--transition-ease)
-}
