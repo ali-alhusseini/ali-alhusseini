@@ -10,6 +10,7 @@ body {
     color-scheme: dark;
     --color-back-main: var(--color-carbon-black);
     --color-text: var(--color-cream-white);
+    font-family: var(--font-family);
 }
 
 body.dark {
@@ -33,14 +34,13 @@ body, html {
 }
 
 #title {
-    position: absolute;
+    position:relative;
     left: 50px;
     top: 20px;
     margin: 0px;
-    font-family: var(--font-family);
     font-weight: 500;
     font-size: 80px;
-    color: var(--color-cream-white);
+    color: var(--color-text);
 }
 
 #light {
