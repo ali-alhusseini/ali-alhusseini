@@ -6,5 +6,4 @@ Hi, I'm a software engineer, currently pursuing a B.S. in Computing Science and 
 - Music
 - Fashion 
 - Nature
-- And the ocean of course 
 
