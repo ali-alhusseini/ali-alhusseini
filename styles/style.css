@@ -45,12 +45,12 @@ body, html {
 
 #blob {
     background-color: var(--color-cream-white);
-    height: 150px;
+    height: 100px;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
     top: 50%;
     translate: -50% -50%;
     border-radius: 50%;
-    opacity: 0.8;
+    opacity: 0.5;
 }
