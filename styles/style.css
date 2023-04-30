@@ -34,13 +34,11 @@ body, html {
 }
 
 #title {
-    position:relative;
-    left: 50px;
-    top: 20px;
-    margin: 0px;
-    font-weight: 500;
-    font-size: 80px;
-    color: var(--color-text);
+    color: var(--color-text);   
+    width: 550px;
+    margin: 50px;
+    position: relative;
+    font-size: 30pt;    
 }
 
 #light {
