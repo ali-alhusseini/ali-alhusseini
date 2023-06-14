@@ -52,3 +52,15 @@ body, html {
     float: left;
     margin-left: 300px;
 }
+
+#blob {
+    background-color: var(--color-cream-white);
+    height: 100px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    opacity: 0.5;
+}
