@@ -41,9 +41,14 @@ body, html {
     font-size: 30pt;    
 }
 
-#light {
-    position: relative;
-    float: right;
-    top: 0px;
-    right: 80px;
+#blob {
+    background-color: var(--color-cream-white);
+    height: 100px;
+    aspect-ratio: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    translate: -50% -50%;
+    border-radius: 50%;
+    opacity: 0.5;
 }
