@@ -9,5 +9,4 @@ Hello, my name is Ali, and I'm a student and software developer currently pursui
 - Reading
 
 ## Website
-[alialhusseini.com](https://alialhusseini.com/)
-
+<a href="https://alialhusseini.com/" target="_blank">alialhusseini.com</a>
