@@ -6,10 +6,6 @@ Hello! My name is Ali, and I'm a software developer currently pursuing a B.S. in
 
 `Java` - `Javascript` - `HTML`/`CSS` - `C`/`C++` - `Git` ...
 
-## Passions
-
-Reading - Running - Nature - Music
-
 ## Contact
 <a href="https://alialhusseini.com/" target="_blank" style="color: #1B1B1B">`alialhusseini.com`</a>
 </br>
