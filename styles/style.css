@@ -4,6 +4,13 @@
     --color-cream-white: #f9f5e7;
     --color-snow-white: #ffffff;
     --font-family: "Roboto", sans-serif;
+    --font-family-serif: "Roboto Serif", serif;
+    --font-family-mono: "Roboto Mono", monospace;
+    --font-size-xs: 12px;
+    --font-size-s: 16px;
+    --font-size-m: 24px;
+    --font-size-l: 36px;
+    --font-size-xl: 52px;
 }
 
 body {
@@ -31,19 +38,29 @@ body, html {
     background-color: var(--color-back-main);
     color: var(--color-text);
     cursor: crosshair;
+    overflow: hidden;
+}
+
+#container {
+    display: flex;
 }
 
 #title {
-    color: var(--color-text);   
-    width: 550px;
-    margin: 50px;
-    position: relative;
-    font-size: 30pt;    
+    font-size: var(--font-size-l);
+    min-width: auto;
+    margin: auto;
+}
+
+#coming-soon {
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-m);
+    min-width: auto;
+    margin: auto;
 }
 
 #blob {
     background-color: var(--color-cream-white);
-    height: 100px;
+    height: 70px;
     aspect-ratio: 1;
     position: absolute;
     left: 50%;
