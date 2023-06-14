@@ -1,12 +1,21 @@
-# Ali Alhusseini
+<div style="font-family:monospace; color: #1B1B1B;">
 
-Hello, my name is Ali, and I'm a student and software developer currently pursuing a B.S. in Computer Science and a Minor in French. I recently have been focusing on web development and I'm working on my website which I'm spending a lot of time on. 
+## Ali Alhusseini
+
+Hello! My name is Ali, and I'm a software developer currently pursuing a B.S. in Computer Science and a Minor in French. I'm very passionate about designing beautiful interfaces through web and app develpment.</p>
+
+## Skills
+
+Java - Javascript - HTML/CSS - C/C++ - Git ...
 
 ## Passions
-- Music
-- Nature
-- Running
-- Reading
 
-## Website
-<a href="https://alialhusseini.com/" target="_blank">alialhusseini.com</a>
+Reading - Running - Nature - Music
+
+## Contact
+
+<a href="https://alialhusseini.com/" target="_blank" style="color: #1B1B1B">alialhusseini.com</a>
+<br/>
+<a href="mailto:hello@alialhusseini.com" style="color: #1B1B1B">hello@alialhusseini.com</a>
+
+</div>
