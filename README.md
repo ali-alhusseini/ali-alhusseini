@@ -9,5 +9,5 @@ Hello, my name is Ali, and I'm a student and software developer currently pursui
 - Reading
 
 ## Website
-[alialhusseini.com](alialhusseini.com)
+[alialhusseini.com](htttps://alialhusseini.com/)
 
