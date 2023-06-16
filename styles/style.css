@@ -1,9 +1,8 @@
 
 :root {
-    --color-carbon-black: #1f1f1f;
-    --color-cream-white: #f9f5e7;
-    --color-snow-white: #ffffff;
-    --font-family: "Roboto", sans-serif;
+    --color-midnightblue: midnightblue;
+    --color-orangered: orangered;
+    --font-family: "Roboto", "Helvetica Neua", sans-serif;
     --font-family-serif: "Roboto Serif", serif;
     --font-family-mono: "Roboto Mono", monospace;
     --font-size-xs: 12px;
@@ -13,30 +12,20 @@
     --font-size-xl: 52px;
 }
 
+@media (prefers-color-scheme: light) {
+    :root {
+        --color-midnightblue: orangered;
+        --color-orangered: midnightblue;
+    }
+    #blob {
+        background-color: var(--color-midnightblue);
+    }
+}
+
 body {
-    color-scheme: dark;
-    --color-back-main: var(--color-carbon-black);
-    --color-text: var(--color-cream-white);
+    background-color: var(--color-midnightblue);
+    color: var(--color-orangered);
     font-family: var(--font-family);
-}
-
-body.dark {
-    color-scheme: dark;
-    --color-back-main: var(--color-pitch-black);
-    --color-text: var(--color-cream-white);
-}
-
-body.light {
-    color-scheme: light;
-    --color-back-main: var(--color-cream-yellow);
-    --color-text: var(--color-carbon-black);
-}
-
-body, html {
-    padding: 0;
-    margin: 0;
-    background-color: var(--color-back-main);
-    color: var(--color-text);
     cursor: crosshair;
     overflow: hidden;
 }
@@ -59,7 +48,7 @@ body, html {
 }
 
 #blob {
-    background-color: var(--color-cream-white);
+    background-color: var(--color-orangered);
     height: 70px;
     aspect-ratio: 1;
     position: absolute;
