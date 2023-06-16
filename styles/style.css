@@ -26,24 +26,34 @@ body {
     background-color: var(--color-midnightblue);
     color: var(--color-orangered);
     font-family: var(--font-family);
-    cursor: crosshair;
+    cursor: none;
     overflow: hidden;
 }
 
 #container {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    /* outline: solid 1px whitesmoke; */
 }
 
 #title {
-    font-size: var(--font-size-l);
-    min-width: auto;
+    font-size: var(--font-size-m);
     margin: auto;
+    padding: 20px;
 }
+
+/* #title:hover {
+    background-color: var(--color-orangered);
+    color: var(--color-midnightblue);
+    padding: 20px;
+    border-radius: 20px;
+} */
 
 #coming-soon {
     font-family: var(--font-family-serif);
     font-size: var(--font-size-m);
-    min-width: auto;
     margin: auto;
 }
 
