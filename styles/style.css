@@ -2,9 +2,9 @@
 :root {
     --color-midnightblue: midnightblue;
     --color-orangered: orangered;
-    --font-family: "Roboto", "Helvetica Neua", sans-serif;
-    --font-family-serif: "Roboto Serif", serif;
-    --font-family-mono: "Roboto Mono", monospace;
+    --font-family: "Helvetica Neua", "Arial", sans-serif;
+    --font-family-serif: "Times New Roman", "Times", serif;
+    --font-family-mono: "Courier New", "Courier", monospace;
     --font-size-xs: 12px;
     --font-size-s: 16px;
     --font-size-m: 24px;
