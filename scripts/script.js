@@ -1,7 +1,7 @@
-window.addEventListener("load", () => {
-    const blob = document.getElementById("blob");
-    document.body.addEventListener("pointermove", ({clientX, clientY}) => {
-        blob.style.left = `${clientX}px`;
-        blob.style.top = `${clientY}px`;
-    });
-});
+document.addEventListener('mousemove', function(event) {
+    var cursor = document.getElementById('cursor');
+    var xPos = event.clientX - cursor.offsetWidth / 2;
+    var yPos = event.clientY - cursor.offsetHeight / 2;
+    cursor.style.left = xPos + 'px';
+    cursor.style.top = yPos + 'px';
+  });

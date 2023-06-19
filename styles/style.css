@@ -44,25 +44,18 @@ body {
     padding: 20px;
 }
 
-/* #title:hover {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    padding: 20px;
-    border-radius: 20px;
-} */
-
 #coming-soon {
     font-family: var(--font-family-serif);
     font-size: var(--font-size-m);
     margin: auto;
 }
 
-#blob {
+#cursor {
     background-color: var(--color-secondary);
-    position: absolute;   
-    aspect-ratio: 1;
-    translate: -50% -50%;
-    border-radius: 50%;
-    height: 70px;
-    opacity: 0.5;
+    opacity: 0.4;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 1000rem;
+    position: fixed;
+    pointer-events: none;
 }
