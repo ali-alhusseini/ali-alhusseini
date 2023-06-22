@@ -41,6 +41,7 @@ body {
 .links {
     color: var(--color-secondary);
     text-decoration: none;
+    padding: 5px;
 }
 
 .links:hover {
