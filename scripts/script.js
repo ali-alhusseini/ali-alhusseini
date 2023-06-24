@@ -6,9 +6,12 @@ document.addEventListener('mousemove', function(event) {
     cursor.style.top = yPos + 'px';
 });
 
-const mode = document.getElementById("mode-switch");
-mode.addEventListener("click", changeMode);
+const mode = document.getElementById("modeSwitch");
+mode.addEventListener("click", function(event) {
+  event.preventDefault();
+  changeMode();
+});
 
 function changeMode() {
-  console.log("change mode");
+  console.log("change mode in progress");
 }
