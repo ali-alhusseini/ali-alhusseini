@@ -30,6 +30,11 @@ body {
     overflow: hidden;
 }
 
+a {
+    text-decoration: none;
+    cursor: none;
+}
+
 #container {
     display: flex;
     justify-content: center;
@@ -90,5 +95,11 @@ body {
     border-radius: 1000rem;
     position: fixed;
     pointer-events: none;
+}
+
+#mode-container {
+    position: fixed;
+    top: 0px;
+    right: 15px;
 }
 
