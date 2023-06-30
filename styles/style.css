@@ -25,6 +25,11 @@
     }
 }
 
+.dark {
+    --color-primary: midnightblue;
+    --color-secondary: orangered;
+}
+
 body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -106,11 +111,13 @@ a {
     right: 15px;
 }
 
-#mode-switch {
-    fill: var(--color-secondary);
-}
- 
-#modeSwitch {
+.mode-switch-button {
+    background: none;
+    border: none;
     cursor: crosshair;
+}
+
+.mode-switch {
+    fill: var(--color-secondary);
 }
  
