@@ -6,12 +6,16 @@ document.addEventListener('mousemove', function(event) {
     cursor.style.top = yPos + 'px';
 });
 
-const mode = document.getElementById("modeSwitch");
-mode.addEventListener("click", function(event) {
-  event.preventDefault();
-  changeMode();
+document.addEventListener('DOMContentLoaded', () => {
+  const modeSwitch = document.getElementById('modeSwitch');
+  modeSwitch.addEventListener('click', (event) => {
+      event.preventDefault();
+      if (document.body.style.backgroundColor = "midnightblue") {
+          document.body.style.backgroundColor = "orangered";
+          document.body.style.color = "midnightblue";
+      } else { 
+          document.body.style.backgroundColor = "mdinightblue";
+          document.body.style.color = "orangered";
+      }
+  });
 });
-
-function changeMode() {
-  console.log("change mode in progress");
-}

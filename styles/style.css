@@ -20,6 +20,9 @@
     #blob {
         background-color: var(--color-primary);
     }
+    #mode-switch {
+        fill: var(--color-primary);
+    }
 }
 
 body {
@@ -33,10 +36,6 @@ body {
 a {
     text-decoration: none;
     cursor: none;
-}
-
-#modeswitch {
-   fill: var(--color-secondary);
 }
 
 #container {
@@ -107,3 +106,11 @@ a {
     right: 15px;
 }
 
+#mode-switch {
+    fill: var(--color-secondary);
+}
+ 
+#modeSwitch {
+    cursor: crosshair;
+}
+ 
