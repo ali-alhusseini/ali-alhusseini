@@ -35,6 +35,10 @@ a {
     cursor: none;
 }
 
+#modeswitch {
+   fill: var(--color-secondary);
+}
+
 #container {
     display: flex;
     justify-content: center;
