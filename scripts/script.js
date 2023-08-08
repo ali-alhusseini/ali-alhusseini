@@ -1,3 +1,5 @@
+var lightSwitch = new Audio('assets/light-switch.mp3');
+
 document.addEventListener('mousemove', function(event) {
     var cursor = document.getElementById('cursor');
     var xPosition = event.clientX - cursor.offsetWidth / 2;
@@ -22,7 +24,6 @@ darkModeBtn.addEventListener('click', () => {
 });
 
 function playSwitchSound() {
-    var lightSwitch = new Audio('assets/light-switch.mp3');
     lightSwitch.volume = 0.2;
     lightSwitch.play();
 }
