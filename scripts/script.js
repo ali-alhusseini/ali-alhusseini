@@ -11,12 +11,12 @@ const darkModeBtn = document.getElementById('dark-mode-btn');
 
 lightModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
-    darkModeBtn.style.display = 'block';
+    darkModeBtn.style.display = 'inline-block';
     lightModeBtn.style.display = 'none';
 });
 
 darkModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
+    lightModeBtn.style.display = 'inline-block';
     darkModeBtn.style.display = 'none';
-    lightModeBtn.style.display = 'block';
 });

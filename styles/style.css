@@ -1,7 +1,10 @@
 :root {
-    --color-primary: midnightblue;
-    --color-secondary: orangered;
-    --color-accent: whitesmoke;
+    --color-midnightblue: midnightblue;
+    --color-orangered: orangered;
+    --color-whitesmoke: whitesmoke;
+    --color-primary: var(--color-midnightblue);
+    --color-secondary: var(--color-orangered);
+    --color-accent: var(--color-whitesmoke);
     --font-family: "Helvetica Neua", "Arial", sans-serif;
     --font-family-serif: "Times New Roman", "Times", serif;
     --font-family-mono: "Courier New", "Courier", monospace;
@@ -14,21 +17,21 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-primary: orangered;
-        --color-secondary: midnightblue;
+        --color-primary: var(--color-orangered);
+        --color-secondary: var(--color-midnightblue);
     }
 }
 
 .light-mode {
-    --color-primary: orangered;
-    --color-secondary: midnightblue;
+    --color-primary: var(--color-orangered);
+    --color-secondary: var(--color-midnightblue);
 }
 
 body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     font-family: var(--font-family);
-    cursor: crosshair;
+    cursor: none;
     overflow: hidden;
 }
 
