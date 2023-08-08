@@ -22,7 +22,7 @@ darkModeBtn.addEventListener('click', () => {
 });
 
 function playSwitchSound() {
-    var lightSwitch = new Audio('/assets/sounds/light-switch.mp3');
+    var lightSwitch = new Audio('assets/light-switch.mp3');
     lightSwitch.volume = 0.2;
     lightSwitch.play();
 }
