@@ -20,3 +20,9 @@ darkModeBtn.addEventListener('click', () => {
     lightModeBtn.style.display = 'inline-block';
     darkModeBtn.style.display = 'none';
 });
+
+function playSwitchSound() {
+    var lightSwitch = new Audio('/assets/sounds/light-switch.mp3');
+    lightSwitch.volume = 0.2;
+    lightSwitch.play();
+}

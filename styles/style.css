@@ -1,9 +1,9 @@
 :root {
-    --color-midnightblue: midnightblue;
-    --color-orangered: orangered;
+    --color-midnightblue: #191970;
+    --color-lemoncello: #FFEE58;
     --color-whitesmoke: whitesmoke;
     --color-primary: var(--color-midnightblue);
-    --color-secondary: var(--color-orangered);
+    --color-secondary: var(--color-lemoncello);
     --color-accent: var(--color-whitesmoke);
     --font-family: "Helvetica Neua", "Arial", sans-serif;
     --font-family-serif: "Times New Roman", "Times", serif;
@@ -17,13 +17,13 @@
 
 @media (prefers-color-scheme: light) {
     :root {
-        --color-primary: var(--color-orangered);
+        --color-primary: var(--color-lemoncello);
         --color-secondary: var(--color-midnightblue);
     }
 }
 
 .light-mode {
-    --color-primary: var(--color-orangered);
+    --color-primary: var(--color-lemoncello);
     --color-secondary: var(--color-midnightblue);
 }
 
@@ -40,12 +40,27 @@ a {
     cursor: none;
 }
 
-#container {
+#main-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    /* outline: solid 1px whitesmoke; */
+}
+
+#title-container {
+    flex: 1;
+    font-size: var(--font-size-m);
+    text-align: right;
+    margin: auto;
+    padding: 20px;
+}
+
+#links-container {
+    flex: 1;
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-m);
+    margin: auto;
+    text-align: left;
 }
 
 .links {
@@ -58,18 +73,6 @@ a {
     color: var(--color-primary);
     background-color: var(--color-secondary);
     border-radius: 5px;
-}
-
-#title {
-    font-size: var(--font-size-m);
-    margin: auto;
-    padding: 20px;
-}
-
-#coming-soon {
-    font-family: var(--font-family-serif);
-    font-size: var(--font-size-m);
-    margin: auto;
 }
 
 #error-code {
@@ -125,4 +128,11 @@ a {
 
 .mode-icon {
     fill: var(--color-secondary);
+}
+
+.email {
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-m);
+    display: block;
+    width: fit-content;
 }
