@@ -15,12 +15,12 @@
     --font-size-xl: 52px;
 }
 
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
     :root {
         --color-primary: var(--color-lemoncello);
         --color-secondary: var(--color-midnightblue);
     }
-}
+} */
 
 .light-mode {
     --color-primary: var(--color-lemoncello);
