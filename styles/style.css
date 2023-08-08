@@ -17,24 +17,18 @@
         --color-primary: orangered;
         --color-secondary: midnightblue;
     }
-    #blob {
-        background-color: var(--color-primary);
-    }
-    #mode-switch {
-        fill: var(--color-primary);
-    }
 }
 
-.dark {
-    --color-primary: midnightblue;
-    --color-secondary: orangered;
+.light-mode {
+    --color-primary: orangered;
+    --color-secondary: midnightblue;
 }
 
 body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     font-family: var(--font-family);
-    cursor: none;
+    cursor: crosshair;
     overflow: hidden;
 }
 
@@ -111,13 +105,21 @@ a {
     right: 15px;
 }
 
-.mode-switch-button {
+#dark-mode-btn {
     background: none;
     border: none;
-    cursor: crosshair;
+    outline: none;
+    display: none;
+    cursor: grab;
 }
 
-.mode-switch {
+#light-mode-btn {
+    background: none;
+    border: none;
+    outline: none;
+    cursor: grab;
+}
+
+.mode-icon {
     fill: var(--color-secondary);
 }
- 
