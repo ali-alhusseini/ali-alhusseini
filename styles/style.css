@@ -31,8 +31,8 @@ body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     font-family: var(--font-family);
-    cursor: none;
     overflow: hidden;
+    cursor: none;
 }
 
 a {
@@ -95,14 +95,16 @@ a {
     margin: auto;
 }
 
-#cursor {
-    background-color: var(--color-secondary);
-    opacity: 0.4;
-    height: 4rem;
-    width: 4rem;
-    border-radius: 1000rem;
-    position: fixed;
-    pointer-events: none;
+@media only screen and (min-width: 768px) {
+    #cursor {
+        background-color: var(--color-secondary);
+        opacity: 0.4;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 1000rem;
+        position: fixed;
+        pointer-events: none;
+    }
 }
 
 #mode-container {
