@@ -27,3 +27,12 @@ function playSwitchSound() {
     lightSwitch.volume = 0.2;
     lightSwitch.play();
 }
+
+function updateTime() {
+    const date = Date();
+    let time = date.slice(16, 24);
+    document.getElementById('time').innerHTML = "Time: " + time;
+}
+
+updateTime();
+setInterval(updateTime, 1000);
