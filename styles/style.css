@@ -1,8 +1,8 @@
 :root {
-    --color-midnightblue: midnightblue;
-    --color-whitesmoke: whitesmoke;
-    --color-primary: var(--color-midnightblue);
-    --color-secondary: var(--color-whitesmoke);
+    --color-carbon: #1B1B1B;
+    --color-cream: #F9F5E7;
+    --color-primary: var(--color-carbon);
+    --color-secondary: var(--color-cream);
     --font-family: "Helvetica Neua", "Arial", sans-serif;
     --font-family-serif: "Times New Roman", "Times", serif;
     --font-family-mono: "Courier New", "Courier", monospace;
@@ -21,8 +21,8 @@
 } */
 
 .light-mode {
-    --color-primary: var(--color-whitesmoke);
-    --color-secondary: var(--color-midnightblue);
+    --color-primary: var(--color-cream);
+    --color-secondary: var(--color-carbon);
 }
 
 body {
