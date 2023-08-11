@@ -9,7 +9,7 @@
     --font-size-xs: 12px;
     --font-size-s: 16px;
     --font-size-m: 24px;
-    --font-size-l: 36px;
+    --font-size-l: 30px;
     --font-size-xl: 52px;
 }
 
@@ -47,26 +47,56 @@ a {
 
 #main-container {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
     align-items: center;
-    height: 100vh;
+    place-content: center;
+    width: 100%;
+    position: absolute;
+    top: 30%;
 }
 
 #title-container {
-    flex: 1;
-    font-size: var(--font-size-m);
-    text-align: right;
-    margin: auto;
-    padding: 20px;
+    font-size: var(--font-size-l);
+    text-align: left;
+    margin: 5px;
+    padding: 10px;
 }
 
 #links-container {
-    flex: 1;
     font-family: var(--font-family-serif);
     font-size: var(--font-size-m);
-    margin: auto;
     text-align: left;
+    margin: 10px;
+    align-items: center;
 }
+
+#links-container > .email {
+    font-family: var(--font-family-mono);
+    font-size: 21px;
+    display: flex;
+    padding: 5px;
+}
+
+#footer {
+    font-size: var(--font-size-xs);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    border-radius: 5px;
+}
+
+#footer:hover {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+}
+
 
 .links {
     color: var(--color-secondary);
@@ -135,11 +165,4 @@ a {
 
 .mode-icon {
     fill: var(--color-secondary);
-}
-
-.email {
-    font-family: var(--font-family-mono);
-    font-size: var(--font-size-m);
-    display: block;
-    width: fit-content;
 }
