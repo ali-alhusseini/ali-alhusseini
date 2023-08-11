@@ -13,6 +13,19 @@
     --font-size-xl: 52px;
 }
 
+html {
+    height: 100%;
+}
+
+body {
+    background-color: var(--color-primary);
+    color: var(--color-secondary);
+    font-family: var(--font-family);
+    overflow: hidden;
+    cursor: none;
+    height: 100%;
+}
+
 /* @media (prefers-color-scheme: light) {
     :root {
         --color-primary: var(--color-lemoncello);
@@ -23,14 +36,6 @@
 .light-mode {
     --color-primary: var(--color-cream);
     --color-secondary: var(--color-carbon);
-}
-
-body {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
-    font-family: var(--font-family);
-    overflow: hidden;
-    cursor: none;
 }
 
 a {
@@ -45,7 +50,7 @@ a {
     line-height: 0.1rem;
 }
 
-#main-container {
+.main-container {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -54,24 +59,27 @@ a {
     place-content: center;
     width: 100%;
     position: absolute;
-    top: 35%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
 }
 
-#title-container {
+.title-container {
     font-size: var(--font-size-m);
     text-align: left;
     margin: 5px;
     padding: 10px;
 }
 
-#links-container {
+.links-container {
     font-family: var(--font-family-serif);
     font-size: var(--font-size-m);
     text-align: left;
     align-items: center;
 }
 
-#links-container > .email {
+.links-container > .email {
     font-family: var(--font-family-mono);
     font-size: 21px;
     display: flex;
@@ -118,24 +126,28 @@ a {
     border-radius: 5px;
 }
 
-#error-code {
-    border: solid 10px var(--color-secondary);
-    font-size: var(--font-size-xl);
+.error-code {
+    font-size: var(--font-size-l);
     font-weight: 700;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    border: 10px solid var(--color-secondary);
     border-radius: 5px;
-    padding: 25px;
-    margin: auto;
 }
 
-#error-code:hover {
+.error-code:hover {
     color: var(--color-primary);
     background-color: var(--color-secondary);
 }
 
-#error-message{
+.error-message {
     font-size: var(--font-size-m);
-    font-weight: 700;
-    margin: auto;
+    padding: 10px;
+}
+
+.error-link {
+    font-family: var(--font-family-mono);
 }
 
 @media only screen and (min-width: 500px) {
