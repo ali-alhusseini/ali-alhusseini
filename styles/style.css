@@ -25,7 +25,7 @@
     --color-secondary: var(--color-carbon);
 }
 
-body {
+html, body {
     background-color: var(--color-primary);
     color: var(--color-secondary);
     font-family: var(--font-family);
@@ -54,11 +54,11 @@ a {
     place-content: center;
     width: 100%;
     position: absolute;
-    top: 30%;
+    top: 35%;
 }
 
 #title-container {
-    font-size: var(--font-size-l);
+    font-size: var(--font-size-m);
     text-align: left;
     margin: 5px;
     padding: 10px;
@@ -68,7 +68,6 @@ a {
     font-family: var(--font-family-serif);
     font-size: var(--font-size-m);
     text-align: left;
-    margin: 10px;
     align-items: center;
 }
 
@@ -77,6 +76,13 @@ a {
     font-size: 21px;
     display: flex;
     padding: 5px;
+}
+
+@media screen and (min-width: 500px){
+    #title-container {
+        font-size: var(--font-size-l);
+        margin: 10px;
+    }
 }
 
 #footer {
