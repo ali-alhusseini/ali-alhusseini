@@ -76,6 +76,8 @@ a {
     font-size: 21px;
     display: flex;
     padding: 5px;
+    margin-top: 10px;
+    text-align: center;
 }
 
 @media screen and (min-width: 500px){
@@ -107,6 +109,7 @@ a {
     color: var(--color-secondary);
     text-decoration: none;
     padding: 5px;
+    margin: 2px;
 }
 
 .links:hover {
