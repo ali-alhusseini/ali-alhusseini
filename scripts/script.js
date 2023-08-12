@@ -1,4 +1,6 @@
-var lightSwitch = new Audio('assets/light-switch.mp3');
+const switchAudio = document.getElementById('switch-audio');
+const lightModeBtn = document.getElementById('light-mode-btn');
+const darkModeBtn = document.getElementById('dark-mode-btn');
 
 document.addEventListener('mousemove', function(event) {
     var cursor = document.getElementById('cursor');
@@ -7,9 +9,6 @@ document.addEventListener('mousemove', function(event) {
     cursor.style.left = xPosition + 'px';
     cursor.style.top = yPosition + 'px';
 });
-
-const lightModeBtn = document.getElementById('light-mode-btn');
-const darkModeBtn = document.getElementById('dark-mode-btn');
 
 lightModeBtn.addEventListener('click', () => {
     document.body.classList.toggle('light-mode');
@@ -24,9 +23,24 @@ darkModeBtn.addEventListener('click', () => {
 });
 
 function playSwitchSound() {
-    lightSwitch.volume = 0.2;
-    lightSwitch.play();
+    if (switchAudio.readyState === 4) {
+        switchAudio.volume = 0.2;
+        switchAudio.play();
+    } else {
+        switchAudio.addEventListener('canplaythrough', () => {
+            switchAudio.volume = 0.2;
+            switchAudio.play();
+        });
+    }
 }
+
+lightModeBtn.addEventListener('click', () => {
+    playSwitchSound();
+});
+
+darkModeBtn.addEventListener('click', () => {
+    playSwitchSound();
+});
 
 function updateTime() {
     const date = Date();
