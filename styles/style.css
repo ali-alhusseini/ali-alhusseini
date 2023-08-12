@@ -103,30 +103,6 @@ a {
     border-radius: 5px;
 }
 
-.error-code {
-    font-size: var(--font-size-l);
-    font-weight: 700;
-    padding: 10px;
-    margin: 10px;
-    text-align: center;
-    border: 10px solid var(--color-secondary);
-    border-radius: 5px;
-}
-
-.error-code:hover {
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
-}
-
-.error-message {
-    font-size: var(--font-size-m);
-    padding: 10px;
-}
-
-.error-link {
-    font-family: var(--font-family-mono);
-}
-
 @media only screen and (min-width: 500px) {
     #cursor {
         background-color: var(--color-secondary);
@@ -189,3 +165,51 @@ a {
         color: var(--color-secondary);
     }
 }
+
+/* 404 Page Not Found - start */
+.error-code {
+    font-size: var(--font-size-m);
+    font-weight: 700;
+    padding: 10px;
+    margin: 50px;
+    text-align: center;
+    border: 10px solid var(--color-secondary);
+    border-radius: 5px;
+}
+
+.error-code:hover {
+    color: var(--color-primary);
+    background-color: var(--color-secondary);
+}
+
+.error-message {
+    font-size: var(--font-size-s);
+    padding: 0;
+    margin: 50px;
+    line-height: 10px;
+}
+
+.error-link {
+    font-family: var(--font-family-mono);
+}
+
+@media only screen and (min-width: 500px) {
+    .error-code {
+        font-size: var(--font-size-l);
+        font-weight: 700;
+        padding: 10px;
+        margin: 10px;
+        text-align: center;
+        border: 10px solid var(--color-secondary);
+        border-radius: 5px;
+    }
+
+    .error-message {
+        font-size: var(--font-size-m);
+        padding: 10px;
+        margin: 0;
+        line-height: 20px;
+    }
+}
+/* 404 Page Not Found - end */
+
