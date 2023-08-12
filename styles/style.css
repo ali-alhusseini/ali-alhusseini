@@ -171,7 +171,7 @@ a {
     font-size: var(--font-size-m);
     font-weight: 700;
     padding: 10px;
-    margin: 50px;
+    margin: 20px;
     text-align: center;
     border: 10px solid var(--color-secondary);
     border-radius: 5px;
@@ -185,12 +185,15 @@ a {
 .error-message {
     font-size: var(--font-size-s);
     padding: 0;
-    margin: 50px;
+    margin: 20px;
     line-height: 10px;
 }
 
 .error-link {
     font-family: var(--font-family-mono);
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 5px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -209,6 +212,14 @@ a {
         padding: 10px;
         margin: 0;
         line-height: 20px;
+    }
+
+    .error-link {
+        font-family: var(--font-family-mono);
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+        border: 2px solid var(--color-secondary);
+        border-radius: 5px;
     }
 }
 /* 404 Page Not Found - end */
