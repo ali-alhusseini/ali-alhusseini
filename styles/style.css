@@ -15,6 +15,7 @@
 
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -26,12 +27,6 @@ body {
     height: 100%;
 }
 
-/* @media (prefers-color-scheme: light) {
-    :root {
-        --color-primary: var(--color-lemoncello);
-        --color-secondary: var(--color-midnightblue);
-    }
-} */
 
 .light-mode {
     --color-primary: var(--color-cream);
@@ -93,24 +88,6 @@ a {
         font-size: var(--font-size-l);
         margin: 10px;
     }
-}
-
-#footer {
-    font-size: var(--font-size-xs);
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    text-align: center;
-    margin: 10px;
-    padding: 10px;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    border-radius: 5px;
-}
-
-#footer:hover {
-    background-color: var(--color-primary);
-    color: var(--color-secondary);
 }
 
 .links {
@@ -186,4 +163,29 @@ a {
 
 .mode-icon {
     fill: var(--color-secondary);
+}
+
+#footer {
+    display: none;
+}
+
+@media only screen and (min-width: 500px) {
+    #footer {
+        display: inline;
+        font-size: var(--font-size-xs);
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
+        text-align: center;
+        margin: 10px;
+        padding: 10px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        border-radius: 5px;
+    }
+
+    #footer:hover {
+        background-color: var(--color-primary);
+        color: var(--color-secondary);
+    }
 }
