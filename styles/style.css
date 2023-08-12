@@ -174,12 +174,9 @@ a {
     margin: 20px;
     text-align: center;
     border: 10px solid var(--color-secondary);
-    border-radius: 5px;
-}
-
-.error-code:hover {
-    color: var(--color-primary);
     background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border-radius: 5px;
 }
 
 .error-message {
@@ -207,6 +204,11 @@ a {
         border-radius: 5px;
     }
 
+    .error-code:hover {
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
+    }
+    
     .error-message {
         font-size: var(--font-size-m);
         padding: 10px;
