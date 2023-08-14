@@ -27,47 +27,29 @@ body {
     height: 100%;
 }
 
+body a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    cursor: crosshair;
+}
 
 .light-mode {
     --color-primary: var(--color-cream);
     --color-secondary: var(--color-carbon);
 }
 
-a {
-    text-decoration: none;
-    cursor: none;
-}
-
-.info {
-    font-size: var(--font-size-xs);
-    font-family: var(--font-family-mono);
-    padding: 5px;
-    line-height: 0.1rem;
-}
-
 .main-container {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     place-content: center;
-    position: absolute;
+    position: absolute;  
     width: 100%;
     top: 0;
     right: 0;
     bottom: 0;
     left: 0;
-}
-
-.title-container {
-    background-color: var(--color-secondary);
-    color: var(--color-primary);
-    font-size: var(--font-size-m);
-    margin: 20px;
-    padding: auto;
-    border: 10px solid var(--color-secondary);
-    border-radius: 5px;
 }
 
 .right-container {
@@ -77,49 +59,70 @@ a {
     align-items: center;
 }
 
-/* 
-.links {
+.title-container {
     color: var(--color-secondary);
-    text-decoration: none;
+    font-family: var(--font-family);
+    font-size: var(--font-size-m);
+    text-align: center;
+    border: 6px solid var(--color-secondary);
+    border-radius: 5px;
+    margin: 20px;
+}
+
+.main-links {
+    font-family: var(--font-family-serif);
+    font-size: var(--font-size-xl);
+    font-weight: 700;
     padding: 5px;
     margin: 2px;
 }
 
-.links:hover {
-    color: var(--color-primary);
-    background-color: var(--color-secondary);
-    border-radius: 5px;
-} */
+.main-links a {
+    color: var(--color-secondary);
+}
+
+.blog-link {
+    background-color: red;
+    transform: rotate(-90deg);
+    width: fit-content;
+}
+
+.left-container {
+    display: none;
+}
 
 @media only screen and (min-width: 500px) {
+    .right-container {
+        /* background-color: darkorange; */
+        width: 50%;
+        margin: 20px;
+    }
+    .left-container {
+        display: block;
+        /* background-color: midnightblue; */
+        width: 50%;
+        margin: 20px;
+        flex-shrink: 0;
+    }
+    
+    .strings {
+        fill: none;
+        stroke: var(--color-secondary);
+    }
+
+    .strings-title {
+        background-color: red;
+        position: fixed;
+        left: 50%;
+    }
+
     #title-container {
         font-size: var(--font-size-l);
         margin: 10px;
     }
-
-    .right-container > .email {
-        background-color: var(--color-primary);
-        color: var(--color-secondary);
-        border: 2px solid var(--color-secondary);
-        border-radius: 5px;
-    }
-
-    .right-container > .email:hover {
-        background-color: var(--color-secondary);
-        color: var(--color-primary);
-    }
-
-    #cursor {
-        background-color: var(--color-secondary);
-        opacity: 0.4;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 1000rem;
-        position: fixed;
-        pointer-events: none;
-    }
 }
 
+/* Header - start */
 #mode-container {
     position: fixed;
     top: 0px;
@@ -146,9 +149,13 @@ a {
     fill: var(--color-secondary);
 }
 
-.left-container {
-    display: none;
+.info {
+    font-size: var(--font-size-xs);
+    font-family: var(--font-family-mono);
+    padding: 5px;
+    line-height: 0.1rem;
 }
+/* Header - end */
 
 /* Footer - start */
 .footer {
@@ -162,23 +169,6 @@ a {
 }
 
 @media only screen and (min-width: 500px) {
-    .left-container {
-        display: flex;
-        width: fit-content;
-        height: fit-content;
-    }
-    
-    .strings {
-        fill: none;
-        stroke: var(--color-secondary);
-    }
-
-    .strings-title {
-        background-color: red;
-        position: fixed;
-        left: 50%;
-    }
-
     .footer {
         background-color: var(--color-primary);
         color: var(--color-secondary);
@@ -222,7 +212,6 @@ a {
     }
 }
 /* Footer - end */
-
 
 /* 404 Page Not Found - start */
 .error-code {
@@ -293,3 +282,14 @@ a {
 }
 /* 404 Page Not Found - end */
 
+@media only screen and (min-width: 500px) {
+    #cursor {
+        background-color: var(--color-secondary);
+        opacity: 0.4;
+        height: 4rem;
+        width: 4rem;
+        border-radius: 1000rem;
+        position: fixed;
+        pointer-events: none;
+    }
+}
