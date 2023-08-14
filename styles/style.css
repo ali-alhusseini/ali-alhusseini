@@ -249,6 +249,8 @@ a {
     background-color: var(--color-secondary);
     color: var(--color-primary);
     border-radius: 5px;
+    padding: 5px;
+    margin: 2px;
 }
 
 @media only screen and (min-width: 500px) {
@@ -282,6 +284,11 @@ a {
         color: var(--color-secondary);
         border: 2px solid var(--color-secondary);
         border-radius: 5px;
+    }
+
+    .error-link:hover {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
     }
 }
 /* 404 Page Not Found - end */
