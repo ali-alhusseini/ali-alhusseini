@@ -82,7 +82,6 @@ body a, a:visited, a:hover, a:active {
 }
 
 .blog-link {
-    background-color: red;
     transform: rotate(-90deg);
     width: fit-content;
 }
@@ -103,6 +102,11 @@ body a, a:visited, a:hover, a:active {
         width: 50%;
         margin: 20px;
         flex-shrink: 0;
+    }
+
+    .title-container:hover {
+        background-color: var(--color-secondary);
+        color: var(--color-primary);
     }
     
     .strings {
