@@ -65,30 +65,30 @@ body a, a:visited, a:hover, a:active {
         margin: 20px;
         border-radius: 5px;
     }
-    
-    .left-container {
-        display: block;
-        position: relative;
-        margin: 20px;
-    }
 
     .title {
         color: var(--color-primary);
         font-size: var(--font-size-l);
         text-align: center;
+        padding: 5px;
     }
     
     .main-links {
         font-family: var(--font-family-serif);
         font-size: 48px;
         font-weight: 700;
-        margin: 40px 0 40px 0;
         text-align: center;
         line-height: normal;
     }
     
     .main-links a {
         color: var(--color-primary);
+        margin: 40px 0 40px 0;
+
+    }
+
+    .main-link {
+        margin: 40px 0 0 0;
     }
 
     .redacted {
@@ -99,20 +99,27 @@ body a, a:visited, a:hover, a:active {
     }
     
     .r-1 {
-        width: 388px;
+        width: 65%;
     }
 
     .r-2 {
-        width: 170px;
+        width: 28%;
     }
 
     .r-3 {
-        width: 420px;
+        width: 70%;
     }
 
     .r-4 {
-        width: 343px;
+        width: 57%;
     }
+
+    .left-container {
+        display: block;
+        position: relative;
+        margin: 20px;
+    }
+
     .strings {
         fill: none;
         stroke: var(--color-secondary);
