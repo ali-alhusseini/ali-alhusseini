@@ -9,7 +9,7 @@
     --font-size-xl: 52px;
     --font-size-l: 30px;
     --font-size-m: 24px;
-    --font-size-s: 16px;
+    --font-size-s: 12px;
     --font-size-xs: 10px;
 }
 
@@ -84,7 +84,13 @@ body a, a:visited, a:hover, a:active {
     .main-links a {
         color: var(--color-primary);
         margin: 40px 0 40px 0;
+        padding: 5px;
+        border-radius: 5px;
+    }
 
+    .main-links a:hover {
+        color: var(--color-carbon);
+        background-color: rgb(232, 232, 16);
     }
 
     .main-link {
@@ -163,7 +169,7 @@ body a, a:visited, a:hover, a:active {
     font-size: var(--font-size-xs);
     font-family: var(--font-family-mono);
     padding: 5px;
-    line-height: 0.1rem;
+    line-height: 0.3rem;
 }
 /* Header - end */
 
@@ -208,6 +214,7 @@ body a, a:visited, a:hover, a:active {
     }
 
     .footer-msg {
+        font-size: var(--font-size-s);
         font-family: var(--font-family-serif);
         background-color: var(--color-secondary);
         color: var(--color-primary);
