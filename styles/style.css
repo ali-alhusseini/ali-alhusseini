@@ -64,12 +64,9 @@ body a, a:visited, a:hover, a:active {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 1fr 1fr 2fr 3fr;
-    /* gap: 10px; */
-    /* align-items: center; */
     border: 2px solid var(--color-secondary);
     border-radius: 30px;
     overflow: hidden;
-    /* padding: 20px; */
     box-sizing: border-box;
     height: 90vh;
     width: 90%;
@@ -106,6 +103,7 @@ body a, a:visited, a:hover, a:active {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
     font-size: 0.7em;
+    font-weight: 400;
 }
 
 .email {
@@ -182,6 +180,7 @@ body a, a:visited, a:hover, a:active {
     color: var(--color-primary);
     border: none;
     border-radius: 1em;
+    margin: 0.5em;
 }
 
 .share-logo {
