@@ -170,6 +170,7 @@ body a, a:visited, a:hover, a:active {
     font-family: var(--font-family-serif);
     font-size: 1em;
     line-height: normal;
+    font-style: italic;
 }
 
 .save-button {
