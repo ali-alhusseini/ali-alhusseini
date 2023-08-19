@@ -118,6 +118,7 @@ body a, a:visited, a:hover, a:active {
     font-family: var(--font-family-mono);
     font-size: 4vw;
     letter-spacing: 0.6px;
+    font-weight: 500;
 }
 
 .email-value a {
@@ -195,6 +196,10 @@ body a, a:visited, a:hover, a:active {
     .light-mode {
         --color-primary: var(--color-cream);
         --color-secondary: var(--color-carbon);
+    }
+
+    #header {
+        display: flex;
     }
     
     #mode-container {
