@@ -151,12 +151,20 @@ body a, a:visited, a:hover, a:active {
     margin: 10px 0 0 0;
 }
 
+.brand-logos {
+    fill: var(--color-secondary);
+}
+
 .about {
     grid-column: 1 / 2;
     grid-row: 4 / 8;
 }
 
 .about-value {
+    display: flex;
+    flex-direction: column;
+    align-items: right;
+    align-items: end;
     grid-column: 2 / 3;
     grid-row: 4 / 8;
     font-family: var(--font-family-serif);
@@ -164,9 +172,24 @@ body a, a:visited, a:hover, a:active {
     line-height: normal;
 }
 
-.brand-logos {
-    fill: var(--color-secondary);
+.save-button {
+    display: flex;
+    flex-shrink: none;
+    justify-content: right;
+    align-items: right;
+    text-align: center;
+    background-color: var(--color-secondary);
+    color: var(--color-primary);
+    border: none;
+    border-radius: 1em;
 }
+
+.share-logo {
+    padding-left: 5px;
+    fill: none;
+    stroke: var(--color-primary);
+}
+
 
 @media only screen and (min-width: 500px) {
     .light-mode {
@@ -351,12 +374,6 @@ body a, a:visited, a:hover, a:active {
     .footer-msg:hover {
         background-color: var(--color-primary);
         color: var(--color-secondary);
-    }
-
-    .email {
-        font-family: var(--font-family-mono);
-        font-size: 21px;
-        letter-spacing: 0.6px;
     }
 }
 /* Footer - end */
