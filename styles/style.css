@@ -70,10 +70,11 @@ body a, a:visited, a:hover, a:active {
     overflow: hidden;
     box-sizing: border-box;
     height: 90vh;
-    width: 90%;
+    width: 100%;
+    margin: 0px 20px;
 }
 
-.m-key {
+.mobile-key {
     display: flex;
     font-family: var(--font-family-serif);
     font-style: italic;
@@ -87,7 +88,7 @@ body a, a:visited, a:hover, a:active {
     border-bottom: 1px solid var(--color-secondary);
 }
 
-.m-value {
+.mobile-value {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +104,7 @@ body a, a:visited, a:hover, a:active {
 .name-value {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
-    font-size: 0.7em;
+    font-size: 0.68em;
     font-weight: 400;
 }
 
@@ -116,8 +117,8 @@ body a, a:visited, a:hover, a:active {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-family: var(--font-family-mono);
-    font-size: 4vw;
-    letter-spacing: 1px;
+    font-size: 0.78em;
+    letter-spacing: 0.1em;
     font-weight: 500;
 }
 
@@ -167,9 +168,10 @@ body a, a:visited, a:hover, a:active {
     grid-column: 2 / 3;
     grid-row: 4 / 8;
     font-family: var(--font-family-serif);
-    font-size: 1em;
+    font-size: 0.88em;
     line-height: normal;
     font-style: italic;
+    padding-right: 15px;
 }
 
 .save-button {
@@ -181,6 +183,7 @@ body a, a:visited, a:hover, a:active {
     border: none;
     border-radius: 1em;
     margin: 0.5em;
+    padding: 2px 10px;
 }
 
 .share-logo {
