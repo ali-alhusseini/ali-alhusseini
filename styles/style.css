@@ -205,7 +205,7 @@ body a, a:visited, a:hover, a:active {
 }
 
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 768px) {
     .light-mode {
         --color-primary: var(--color-cream);
         --color-secondary: var(--color-carbon);
@@ -275,13 +275,14 @@ body a, a:visited, a:hover, a:active {
         color: var(--color-primary);
         text-align: center;
         padding: 25px 5px 10px 5px;
-        font-size: 4em;
-        font-weight: 900;
+        font-size: 4.5vw;
+        font-weight: 800;
+        margin: 10px;
     }
     
     .main-links {
         font-family: var(--font-family-serif);
-        font-size: 48px;
+        font-size: 4vw;
         font-weight: 700;
         text-align: center;
         line-height: normal;
@@ -300,30 +301,30 @@ body a, a:visited, a:hover, a:active {
     }
 
     .main-link {
-        margin: 40px 0 0 0;
+        margin: 5vh 1vw 0 1vw;
     }
 
     .redacted {
         display: inline-block;
-        height: 30px;
+        height: 2.2vw;
         background-color: var(--color-primary);
         border-radius: 5px;
     }
     
     .r-1 {
-        width: 65%;
+        width: 26.5vw;
     }
 
     .r-2 {
-        width: 28%;
+        width: 11vw;
     }
 
     .r-3 {
-        width: 70%;
+        width: 29vw;
     }
 
     .r-4 {
-        width: 57%;
+        width: 22.8vw;
     }
 
     .left-container {
@@ -351,7 +352,7 @@ body a, a:visited, a:hover, a:active {
     }
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 768px) {
     .footer {
         background-color: var(--color-primary);
         color: var(--color-secondary);
