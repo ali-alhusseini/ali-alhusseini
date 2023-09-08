@@ -364,12 +364,19 @@ body a, a:visited, a:hover, a:active {
         position: relative;
         font-family: var(--font-family-serif);
         font-size: 4.2vw;
+        font-weight: 500;
         margin: 5vh 0 2vh 5vw;
     }
 
     .about-container {
+        display: none;
         background-color: orangered;
         color: var(--color-primary);
+    }
+
+    .connect-container {
+        background-color: #000AF8;
+        color: var(--color-secondary);
     }
 
     .about-container-description {
