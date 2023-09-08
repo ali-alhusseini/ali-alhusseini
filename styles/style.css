@@ -350,6 +350,34 @@ body a, a:visited, a:hover, a:active {
         padding: 5px;
         line-height: 0.3rem;
     }
+
+    .info-container {
+        position: relative;
+        width: 600px;
+        height: 600px;
+        margin: 20px;
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    .info-container-title {
+        position: relative;
+        font-family: var(--font-family-serif);
+        font-size: 4.2vw;
+        margin: 5vh 0 2vh 5vw;
+    }
+
+    .about-container {
+        background-color: orangered;
+        color: var(--color-primary);
+    }
+
+    .about-container-description {
+        margin: 50px;
+        font-family: var(--font-family-serif);
+        font-size: var(--font-size-m);
+        text-align: justify;
+    }
 }
 
 @media only screen and (min-width: 768px) {
