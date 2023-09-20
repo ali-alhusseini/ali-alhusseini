@@ -127,7 +127,7 @@ body a, a:visited, a:hover, a:active {
     grid-row: 2 / 3;
     font-family: var(--font-family-mono);
     font-size: 0.78em;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.07em;
     font-weight: 500;
 }
 
