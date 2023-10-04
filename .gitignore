@@ -1,7 +1,13 @@
-*.log
+# macOS
 .DS_Store
-Thumbs.db
+.AppleDouble
+.LSOverride
+*.log
 
+Thumbs.db
+._*
+
+# Visual Studio Code
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
@@ -11,3 +17,7 @@ Thumbs.db
 
 .history/
 *.vsix
+.history
+.ionide
+
+.idea
