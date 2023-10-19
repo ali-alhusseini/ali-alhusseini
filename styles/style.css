@@ -146,6 +146,11 @@ body a, a:visited, a:hover, a:active {
     grid-row: 3 / 4;
     font-size: 1.2em;
     font-weight: 600;
+    line-height: 1.3em;
+}
+
+.social-value-spans {
+    vertical-align: 11%;
 }
 
 .social-value a {
