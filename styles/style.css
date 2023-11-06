@@ -209,7 +209,7 @@ body a, a:visited, a:hover, a:active {
     stroke: var(--color-secondary);
 }
 
-
+/* Desktop */
 @media only screen and (min-width: 768px) {
     .light-mode {
         --color-primary: var(--color-cream);
@@ -392,6 +392,7 @@ body a, a:visited, a:hover, a:active {
     }
 }
 
+/* Footer - begin */
 @media only screen and (min-width: 768px) {
     .footer {
         background-color: var(--color-primary);
@@ -438,7 +439,7 @@ body a, a:visited, a:hover, a:active {
 }
 /* Footer - end */
 
-/* 404 Page Not Found - start */
+/* 404 Page Not Found - begin */
 .error-code {
     font-size: var(--font-size-m);
     font-weight: 700;
@@ -507,6 +508,7 @@ body a, a:visited, a:hover, a:active {
 }
 /* 404 Page Not Found - end */
 
+/* Cursor */
 @media only screen and (min-width: 500px) {
     #cursor {
         background-color: var(--color-secondary);
