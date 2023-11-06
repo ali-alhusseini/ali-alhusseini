@@ -14,8 +14,8 @@
     --color-secondary: var(--color-cream);
     --transparency: 0.5;
     --font-family: 'Mona Sans', sans-serif;
-    --font-family-serif: 'Times', serif;
-    --font-family-mono: 'Fira Code', monospace;
+    --font-family-serif: 'Times', 'Time New Roman', serif;
+    --font-family-mono: 'Courier New', monospace;
     --font-size-xl: 52px;
     --font-size-l: 30px;
     --font-size-m: 24px;
@@ -126,9 +126,9 @@ body a, a:visited, a:hover, a:active {
     grid-column: 2 / 3;
     grid-row: 2 / 3;
     font-family: var(--font-family-mono);
-    font-size: 0.78em;
-    letter-spacing: 0.07em;
-    font-weight: 500;
+    font-size: 0.9em;
+    letter-spacing: 0.06em;
+    font-weight: bold;
 }
 
 .email-value a {
