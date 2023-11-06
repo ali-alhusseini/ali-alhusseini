@@ -1,17 +1,10 @@
-@font-face {
-    font-family: 'Mona Sans';
-    src:
-        url('/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
-        url('/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
-    font-weight: 200 900;
-    font-stretch: 75% 125%;
-}
-
 :root {
-    --color-carbon: #1B1B1B;
-    --color-cream: #F9F5E7;
     --color-primary: var(--color-carbon);
     --color-secondary: var(--color-cream);
+    --color-carbon: #1B1B1B;
+    --color-cream: #F9F5E7;
+    --color-yellow-marker: #E8E810;
+    --color-blue-marker: rgb(13, 13, 198);
     --transparency: 0.5;
     --font-family: 'Mona Sans', sans-serif;
     --font-family-serif: 'Times', 'Time New Roman', serif;
@@ -22,7 +15,16 @@
     --font-size-s: 12px;
     --font-size-xs: 10px;
 }
-  
+
+@font-face {
+    font-family: 'Mona Sans';
+    src:
+        url('/assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+        url('/assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
 body, html {
     background-color: var(--color-primary);
     color: var(--color-secondary);
@@ -302,7 +304,7 @@ body a, a:visited, a:hover, a:active {
 
     .main-links a:hover {
         color: var(--color-carbon);
-        background-color: rgb(232, 232, 16);
+        background-color: var(--color-yellow-marker);
     }
 
     .main-link {
@@ -344,7 +346,6 @@ body a, a:visited, a:hover, a:active {
     }
 
     .strings-title {
-        background-color: red;
         position: fixed;
         left: 50%;
     }
@@ -375,13 +376,12 @@ body a, a:visited, a:hover, a:active {
 
     .about-container {
         display: none;
-        background-color: orangered;
-        color: var(--color-primary);
-    }
-
-    .connect-container {
-        background-color: #000AF8;
         color: var(--color-secondary);
+        background-image: repeating-linear-gradient(
+            90deg,
+            var(--color-yellow-marker) 0 23px,
+            transparent 23px 24px
+          );
     }
 
     .about-container-description {
@@ -390,6 +390,38 @@ body a, a:visited, a:hover, a:active {
         font-size: var(--font-size-m);
         text-align: justify;
     }
+
+    .connect-container {
+        /* display: none; */
+        color: var(--color-cream);
+        background-image: repeating-linear-gradient(
+            90deg,
+            var(--color-blue-marker) 0 23px,
+            #767771 23px 24px
+        );
+    }
+
+    .connect-container a{
+        color: var(--color-cream);
+    }
+
+    #connect-container-email {
+        margin: 20px 0 20px 72px;
+        font-size: 1.8em;
+        font-family: var(--font-family-mono);
+    }
+
+    .connect-container-links {
+        margin: 50px;
+        list-style: none;
+    }
+
+    .connect-container-links ol {
+        list-style: discs;
+        font-size: 20px;
+    }
+    
+
 }
 
 /* Footer - begin */
