@@ -275,8 +275,9 @@ body a, a:visited, a:hover, a:active {
         position: relative;
         background-color: var(--color-secondary);
         width: 600px;
+        min-width: 500px;
         height: 600px;
-        margin: 20px;
+        min-height: 500px;
         border-radius: var(--border-radius);
     }
 
@@ -331,25 +332,25 @@ body a, a:visited, a:hover, a:active {
 
     .redacted {
         display: inline-block;
-        height: 2.2vw;
+        height: 2rem;
         background-color: var(--color-primary);
         border-radius: var(--border-radius);
     }
-    
+
     .r-1 {
-        width: 26.5vw;
+        width: 24rem;
     }
 
     .r-2 {
-        width: 11vw;
+        width: 10.2rem;
     }
 
     .r-3 {
-        width: 29vw;
+        width: 26rem;
     }
 
     .r-4 {
-        width: 22.8vw;
+        width: 20.5rem;
     }
 
     .left-container {
@@ -379,7 +380,7 @@ body a, a:visited, a:hover, a:active {
         position: relative;
         width: 600px;
         height: 600px;
-        margin: 20px;
+        margin-right: 20px;
         border-radius: var(--border-radius);
         overflow: hidden;
     }
