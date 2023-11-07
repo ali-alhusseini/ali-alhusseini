@@ -5,6 +5,7 @@
     --color-cream: #F9F5E7;
     --color-yellow-marker: #E8E810;
     --color-blue-marker: rgb(13, 13, 198);
+    --color-transparent: rgba(121, 121, 116, 0.73);
     --transparency: 0.5;
     --font-family: 'Mona Sans', sans-serif;
     --font-family-serif: 'Times', 'Time New Roman', serif;
@@ -14,6 +15,7 @@
     --font-size-m: 24px;
     --font-size-s: 12px;
     --font-size-xs: 10px;
+    --border-radius: 5px;
 }
 
 @font-face {
@@ -275,21 +277,21 @@ body a, a:visited, a:hover, a:active {
         width: 600px;
         height: 600px;
         margin: 20px;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 
     .title {
         color: var(--color-primary);
         text-align: center;
         padding: 25px 5px 10px 5px;
-        font-size: 4.5vw;
+        font-size: 4rem;
         font-weight: 800;
         margin: 10px;
     }
     
     .main-links {
         font-family: var(--font-family-serif);
-        font-size: 4vw;
+        font-size: 3.4em;
         font-weight: 700;
         text-align: center;
         line-height: normal;
@@ -299,7 +301,7 @@ body a, a:visited, a:hover, a:active {
         color: var(--color-primary);
         margin: 40px 0 40px 0;
         padding: 5px;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 
     .main-links a:hover {
@@ -315,7 +317,7 @@ body a, a:visited, a:hover, a:active {
         display: inline-block;
         height: 2.2vw;
         background-color: var(--color-primary);
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
     
     .r-1 {
@@ -362,25 +364,26 @@ body a, a:visited, a:hover, a:active {
         width: 600px;
         height: 600px;
         margin: 20px;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
         overflow: hidden;
     }
 
     .info-container-title {
         position: relative;
         font-family: var(--font-family-serif);
-        font-size: 4.2vw;
-        font-weight: 500;
+        font-size: 3.4em;
+        font-weight: 700;
+        line-height: normal;
         margin: 5vh 0 2vh 5vw;
     }
 
     .about-container {
         display: none;
-        color: var(--color-secondary);
+        color: var(--color-carbon);
         background-image: repeating-linear-gradient(
             90deg,
-            var(--color-yellow-marker) 0 23px,
-            transparent 23px 24px
+            var(--color-yellow-marker) 0 19px,
+            var(--color-transparent) 19px 19.5px
           );
     }
 
@@ -396,32 +399,63 @@ body a, a:visited, a:hover, a:active {
         color: var(--color-cream);
         background-image: repeating-linear-gradient(
             90deg,
-            var(--color-blue-marker) 0 23px,
-            #767771 23px 24px
+            var(--color-blue-marker) 0 19px,
+            var(--color-transparent) 19px 19.5px
         );
     }
 
-    .connect-container a{
-        color: var(--color-cream);
-    }
-
     #connect-container-email {
-        margin: 20px 0 20px 72px;
+        margin: 25px 0px 20px 73px;
         font-size: 1.8em;
         font-family: var(--font-family-mono);
+        font-weight: 500;
+    }
+
+    #connect-container-email a {
+        color: var(--color-cream);
+        padding: 10px 1px 10px 1px;
+    }
+
+    #connect-container-email a:hover {
+        color: var(--color-carbon);
+        background-color: var(--color-cream);
+        border-radius: var(--border-radius);
     }
 
     .connect-container-links {
-        margin: 50px;
-        list-style: none;
+        margin: 50px 0px 0px 62px;
+        font-size: 1.6em;
+        font-weight: 500;
     }
 
-    .connect-container-links ol {
-        list-style: discs;
-        font-size: 20px;
+    .connect-container-links a {
+        color: var(--color-cream);
+        padding-right: 5px;
     }
-    
 
+    .connect-container-links a:hover {
+        text-decoration: none;
+        border-bottom: 10px solid currentColor;
+        border-right: 10px solid currentColor;
+    }
+
+    .connect-container-links li {
+        margin-top: 25px;
+        list-style-type: none;
+        position: relative;
+    }
+
+    .connect-container-links li::before {
+        content: '';
+        position: absolute;
+        left: -25px;
+        top: 30%;
+        transform: translateY(-30%);
+        width: 20px;
+        height: 20px;
+        border-radius: 40%;
+        background-color: var(--color-cream);
+    }
 }
 
 /* Footer - begin */
@@ -436,7 +470,7 @@ body a, a:visited, a:hover, a:active {
         position: fixed;
         bottom: 0;
         left: 0;
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 
     .footer a {
@@ -451,7 +485,7 @@ body a, a:visited, a:hover, a:active {
     .footer a:hover {
         background-color: var(--color-secondary);
         color: var(--color-primary);
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 
     .footer-msg {
@@ -459,7 +493,7 @@ body a, a:visited, a:hover, a:active {
         font-family: var(--font-family-serif);
         background-color: var(--color-secondary);
         color: var(--color-primary);
-        border-radius: 5px;
+        border-radius: var(--border-radius);
         padding: 5px;
         margin: 2px;
     }
@@ -481,7 +515,7 @@ body a, a:visited, a:hover, a:active {
     border: 10px solid var(--color-secondary);
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
 }
 
 .error-message {
@@ -495,7 +529,7 @@ body a, a:visited, a:hover, a:active {
     font-family: var(--font-family-mono);
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    border-radius: 5px;
+    border-radius: var(--border-radius);
     padding: 5px;
     margin: 2px;
 }
@@ -510,7 +544,7 @@ body a, a:visited, a:hover, a:active {
         border: 10px solid var(--color-secondary);
         background-color: var(--color-primary);
         color: var(--color-secondary);
-        border-radius: 5px;
+        border-radius: var(--border-radius);
     }
 
     .error-code:hover {
@@ -547,7 +581,7 @@ body a, a:visited, a:hover, a:active {
         opacity: 0.4;
         height: 4rem;
         width: 4rem;
-        border-radius: 1000rem;
+        border-radius: 50%;
         position: fixed;
         pointer-events: none;
     }
