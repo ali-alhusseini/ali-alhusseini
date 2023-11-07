@@ -61,8 +61,10 @@ aboutLink.addEventListener('click', () => {
     if (aboutContainer.style.display == 'none') {
         aboutContainer.style.display = 'block';
         connectContainer.style.display = 'none';
+        document.querySelector(".strings").style.display = 'none';
     } else {
         aboutContainer.style.display = 'none';
+        document.querySelector(".strings").style.display = 'block';
     }
 });
 
@@ -70,7 +72,23 @@ connectLink.addEventListener('click', () => {
     if (connectContainer.style.display == 'none') {
         connectContainer.style.display = 'block';
         aboutContainer.style.display = 'none';
+        document.querySelector(".strings").style.display = 'none';
     } else {
         connectContainer.style.display = 'none';
+        document.querySelector(".strings").style.display = 'block';
     }
 });
+
+const aboutCloseBtn = document.querySelector(".about-close-btn");
+const connectCloseBtn = document.querySelector(".connect-close-btn");
+
+aboutCloseBtn.addEventListener('click', () => {
+    aboutContainer.style.display = 'none';
+    document.querySelector(".strings").style.display = 'block';
+});
+
+connectCloseBtn.addEventListener('click', () => {
+    connectContainer.style.display = 'none';
+    document.querySelector(".strings").style.display = 'block';
+});
+

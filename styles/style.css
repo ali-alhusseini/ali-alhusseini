@@ -305,9 +305,24 @@ body a, a:visited, a:hover, a:active {
         border-radius: var(--border-radius);
     }
 
-    .main-links a:hover {
+    .about-link a:hover {
         color: var(--color-carbon);
         background-color: var(--color-yellow-marker);
+    }
+
+    .connect-link a:hover {
+        color: var(--color-cream);
+        background-color: var(--color-blue-marker);
+    }
+
+    .close-button {
+        background: none;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        position: absolute;
+        top: 20px;
+        right: 10px;
     }
 
     .main-link {
