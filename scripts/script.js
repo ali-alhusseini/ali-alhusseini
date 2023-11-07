@@ -50,3 +50,27 @@ function updateTime() {
 
 updateTime();
 setInterval(updateTime, 1000);
+
+
+const aboutLink = document.querySelector(".about-link a");
+const connectLink = document.querySelector(".connect-link a");
+const aboutContainer = document.querySelector(".about-container");
+const connectContainer = document.querySelector(".connect-container");
+
+aboutLink.addEventListener('click', () => {
+    if (aboutContainer.style.display == 'none') {
+        aboutContainer.style.display = 'block';
+        connectContainer.style.display = 'none';
+    } else {
+        aboutContainer.style.display = 'none';
+    }
+});
+
+connectLink.addEventListener('click', () => {
+    if (connectContainer.style.display == 'none') {
+        connectContainer.style.display = 'block';
+        aboutContainer.style.display = 'none';
+    } else {
+        connectContainer.style.display = 'none';
+    }
+});
