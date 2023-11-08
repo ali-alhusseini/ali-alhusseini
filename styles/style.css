@@ -281,7 +281,7 @@ body a, a:visited, a:hover, a:active {
         border-radius: var(--border-radius);
     }
 
-    .title {
+    .main-title {
         color: var(--color-primary);
         font-family: var(--font-family);
         text-align: center;
@@ -306,14 +306,9 @@ body a, a:visited, a:hover, a:active {
         border-radius: var(--border-radius);
     }
 
-    .about-link a:hover {
+    .main-links a:hover {
         color: var(--color-carbon);
         background-color: var(--color-yellow-marker);
-    }
-
-    .connect-link a:hover {
-        color: var(--color-cream);
-        background-color: var(--color-blue-marker);
     }
 
     .close-button {
@@ -326,8 +321,8 @@ body a, a:visited, a:hover, a:active {
         right: 10px;
     }
 
-    .main-link {
-        margin: 5vh 1vw 0 1vw;
+    .main-links-row {
+        margin: 2.4rem 0.8rem 0 0.8rem;
     }
 
     .redacted {
@@ -396,10 +391,10 @@ body a, a:visited, a:hover, a:active {
 
     .about-container {
         display: none;
-        color: var(--color-carbon);
+        color: var(--color-primary);
         background-image: repeating-linear-gradient(
             90deg,
-            var(--color-yellow-marker) 0 19px,
+            var(--color-secondary) 0 19px,
             var(--color-transparent) 19px 19.5px
           );
     }
@@ -413,10 +408,10 @@ body a, a:visited, a:hover, a:active {
 
     .connect-container {
         display: none;
-        color: var(--color-cream);
+        color: var(--color-primary);
         background-image: repeating-linear-gradient(
             90deg,
-            var(--color-blue-marker) 0 19px,
+            var(--color-secondary) 0 19px,
             var(--color-transparent) 19px 19.5px
         );
     }
@@ -429,14 +424,15 @@ body a, a:visited, a:hover, a:active {
     }
 
     #connect-container-email a {
-        color: var(--color-cream);
-        padding: 10px 1px 10px 1px;
+        color: var(--color-primary);
+        padding: 10px 10px 10px 1px;
     }
 
     #connect-container-email a:hover {
-        color: var(--color-carbon);
-        background-color: var(--color-cream);
+        color: var(--color-secondary);
+        background-color: var(--color-primary);
         border-radius: var(--border-radius);
+        transition: background-color 0.3s ease-in-out;
     }
 
     .connect-container-links {
@@ -446,14 +442,14 @@ body a, a:visited, a:hover, a:active {
     }
 
     .connect-container-links a {
-        color: var(--color-cream);
+        color: var(--color-primary);
         padding-right: 5px;
     }
 
     .connect-container-links a:hover {
         text-decoration: none;
-        border-bottom: 10px solid currentColor;
-        border-right: 10px solid currentColor;
+        border-bottom: 6px solid currentColor;
+        transition: border-bottom 0.3s ease-in-out;
     }
 
     .connect-container-links li {
@@ -471,7 +467,7 @@ body a, a:visited, a:hover, a:active {
         width: 20px;
         height: 20px;
         border-radius: 40%;
-        background-color: var(--color-cream);
+        background-color: var(--color-primary);
     }
 }
 
