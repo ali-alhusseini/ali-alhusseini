@@ -92,3 +92,7 @@ connectCloseBtn.addEventListener('click', () => {
     document.querySelector(".strings").style.display = 'block';
 });
 
+document.getElementById('get-in-touch-link').addEventListener('click', function(event) {
+    event.preventDefault();
+    connectLink.click();
+});
