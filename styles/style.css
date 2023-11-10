@@ -40,7 +40,7 @@ body, html {
 
 body a, a:visited, a:hover, a:active {
     text-decoration: none;
-    cursor: pointer;
+    cursor: none;
 }
 
 @media (prefers-color-scheme: light) {
@@ -451,7 +451,7 @@ body a, a:visited, a:hover, a:active {
     #connect-container-email:hover {
         background-color: var(--color-primary);
         color: var(--color-secondary);
-        cursor: pointer;
+        letter-spacing: .12em;
     }
 
     .connect-container-links {
@@ -610,13 +610,21 @@ body a, a:visited, a:hover, a:active {
 
 /* Cursor */
 @media only screen and (min-width: 500px) {
-    #cursor {
-        background-color: var(--color-secondary);
-        opacity: 0.4;
-        height: 4rem;
-        width: 4rem;
-        border-radius: 50%;
+    .cursor {
         position: fixed;
+        opacity: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
         pointer-events: none;
+        background-color: var(--color-cream);
+        mix-blend-mode: difference;
+        transition: transform 350ms ease;
+        transform: translate(-50%, -50%) scale(.3);
+        z-index: 1000;
+    }
+
+    .cursor-link {
+        transform: translate(-50%, -50%) scale(1);
     }
 }
