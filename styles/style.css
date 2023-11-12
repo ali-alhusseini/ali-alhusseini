@@ -303,16 +303,6 @@ body a, a:visited, a:hover, a:active {
         background-color: var(--color-yellow-marker);
     }
 
-    .close-button {
-        background: none;
-        border: none;
-        outline: none;
-        cursor: pointer;
-        position: absolute;
-        top: 20px;
-        right: 10px;
-    }
-
     .main-links-row {
         margin: 2.4rem 0.8rem 0 0.8rem;
     }
@@ -397,6 +387,10 @@ body a, a:visited, a:hover, a:active {
         font-size: 1.2em;
         padding: 20px;
         border-bottom: solid 3px var(--color-primary);
+    }
+
+    .about-container-section1 a {
+        color: inherit;
     }
 
     .about-container-section2 {
