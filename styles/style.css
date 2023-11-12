@@ -374,7 +374,9 @@ body a, a:visited, a:hover, a:active {
     .info-container {
         position: relative;
         width: 600px;
+        max-width: 600px;
         height: 600px;
+        max-height: 600px;  
         margin-right: 20px;
         border-radius: var(--border-radius);
         overflow: hidden;
@@ -398,15 +400,7 @@ body a, a:visited, a:hover, a:active {
         background-color: var(--color-secondary);
     }
 
-    .about-container-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 2fr 2fr;
-    }
-
     .about-container-section1 {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
         font-family: var(--font-family-mono);
         font-size: 1.2em;
         padding: 20px;
@@ -414,8 +408,6 @@ body a, a:visited, a:hover, a:active {
     }
 
     .about-container-section2 {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
         font-family: var(--font-family-mono);
         font-size: 1.2em;
         padding: 20px;
@@ -427,39 +419,32 @@ body a, a:visited, a:hover, a:active {
         background-color: var(--color-secondary);
     }
 
-    .connect-container-content {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr 4fr;
-    }
-
-    #connect-container-email {
-        grid-column: 1 / 2;
-        grid-row: 2 / 3;
+    .connect-container-email {
+        display: block;
         font-family: var(--font-family-mono);
         font-size: 1.8em;
         font-weight: 500;
+        color: var(--color-primary);
         border-bottom: solid 3px var(--color-primary);
         display: flex;
         justify-content: center;
         align-items: center;
+        padding: 40px 0 40px 0;
     }
 
-    #connect-container-email a {
+    .connect-container-email a {
         color: inherit;
     }
 
-    #connect-container-email:hover {
+    .connect-container-email:hover {
         background-color: var(--color-primary);
         color: var(--color-secondary);
     }
 
     .connect-container-links {
-        grid-column: 1 / 2;
-        grid-row: 3 / 4;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: 190px 190px;
         font-size: 1.6em;
         font-weight: 500;
         align-items: center;
@@ -484,6 +469,7 @@ body a, a:visited, a:hover, a:active {
     .github-link {
         grid-column: 1 / 2;
         grid-row: 1 / 2;
+        border-bottom: solid 3px var(--color-primary);
     }
 
     .instagram-link {
@@ -494,25 +480,8 @@ body a, a:visited, a:hover, a:active {
     .linkedin-link {
         grid-column: 2 / 3;
         grid-row: 1 / 3;
+        border-left: solid 3px var(--color-primary);
     }
-
-    /* .connect-container-links li {
-        margin-top: 25px;
-        list-style-type: none;
-        position: relative;
-    }
-
-    .connect-container-links li::before {
-        content: '';
-        position: absolute;
-        left: -25px;
-        top: 30%;
-        transform: translateY(-30%);
-        width: 20px;
-        height: 20px;
-        border-radius: 40%;
-        background-color: var(--color-primary);
-    } */
 }
 
 /* Footer - begin */
