@@ -4,17 +4,9 @@
     --color-carbon: #1B1B1B;
     --color-cream: #F9F5E7;
     --color-yellow-marker: #E8E810;
-    --color-blue-marker: rgb(13, 13, 198);
-    --color-transparent: rgba(121, 121, 116, 0.73);
-    --transparency: 0.5;
     --font-family: 'Mona Sans', sans-serif;
     --font-family-serif: 'Times', 'Time New Roman', serif;
     --font-family-mono: 'Courier New', monospace;
-    --font-size-xl: 52px;
-    --font-size-l: 30px;
-    --font-size-m: 24px;
-    --font-size-s: 12px;
-    --font-size-xs: 10px;
     --border-radius: 5px;
 }
 
@@ -365,9 +357,9 @@ body a, a:visited, a:hover, a:active {
     }
 
     .info {
-        font-size: var(--font-size-xs);
         font-family: var(--font-family-mono);
-        padding: 5px;
+        font-size: 0.5em;
+        padding: 10px;
         line-height: 0.3rem;
     }
 
@@ -484,7 +476,7 @@ body a, a:visited, a:hover, a:active {
     }
 }
 
-/* Footer - begin */
+/* Footer - start */
 @media only screen and (min-width: 768px) {
     .footer {
         background-color: var(--color-primary);
@@ -498,24 +490,9 @@ body a, a:visited, a:hover, a:active {
         left: 0;
         border-radius: var(--border-radius);
     }
-
-    .footer a {
-        text-decoration: none;
-        color: var(--color-secondary);
-        font-family: var(--font-family-serif);
-        font-size: var(--font-size-s);
-        padding: 5px;
-        margin: 2px;
-    }
-
-    .footer a:hover {
-        background-color: var(--color-secondary);
-        color: var(--color-primary);
-        border-radius: var(--border-radius);
-    }
-
+    
     .footer-msg {
-        font-size: var(--font-size-s);
+        font-size: 0.65em;
         font-family: var(--font-family-serif);
         background-color: var(--color-secondary);
         color: var(--color-primary);
@@ -531,21 +508,35 @@ body a, a:visited, a:hover, a:active {
 }
 /* Footer - end */
 
-/* 404 Page Not Found - begin */
+/* 404 Page Not Found - start */
+.error-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    place-content: center;
+    position: absolute;  
+    width: 100%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
 .error-code {
-    font-size: var(--font-size-m);
+    font-size: 1.8em;
     font-weight: 700;
-    padding: 10px;
-    margin: 20px;
-    text-align: center;
-    border: 10px solid var(--color-secondary);
+    padding: 0 55px 0 55px;
     background-color: var(--color-secondary);
     color: var(--color-primary);
     border-radius: var(--border-radius);
 }
 
 .error-message {
-    font-size: var(--font-size-s);
+    font-size: 0.8em;
     padding: 0;
     margin: 20px;
     line-height: 10px;
@@ -553,20 +544,35 @@ body a, a:visited, a:hover, a:active {
 
 .error-link {
     font-family: var(--font-family-mono);
+    border-radius: var(--border-radius);
     background-color: var(--color-secondary);
     color: var(--color-primary);
-    border-radius: var(--border-radius);
     padding: 5px;
     margin: 2px;
 }
 
-@media only screen and (min-width: 500px) {
+@media only screen and (min-width: 768px) {
+    .error-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        place-content: center;
+        position: absolute;  
+        width: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    
     .error-code {
-        font-size: var(--font-size-l);
+        font-size: 2em;
         font-weight: 700;
-        padding: 10px;
-        margin: 10px;
-        text-align: center;
+        padding: 0 100px 0 100px;
         border: 10px solid var(--color-secondary);
         background-color: var(--color-primary);
         color: var(--color-secondary);
@@ -579,9 +585,7 @@ body a, a:visited, a:hover, a:active {
     }
     
     .error-message {
-        font-size: var(--font-size-m);
-        padding: 10px;
-        margin: 0;
+        font-size: 1.28em;
         line-height: 20px;
     }
 
