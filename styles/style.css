@@ -336,16 +336,6 @@ body a, a:visited, a:hover, a:active {
         margin: 20px;
     }
 
-    .strings {
-        fill: none;
-        stroke: var(--color-secondary);
-    }
-
-    .strings-title {
-        position: fixed;
-        left: 50%;
-    }
-
     .info {
         font-family: var(--font-family-mono);
         font-size: 0.5em;
@@ -377,7 +367,6 @@ body a, a:visited, a:hover, a:active {
     }
 
     .about-container {
-        display: none;
         color: var(--color-primary);
         background-color: var(--color-secondary);
     }
@@ -400,7 +389,6 @@ body a, a:visited, a:hover, a:active {
     }
 
     .connect-container {
-        display: none;
         color: var(--color-primary);
         background-color: var(--color-secondary);
     }

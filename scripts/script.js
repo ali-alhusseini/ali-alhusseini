@@ -1,16 +1,4 @@
-const switchAudio = document.getElementById('switch-audio');
-const lightModeBtn = document.getElementById('light-mode-btn');
-const darkModeBtn = document.getElementById('dark-mode-btn');
-
-// document.addEventListener('mousemove', function(event) {
-//     var cursor = document.getElementById('cursor');
-//     var xPosition = event.clientX - cursor.offsetWidth / 2;
-//     var yPosition = event.clientY - cursor.offsetHeight / 2;
-//     cursor.style.left = xPosition + 'px';
-//     cursor.style.top = yPosition + 'px';
-// });
-
-// Custom Cursor 
+// Cursor 
 document.addEventListener("DOMContentLoaded", function(event) {
     var cursor = document.querySelector('.cursor');
     var links = document.querySelectorAll("a");
@@ -26,7 +14,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
           cursor.classList.remove("cursor-link");
         });
       }
-    
 
     window.onmousemove = function(e) {
         var mouseX = e.clientX;
@@ -47,18 +34,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
-lightModeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    darkModeBtn.style.display = 'inline-block';
-    lightModeBtn.style.display = 'none';
-});
-
-darkModeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    lightModeBtn.style.display = 'inline-block';
-    darkModeBtn.style.display = 'none';
-});
-
+// Switch Sound
 function playSwitchSound() {
     if (switchAudio.readyState === 4) {
         switchAudio.volume = 0.2;
@@ -71,14 +47,26 @@ function playSwitchSound() {
     }
 }
 
+// Dark/Light Mode
+const switchAudio = document.getElementById('switch-audio');
+const lightModeBtn = document.getElementById('light-mode-btn');
+const darkModeBtn = document.getElementById('dark-mode-btn');
+
 lightModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    darkModeBtn.style.display = 'inline-block';
+    lightModeBtn.style.display = 'none';
     playSwitchSound();
 });
 
 darkModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('light-mode');
+    lightModeBtn.style.display = 'inline-block';
+    darkModeBtn.style.display = 'none';
     playSwitchSound();
 });
 
+// Header Time
 function updateTime() {
     const date = Date();
     let time = date.slice(16, 24);
@@ -88,48 +76,32 @@ function updateTime() {
 updateTime();
 setInterval(updateTime, 1000);
 
+// About/Connect
+let aboutLink = document.getElementById('about-link');
+let connectLink = document.getElementById('connect-link');
+let aboutContainer = document.querySelector(".about-container");
+let connectContainer = document.querySelector(".connect-container");
 
-const aboutLink = document.querySelector(".about-link a");
-const connectLink = document.querySelector(".connect-link a");
-const aboutContainer = document.querySelector(".about-container");
-const connectContainer = document.querySelector(".connect-container");
+window.onload = () => {
+    aboutContainer.style.display = 'none';
+    connectContainer.style.display = 'none';
+}
 
 aboutLink.addEventListener('click', () => {
     if (aboutContainer.style.display == 'none') {
         aboutContainer.style.display = 'block';
         connectContainer.style.display = 'none';
-        // document.querySelector(".strings").style.display = 'none';
     } else {
         aboutContainer.style.display = 'none';
-        // document.querySelector(".strings").style.display = 'block';
     }
 });
+
 
 connectLink.addEventListener('click', () => {
     if (connectContainer.style.display == 'none') {
         connectContainer.style.display = 'block';
         aboutContainer.style.display = 'none';
-        // document.querySelector(".strings").style.display = 'none';
     } else {
         connectContainer.style.display = 'none';
-        // document.querySelector(".strings").style.display = 'block';
     }
-});
-
-const aboutCloseBtn = document.querySelector(".about-close-btn");
-const connectCloseBtn = document.querySelector(".connect-close-btn");
-
-aboutCloseBtn.addEventListener('click', () => {
-    aboutContainer.style.display = 'none';
-    // document.querySelector(".strings").style.display = 'block';
-});
-
-connectCloseBtn.addEventListener('click', () => {
-    connectContainer.style.display = 'none';
-    // document.querySelector(".strings").style.display = 'block';
-});
-
-document.getElementById('get-in-touch-link').addEventListener('click', function(event) {
-    event.preventDefault();
-    connectLink.click();
 });
