@@ -47,6 +47,10 @@ body a, a:visited, a:hover, a:active {
     --color-secondary: var(--color-carbon);
 }
 
+.serif {
+    font-family: var(--font-family-serif);
+}
+
 #header {
     display: none;
 }
@@ -352,6 +356,8 @@ body a, a:visited, a:hover, a:active {
         margin-right: 20px;
         border-radius: var(--border-radius);
         overflow: hidden;
+        color: var(--color-primary);
+        background-color: var(--color-secondary);
     }
 
     .info-container-title {
@@ -364,11 +370,6 @@ body a, a:visited, a:hover, a:active {
         line-height: normal;
         border-bottom: solid 3px var(--color-primary);
         padding: 20px;
-    }
-
-    .about-container {
-        color: var(--color-primary);
-        background-color: var(--color-secondary);
     }
 
     .about-container-section1 {
@@ -386,11 +387,6 @@ body a, a:visited, a:hover, a:active {
         font-family: var(--font-family-mono);
         font-size: 1.2em;
         padding: 20px;
-    }
-
-    .connect-container {
-        color: var(--color-primary);
-        background-color: var(--color-secondary);
     }
 
     .connect-container-email {
