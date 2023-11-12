@@ -35,11 +35,16 @@ body a, a:visited, a:hover, a:active {
     cursor: none;
 }
 
-@media (prefers-color-scheme: light) {
+@media screen and (max-width: 500px) and (prefers-color-scheme: light) {
     :root {
         --color-primary: var(--color-cream);
         --color-secondary: var(--color-carbon);
     }
+}
+
+.light-mode {
+    --color-primary: var(--color-cream);
+    --color-secondary: var(--color-carbon);
 }
 
 #header {
@@ -207,11 +212,6 @@ body a, a:visited, a:hover, a:active {
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
-    .light-mode {
-        --color-primary: var(--color-cream);
-        --color-secondary: var(--color-carbon);
-    }
-
     #header {
         display: flex;
     }
