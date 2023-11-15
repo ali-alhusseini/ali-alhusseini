@@ -347,6 +347,7 @@ body a, a:visited, a:hover, a:active {
     }
 
     .info-container {
+        display: none;
         position: relative;
         width: 600px;
         max-width: 600px;
