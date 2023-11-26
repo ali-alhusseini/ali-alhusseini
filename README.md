@@ -1,5 +1,5 @@
 ![logo](/images/favicon.svg) 
-<a href="https://alialhusseini.com/" target="_blank">`alialhusseini.com`</a>
+`alialhusseini.com`
 
 ## Design Inspiration
 This is my first attempt at buildign my own website from scratch by purely using HTML, CSS, and JavaScript. I have an obsession with music and especially album arts. 
