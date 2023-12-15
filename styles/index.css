@@ -352,6 +352,9 @@ body a, body a:visited, body a:hover, body a:active, html a, html a:visited, htm
     font-size: 1.2em;
     padding: 20px;
   }
+  .about-container-section2 a {
+    color: inherit;
+  }
   .connect-container-email {
     display: block;
     font-family: var(--font-family-mono);

@@ -385,6 +385,10 @@ body, html {
         font-family: var(--font-family-mono);
         font-size: 1.2em;
         padding: 20px;
+
+        a {
+            color: inherit;
+        }
     }
 
     .connect-container-email {
