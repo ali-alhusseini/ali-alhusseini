@@ -3,7 +3,6 @@
     --color-secondary: var(--color-cream);
     --color-carbon: #1B1B1B;
     --color-cream: #F9F5E7;
-    --color-yellow-marker: #E8E810;
     --color-transparent: rgba(199, 199, 199, 0.4);
     --font-family: 'Mona Sans', sans-serif;
     --font-family-serif: 'Times', 'Time New Roman', serif;
@@ -25,15 +24,14 @@ body, html {
     color: var(--color-secondary);
     font-family: var(--font-family);
     overflow: hidden;
-    cursor: none;
     height: 100%;
     margin: 0;
     padding: 0;
-}
 
-body a, a:visited, a:hover, a:active {
-    text-decoration: none;
-    cursor: none;
+    a, a:visited, a:hover, a:active {
+        text-decoration: none;
+        cursor: none;
+    }
 }
 
 @media screen and (max-width: 500px) and (prefers-color-scheme: light) {
@@ -133,10 +131,10 @@ body a, a:visited, a:hover, a:active {
     font-family: var(--font-family-mono);
     font-size: 1em;
     letter-spacing: 0.1em;
-}
 
-.email-value a {
-    color: var(--color-secondary);
+    a {
+        color: var(--color-secondary);
+    }
 }
 
 .social {
@@ -151,24 +149,24 @@ body a, a:visited, a:hover, a:active {
     font-size: 1.2em;
     font-weight: 600;
     line-height: 1.3em;
+
+    a {
+        color: var(--color-secondary);
+    }
+
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    li {
+        margin: 15px 0 0 0;
+    }
 }
 
 .social-value-spans {
     vertical-align: 11%;
-}
-
-.social-value a {
-    color: var(--color-secondary);
-}
-
-.social-value ol {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-}
-
-.social-value li {
-    margin: 15px 0 0 0;
 }
 
 .brand-logos {
@@ -292,18 +290,18 @@ body a, a:visited, a:hover, a:active {
         font-weight: 700;
         text-align: center;
         line-height: normal;
-    }
-    
-    .main-links a {
-        color: var(--color-primary);
-        margin: 40px 0 40px 0;
-        padding: 5px;
-        border-radius: var(--border-radius);
-    }
 
-    .main-links a:hover {
-        color: var(--color-carbon);
-        background-color: var(--color-yellow-marker);
+        a {
+            color: var(--color-primary);
+            margin: 40px 0 40px 0;
+            padding: 5px;
+            border-radius: var(--border-radius);
+        }
+
+        a:hover {
+            color: var(--color-secondary);
+            background-color: var(--color-primary);
+        }
     }
 
     .main-links-row {
@@ -377,10 +375,10 @@ body a, a:visited, a:hover, a:active {
         font-size: 1.2em;
         padding: 20px;
         border-bottom: solid 3px var(--color-primary);
-    }
 
-    .about-container-section1 a {
-        color: inherit;
+        a {
+            color: inherit;
+        }
     }
 
     .about-container-section2 {
@@ -400,10 +398,10 @@ body a, a:visited, a:hover, a:active {
         justify-content: center;
         align-items: center;
         padding: 40px 0 40px 0;
-    }
 
-    .connect-container-email a {
-        color: inherit;
+        a {
+            color: inherit;
+        }
     }
 
     .connect-container-email:hover {
@@ -419,22 +417,21 @@ body a, a:visited, a:hover, a:active {
         font-weight: 500;
         align-items: center;
         justify-items: center;
-    }
 
-    .connect-container-links a {
-        color: inherit;
-        display: flex;
-        width: 100%;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-    }
+        a {
+            color: inherit;
+            display: flex;
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .connect-container-links a:hover {
-        background-color: var(--color-primary);
-        color: var(--color-secondary);
-    
-    } 
+        a:hover {
+            background-color: var(--color-primary);
+            color: var(--color-secondary);
+        }
+    }
 
     .github-link {
         grid-column: 1 / 2;
