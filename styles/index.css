@@ -1,6 +1,9 @@
 :root {
-  --color-primary: var(--color-carbon);
-  --color-secondary: var(--color-cream);
+  --color-primary: var(--color-snow-white);
+  --color-secondary: var(--color-blue);
+  --color-blue: #0029FF;
+  --color-snow-white: #F2F2F2;
+  --color-dark-blue: #1A1C30;
   --color-carbon: #1B1B1B;
   --color-cream: #F9F5E7;
   --color-transparent: rgba(199, 199, 199, 0.4);
@@ -32,13 +35,13 @@ body a, body a:visited, body a:hover, body a:active, html a, html a:visited, htm
 
 @media screen and (max-width: 500px) and (prefers-color-scheme: light) {
   :root {
-    --color-primary: var(--color-cream);
-    --color-secondary: var(--color-carbon);
+    --color-primary: var(--color-dark-blue);
+    --color-secondary: var(--color-snow-white);
   }
 }
 .light-mode {
-  --color-primary: var(--color-cream);
-  --color-secondary: var(--color-carbon);
+  --color-primary: var(--color-snow-white);
+  --color-secondary: var(--color-blue);
 }
 
 .serif {
@@ -68,6 +71,26 @@ body a, body a:visited, body a:hover, body a:active, html a, html a:visited, htm
   justify-content: center;
   align-items: center;
   z-index: 10000;
+}
+
+.mobile-title {
+  width: 100%;
+  height: 100%;
+  font-size: 2.5rem;
+  font-family: Mona Sans;
+  font-weight: 700;
+  line-height: 60px;
+  word-wrap: break-word;
+  margin: 10px;
+}
+
+.mobile-about {
+  height: 100%;
+  font-size: 15px;
+  padding: 10px 100px 10px 10px;
+  font-family: var(--font-family-serif);
+  border-top: solid 2px var(--color-secondary);
+  border-bottom: solid 2px var(--color-secondary);
 }
 
 .mobile {
