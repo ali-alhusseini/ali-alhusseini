@@ -358,7 +358,7 @@ html a:active {
     max-height: 600px;
     margin-right: 20px;
     border-radius: var(--border-radius);
-    overflow: hidden;
+    overflow-y: auto;
     color: var(--color-primary);
     background-color: var(--color-secondary);
   }
@@ -378,7 +378,7 @@ html a:active {
   .about-container-section1 {
     font-family: var(--font-family-mono);
     font-size: 1.2em;
-    padding: 20px;
+    padding: 5px 20px;
     border-bottom: solid 3px var(--color-primary);
   }
 
@@ -389,7 +389,8 @@ html a:active {
   .about-container-section2 {
     font-family: var(--font-family-mono);
     font-size: 1.2em;
-    padding: 20px;
+    padding: 5px 20px;
+    border-bottom: solid 3px var(--color-primary);
   }
 
   .about-container-section2 a {

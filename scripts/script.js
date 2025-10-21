@@ -83,20 +83,17 @@ let blogLink = document.getElementById('blog-link');
 let projectsLink = document.getElementById('projects-link');
 let aboutContainer = document.querySelector(".about-container");
 let connectContainer = document.querySelector(".connect-container");
-let blogContainer = document.querySelector(".blog-container");
 let projectsContainer = document.querySelector(".projects-container");
 
 window.onload = () => {
     aboutContainer.style.display = 'none';
     connectContainer.style.display = 'none';
-    blogContainer.style.display = 'none';
     projectsContainer.style.display = 'none';
 }
 
 function openConnectContainer() {
     connectContainer.style.display = 'block';
     aboutContainer.style.display = 'none';
-    blogContainer.style.display = 'none';
     projectsContainer.style.display = 'none';
 }
 
@@ -104,7 +101,6 @@ aboutLink.addEventListener('click', () => {
     if (aboutContainer.style.display == 'none') {
         aboutContainer.style.display = 'block';
         connectContainer.style.display = 'none';
-        blogContainer.style.display = 'none';
         projectsContainer.style.display = 'none';
     } else {
         aboutContainer.style.display = 'none';
@@ -119,23 +115,11 @@ connectLink.addEventListener('click', () => {
     }
 });
 
-blogLink.addEventListener('click', () => {
-    if (blogContainer.style.display == 'none') {
-        blogContainer.style.display = 'block';
-        aboutContainer.style.display = 'none';
-        connectContainer.style.display = 'none';
-        projectsContainer.style.display = 'none';
-    } else {
-        blogContainer.style.display = 'none';
-    }
-});
-
 projectsLink.addEventListener('click', () => {
     if (projectsContainer.style.display == 'none') {
         projectsContainer.style.display = 'block';
         aboutContainer.style.display = 'none';
         connectContainer.style.display = 'none';
-        blogContainer.style.display = 'none';
     } else {
         projectsContainer.style.display = 'none';
     }
