@@ -340,7 +340,6 @@ html a:active {
   .left-container {
     display: block;
     position: relative;
-    margin: 20px;
   }
 
   .info {
