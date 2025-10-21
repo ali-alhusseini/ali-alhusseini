@@ -83,43 +83,81 @@ let projectsLink = document.getElementById('projects-link');
 let aboutContainer = document.querySelector(".about-container");
 let connectContainer = document.querySelector(".connect-container");
 let projectsContainer = document.querySelector(".projects-container");
+let rightContainer = document.querySelector('.right-container');
+let closeButtons = document.querySelectorAll('.close-container');
 
 window.onload = () => {
-    aboutContainer.style.display = 'none';
-    connectContainer.style.display = 'none';
-    projectsContainer.style.display = 'none';
+    if (aboutContainer) aboutContainer.style.display = 'none';
+    if (connectContainer) connectContainer.style.display = 'none';
+    if (projectsContainer) projectsContainer.style.display = 'none';
 }
 
 function openConnectContainer() {
-    connectContainer.style.display = 'block';
-    aboutContainer.style.display = 'none';
-    projectsContainer.style.display = 'none';
+    if (connectContainer) connectContainer.style.display = 'block';
+    if (aboutContainer) aboutContainer.style.display = 'none';
+    if (projectsContainer) projectsContainer.style.display = 'none';
+    if (rightContainer) rightContainer.style.display = 'none';
 }
 
-aboutLink.addEventListener('click', () => {
-    if (aboutContainer.style.display == 'none') {
-        aboutContainer.style.display = 'block';
-        connectContainer.style.display = 'none';
-        projectsContainer.style.display = 'none';
-    } else {
-        aboutContainer.style.display = 'none';
-    }
-});
+function showRightContainer() {
+    if (rightContainer) rightContainer.style.display = '';
+}
 
-connectLink.addEventListener('click', () => {
-    if (connectContainer.style.display == 'none') {
-        openConnectContainer();
-    } else {
-        connectContainer.style.display = 'none';
-    }
-});
+function hideRightContainer() {
+    if (rightContainer) rightContainer.style.display = 'none';
+}
 
-projectsLink.addEventListener('click', () => {
-    if (projectsContainer.style.display == 'none') {
-        projectsContainer.style.display = 'block';
-        aboutContainer.style.display = 'none';
-        connectContainer.style.display = 'none';
-    } else {
-        projectsContainer.style.display = 'none';
-    }
-});
+if (aboutLink && aboutContainer) {
+    aboutLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (aboutContainer.style.display == 'none' || aboutContainer.style.display === '') {
+            aboutContainer.style.display = 'block';
+            if (connectContainer) connectContainer.style.display = 'none';
+            if (projectsContainer) projectsContainer.style.display = 'none';
+            hideRightContainer();
+        } else {
+            aboutContainer.style.display = 'none';
+            showRightContainer();
+        }
+    });
+}
+
+if (connectLink && connectContainer) {
+    connectLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (connectContainer.style.display == 'none' || connectContainer.style.display === '') {
+            openConnectContainer();
+        } else {
+            connectContainer.style.display = 'none';
+            showRightContainer();
+        }
+    });
+}
+
+if (projectsLink && projectsContainer) {
+    projectsLink.addEventListener('click', (e) => {
+        e.preventDefault();
+        if (projectsContainer.style.display == 'none' || projectsContainer.style.display === '') {
+            projectsContainer.style.display = 'block';
+            if (aboutContainer) aboutContainer.style.display = 'none';
+            if (connectContainer) connectContainer.style.display = 'none';
+            hideRightContainer();
+        } else {
+            projectsContainer.style.display = 'none';
+            showRightContainer();
+        }
+    });
+}
+
+// close (×) buttons inside the info containers
+if (closeButtons && closeButtons.length > 0) {
+    closeButtons.forEach(button => {
+        button.addEventListener('click', (e) => {
+            e.preventDefault();
+            // find the parent info-container and hide it
+            const container = button.closest('.info-container');
+            if (container) container.style.display = 'none';
+            showRightContainer();
+        });
+    });
+}

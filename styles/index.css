@@ -287,6 +287,7 @@ html a:active {
     font-size: 4rem;
     font-weight: 800;
     margin: 10px;
+    text-wrap: nowrap;
   }
 
   .main-links {
@@ -321,7 +322,7 @@ html a:active {
   }
 
   .r-1 {
-    width: 24rem;
+    width: 7em;
   }
 
   .r-2 {
@@ -364,7 +365,9 @@ html a:active {
   }
 
   .info-container-title {
-    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     grid-column: 1/2;
     grid-row: 1/2;
     font-family: var(--font-family-serif);
@@ -373,6 +376,16 @@ html a:active {
     line-height: normal;
     border-bottom: solid 3px var(--color-primary);
     padding: 20px;
+  }
+
+  .close-container {
+    background: none;
+    border: none;
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    font-size: 1rem;
+    cursor: pointer;
   }
 
   .about-container-section1 {
