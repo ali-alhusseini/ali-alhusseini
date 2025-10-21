@@ -79,7 +79,6 @@ setInterval(updateTime, 1000);
 // About/Connect
 let aboutLink = document.getElementById('about-link');
 let connectLink = document.getElementById('connect-link');
-let blogLink = document.getElementById('blog-link');
 let projectsLink = document.getElementById('projects-link');
 let aboutContainer = document.querySelector(".about-container");
 let connectContainer = document.querySelector(".connect-container");
