@@ -77,7 +77,6 @@ html a:active {
 .header-title {
   font-size: 3rem;
   font-weight: 900;
-  font-stretch: 95%;
   line-height: 50px;
   letter-spacing: -0.02em;
   font-family: var(--font-sans);
@@ -115,7 +114,7 @@ html a:active {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 10px;
 }
 
 .links-container a {
@@ -125,10 +124,10 @@ html a:active {
   outline: none;
   padding: 20px 10px;
   cursor: pointer;
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-family: var(--font-serif);
   font-style: italic;
-
+  letter-spacing: .02em;
 }
 
 .links-container a:active,
