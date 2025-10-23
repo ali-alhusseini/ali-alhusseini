@@ -23,10 +23,10 @@ html {
   background-color: var(--color-primary);
   color: var(--color-secondary);
   font-family: var(--font-family);
-  overflow: hidden;
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 body a,
@@ -62,7 +62,7 @@ html a:active {
 }
 
 .border-bottom {
-  border-bottom: solid 2px var(--color-secondary);
+  border-bottom: solid 3px var(--color-secondary);
 }
 
 .header-container {
@@ -104,7 +104,7 @@ html a:active {
   font-family: var(--font-serif);
 }
 
-.connect-container {
+.social-container {
   padding: 10px;
   margin: 0;
 }
@@ -131,9 +131,51 @@ html a:active {
 }
 
 .links-container a:active,
-.links-container a:hover {
+.links-container a:hover,
+.links-container a:focus {
   background-color: var(--color-secondary);
   color: var(--color-primary);
+}
+
+.connect-container {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.connect-container h1 {
+  font-size: 4rem;
+  font-weight: 100;
+  margin: 0 10px 0 20px;
+  font-family: var(--font-serif);
+  text-transform: uppercase;
+}
+
+.connect-email {
+  font-size: 1.3rem;
+  font-family: var(--font-mono);
+  margin: 5px 10px 20px 20px;
+  display: inline-block;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+}
+
+.mail-icon {
+  fill: var(--color-secondary);
+  vertical-align: middle;
+  background: none;
+  justify-content: center;
+  border: solid 3px var(--color-secondary);
+  border-radius: 50px;
+  padding: 12px 45px;
+  cursor: pointer;
+}
+
+.mail-icon:hover,
+.mail-icon:active,
+.mail-icon:focus {
+  background-color: var(--color-secondary);
+  fill: var(--color-primary);
 }
 
 
