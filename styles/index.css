@@ -38,7 +38,7 @@ html a:visited,
 html a:hover,
 html a:active {
   text-decoration: none;
-  cursor: none;
+  cursor: pinter;
 }
 
 @media screen and (max-width: 500px) and (prefers-color-scheme: dark) {
@@ -99,11 +99,42 @@ html a:active {
   display: none;
 }
 
-
 .about-container {
   font-size: 12pt;
   padding: 25px 100px 25px 20px;
   font-family: var(--font-serif);
+}
+
+.connect-container {
+  padding: 10px;
+  margin: 0;
+}
+
+.links-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+.links-container a {
+  border: solid 2px var(--color-secondary);
+  background: none;
+  color: var(--color-secondary);
+  outline: none;
+  padding: 20px 10px;
+  cursor: pointer;
+  font-size: 1.4rem;
+  font-family: var(--font-serif);
+  font-style: italic;
+
+}
+
+.links-container a:active,
+.links-container a:hover {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 
@@ -273,7 +304,7 @@ border-bottom: 3px solid var(--color-secondary);
 }
 
 /* Desktop */
-@media only screen and (min-width: 768px) {
+/* @media only screen and (min-width: 768px) {
   #header {
     display: flex;
   }
@@ -305,7 +336,7 @@ border-bottom: 3px solid var(--color-secondary);
   }
 
   .mobile-container {
-    /* display: none; */
+    display: none;
   }
 
   .main-container {
@@ -516,7 +547,7 @@ border-bottom: 3px solid var(--color-secondary);
   }
 }
 
-/* Footer - start */
+
 @media only screen and (min-width: 768px) {
   .footer {
     background-color: var(--color-primary);
@@ -547,8 +578,7 @@ border-bottom: 3px solid var(--color-secondary);
   }
 }
 
-/* Footer - end */
-/* 404 Page Not Found - start */
+
 .error-container {
   display: flex;
   flex-direction: column;
@@ -643,9 +673,7 @@ border-bottom: 3px solid var(--color-secondary);
   }
 }
 
-/* 404 Page Not Found - end */
 
-/* Cursor */
 @media only screen and (min-width: 500px) {
   .cursor {
     position: fixed;
@@ -665,5 +693,4 @@ border-bottom: 3px solid var(--color-secondary);
     transform: translate(-50%, -50%) scale(1);
   }
 }
-
 */
