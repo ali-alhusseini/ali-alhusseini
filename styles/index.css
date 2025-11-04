@@ -177,6 +177,7 @@ html a:active {
 }
 
 .connect-email {
+  color: var(--color-secondary);
   font-size: 1.3rem;
   font-family: var(--font-mono);
   margin: 5px 10px 20px 20px;
@@ -231,6 +232,40 @@ html a:active {
   font-family: var(--font-sans);
   font-size: 1.4rem;
   font-weight: 300;
+}
+
+.contact-card-container{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin: 0;
+  /* padding: 50px; */
+  align-items: center;
+  justify-content: center;
+}
+
+.save-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 10px;
+  font-family: var(--font-sans);
+  font-size: 1.2rem;
+  background: none;
+  color: var(--color-secondary);
+  border: solid 2px var(--color-secondary);
+  border-radius: 50px;
+  margin: 50px 0 25px 0;
+  padding: 25px;
+  cursor: pointer;
+}
+
+.save-button:hover,
+.save-button:active,
+.save-button:focus {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 footer {
