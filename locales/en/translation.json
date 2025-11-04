@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "ALI ALHUSSEINI"
+  },
+  "about": {
+    "text": "I'm a passionate Software Developer based in Halifax, NS. I enjoy designing and developing beautiful User Interfaces and Experiences. I'm currently studying Computer Science and French at Saint Mary's University.",
+    "resume": "Resume"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram"
+  },
+  "connect": {
+    "title": "Connect",
+    "email": "hello@alialhusseini.com"
+  },
+  "projects": {
+    "title": "Projects",
+    "blog": {
+      "title": "Blog Posting Website",
+      "desc": "Accessible Blog for Users with Motor Impairments."
+    },
+    "woodland": {
+      "title": "Woodland Conservation Website",
+      "desc": "A website for a conservation site built as part of a Software Engineering group project."
+    }
+  },
+  "contact": {
+    "save": "save to contacts"
+  },
+  "footer": {
+    "text": "© 2025 Ali Alhusseini. All rights reserved."
+  }
+}
