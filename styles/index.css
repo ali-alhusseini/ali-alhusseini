@@ -100,8 +100,33 @@ html a:active {
 
 .about-container {
   font-size: 12pt;
-  padding: 25px 100px 25px 20px;
+  padding: 10px 100px 25px 20px;
   font-family: var(--font-serif);
+}
+
+.about-text {
+  font-style: italic;
+}
+
+.resume-link {
+  margin-top: 25px;
+}
+
+.resume-link a {
+  border: solid 2px var(--color-secondary);
+  background: none;
+  color: var(--color-secondary);
+  outline: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.resume-link a:active,
+.resume-link a:hover,
+.resume-link a:focus {
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .social-container {
