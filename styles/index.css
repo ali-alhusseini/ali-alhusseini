@@ -41,16 +41,16 @@ html a:active {
   cursor: pointer;
 }
 
-@media screen and (max-width: 500px) and (prefers-color-scheme: dark) {
+@media screen and (prefers-color-scheme: light) {
   :root {
-    --color-primary: var(--color-dark-blue);
-    --color-secondary: var(--color-snow-white);
+    --color-primary: var(--color-snow-white);
+    --color-secondary: var(--color-blue);
   }
 }
 
-.light-mode {
-  --color-primary: var(--color-snow-white);
-  --color-secondary: var(--color-blue);
+.dark-mode {
+  --color-primary: var(--color-dark-blue);
+  --color-secondary: var(--color-snow-white);
 }
 
 .serif {

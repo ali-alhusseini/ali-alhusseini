@@ -34,6 +34,25 @@ document.addEventListener("DOMContentLoaded", function(event) {
     }
 });
 
+// Dark/Light Mode
+const switchAudio = document.getElementById('switch-audio');
+const lightModeBtn = document.getElementById('light-mode-btn');
+const darkModeBtn = document.getElementById('dark-mode-btn');
+
+lightModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    darkModeBtn.style.display = 'inline-block';
+    lightModeBtn.style.display = 'none';
+    playSwitchSound();
+});
+
+darkModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+    lightModeBtn.style.display = 'inline-block';
+    darkModeBtn.style.display = 'none';
+    playSwitchSound();
+});
+
 // Switch Sound
 function playSwitchSound() {
     if (switchAudio.readyState === 4) {
@@ -46,25 +65,6 @@ function playSwitchSound() {
         });
     }
 }
-
-// Dark/Light Mode
-const switchAudio = document.getElementById('switch-audio');
-const lightModeBtn = document.getElementById('light-mode-btn');
-const darkModeBtn = document.getElementById('dark-mode-btn');
-
-lightModeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    darkModeBtn.style.display = 'inline-block';
-    lightModeBtn.style.display = 'none';
-    playSwitchSound();
-});
-
-darkModeBtn.addEventListener('click', () => {
-    document.body.classList.toggle('light-mode');
-    lightModeBtn.style.display = 'inline-block';
-    darkModeBtn.style.display = 'none';
-    playSwitchSound();
-});
 
 // Header Time
 function updateTime() {
