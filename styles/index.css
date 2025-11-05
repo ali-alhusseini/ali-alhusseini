@@ -142,12 +142,12 @@ html a:active {
   padding: 10px;
 }
 
-.links-container a {
+.link-text {
   border: solid 2px var(--color-secondary);
   background: none;
   color: var(--color-secondary);
   outline: none;
-  padding: 20px 10px;
+  padding: 20px 30px;
   cursor: pointer;
   font-size: 3rem;
   font-family: var(--font-serif);
@@ -155,9 +155,9 @@ html a:active {
   letter-spacing: .02em;
 }
 
-.links-container a:active,
-.links-container a:hover,
-.links-container a:focus {
+.link-text a:active,
+.link-text a:hover,
+.link-text a:focus {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
