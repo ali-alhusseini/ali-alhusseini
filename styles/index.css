@@ -142,7 +142,10 @@ html a:active {
   padding: 10px;
 }
 
-.link-text {
+.link-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   border: solid 2px var(--color-secondary);
   background: none;
   color: var(--color-secondary);
@@ -153,11 +156,12 @@ html a:active {
   font-family: var(--font-serif);
   font-style: italic;
   letter-spacing: .02em;
+  width: 100%;
 }
 
-.link-text a:active,
-.link-text a:hover,
-.link-text a:focus {
+.link-button:active,
+.link-button:hover,
+.link-button:focus {
   background-color: var(--color-secondary);
   color: var(--color-primary);
 }
