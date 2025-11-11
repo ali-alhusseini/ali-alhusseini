@@ -1,157 +1,18 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
 <head>
-    <title>Ali Alhusseini - Software Developer</title>
-
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" lang="en" />
-    <meta name="description" content="Software Developer and Computer Science student based in Halifax, NS." />
-
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="128x128" href="assets/images/favicon-128x128.png" />
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/images/apple-touch-icon.png" />
-    <link rel="mask-icon" href="assets/images/favicon-16x16.svg" color="#0029FF" />
-
-    <link rel="preload" href="/assets/fonts/Mona-Sans.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="stylesheet" href="styles/index.css" type="text/css" />
-
-    <script defer src="scripts/script.js"></script>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ali Alhusseini - Web Developer</title>
 </head>
 
 <body>
-    <header>
-        <div class="header-container border-bottom">
-            <div class="header-title">ALI ALHUSSEINI</div>
-            <div classs="theme-switcher">
-                <button id="dark-mode-btn" class="mode-button" aria-label="Turn dark mode on">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="53" viewBox="0 0 30 53" fill="none">
-                        <path class="mode-icon"
-                            d="M14.75 45.9595C13 45.9595 11.5277 45.3621 10.333 44.1675C9.139 42.9735 8.542 41.5015 8.542 39.7515H2.625C1.93033 39.7515 1.31933 39.4875 0.792 38.9595C0.264 38.4315 0 37.8205 0 37.1265C0 33.0705 1.27767 29.6121 3.833 26.7515C6.389 23.8901 9.59733 22.2928 13.458 21.9595V0H16.083V21.9595C19.9163 22.3208 23.111 23.9251 25.667 26.7725C28.2223 29.6191 29.5 33.0705 29.5 37.1265C29.5 37.8205 29.236 38.4315 28.708 38.9595C28.1807 39.4875 27.5697 39.7515 26.875 39.7515H20.958C20.958 41.5015 20.361 42.9735 19.167 44.1675C17.9723 45.3621 16.5 45.9595 14.75 45.9595ZM2.625 37.1265H26.875C26.875 33.6265 25.6943 30.6611 23.333 28.2305C20.9723 25.7998 18.1113 24.5845 14.75 24.5845C11.3887 24.5845 8.52767 25.7998 6.167 28.2305C3.80567 30.6611 2.625 33.6265 2.625 37.1265ZM14.75 43.3345C15.75 43.3345 16.5973 42.9871 17.292 42.2925C17.986 41.5985 18.333 40.7515 18.333 39.7515H11.167C11.167 40.7515 11.514 41.5985 12.208 42.2925C12.9027 42.9871 13.75 43.3345 14.75 43.3345Z" />
-                        <path class="mode-icon" d="M14 53V47H16.5V53H14Z" />
-                        <path class="mode-icon"
-                            d="M23.9345 50.1693L20 45.6394L21.8874 44L25.8219 48.5299L23.9345 50.1693Z" />
-                        <path class="mode-icon"
-                            d="M5.88776 50.1693L9.82227 45.6394L7.93482 44L4.00032 48.5299L5.88776 50.1693Z" />
-                    </svg>
-                </button>
-                <button id="light-mode-btn" class="mode-button" aria-label="Turn light mode on">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="46" viewBox="0 0 30 46" fill="none">
-                        <path class="mode-icon"
-                            d="M14.75 45.9595C13 45.9595 11.5277 45.3621 10.333 44.1675C9.139 42.9735 8.542 41.5015 8.542 39.7515H2.625C1.93033 39.7515 1.31933 39.4875 0.792 38.9595C0.264 38.4315 0 37.8205 0 37.1265C0 33.0705 1.27767 29.6121 3.833 26.7515C6.389 23.8901 9.59733 22.2928 13.458 21.9595V0H16.083V21.9595C19.9163 22.3208 23.111 23.9251 25.667 26.7725C28.2223 29.6191 29.5 33.0705 29.5 37.1265C29.5 37.8205 29.236 38.4315 28.708 38.9595C28.1807 39.4875 27.5697 39.7515 26.875 39.7515H20.958C20.958 41.5015 20.361 42.9735 19.167 44.1675C17.9723 45.3621 16.5 45.9595 14.75 45.9595ZM2.625 37.1265H26.875C26.875 33.6265 25.6943 30.6611 23.333 28.2305C20.9723 25.7998 18.1113 24.5845 14.75 24.5845C11.3887 24.5845 8.52767 25.7998 6.167 28.2305C3.80567 30.6611 2.625 33.6265 2.625 37.1265ZM14.75 43.3345C15.75 43.3345 16.5973 42.9871 17.292 42.2925C17.986 41.5985 18.333 40.7515 18.333 39.7515H11.167C11.167 40.7515 11.514 41.5985 12.208 42.2925C12.9027 42.9871 13.75 43.3345 14.75 43.3345Z" />
-                    </svg>
-                </button>
-            </div>
-            <audio id="switch-audio" preload="auto">
-                <source src="assets/light-switch.mp3" type="audio/mpeg">
-            </audio>
-        </div>
-    </header>
-    <div class="about-container border-bottom">
-        <p class="about-text">
-            I'm a passionate Software Developer based in Halifax, NS. I enjoy designing and developing beautiful User
-            Interfaces and Experiences.
-            I'm currently studying Computer Science and French at Saint Mary's University.
-        </p>
-        <div class="resume-link">
-            <a href="assets/Ali-Alhusseini-Resume.pdf" download="Ali-Alhusseini-Resume.pdf">Resume</a>
-        </div>
-    </div>
-
-    <div class="connect-container border-bottom">
-        <h1>Connect</h1>
-        <a class="connect-email"
-            href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;">
-            &#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;
-        </a>
-        <a class="connect-email"
-            href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;">
-            <svg xmlns="http://www.w3.org/2000/svg" height="50px" viewBox="0 -960 960 960" width="50px" fill="none"
-                class="mail-icon">
-                <path
-                    d="M140-160q-24 0-42-18t-18-42v-520q0-24 18-42t42-18h680q24 0 42 18t18 42v520q0 24-18 42t-42 18H140Zm340-302L140-685v465h680v-465L480-462Zm0-60 336-218H145l335 218ZM140-685v-55 520-465Z" />
-            </svg>
-        </a>
-        <div class="links-container">
-            <a href="https://www.linkedin.com/in/ali-alhusseini/" rel="nonreferrer noopener" class="link-button"
-                target="_blank">
-                <span>
-                    LinkedIn
-                </span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-                        <rect x="2" y="9" width="4" height="12"></rect>
-                        <circle cx="4" cy="4" r="2"></circle>
-                    </svg>
-                </span>
-            </a>
-        </div>
-        <div class="links-container">
-            <a href="https://github.com/ali-alhusseini/" rel="nonreferrer noopener" target="_blank" class="link-button">
-                <span>
-                    GitHub
-                </span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-                        <path
-                            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                        </path>
-                    </svg>
-                </span>
-            </a>
-        </div>
-    </div>
-    <div class="projects-container">
-        <h1>Projects</h1>
-        <div class="project-item">
-            <a href="#" target="_blank">
-                <h3>Blog Posting Website</h3>
-            </a>
-            <p>Accessible Blog for Users with Motor Impairments.</p>
-        </div>
-        <div class="project-item">
-            <a href="#" target="_blank">
-                <h3>Woodland Conservation Website</h3>
-            </a>
-            <p>A website for a conservation site built as part of a Software Engineering group project.</p>
-        </div>
-        <div class="project-item">
-            <a href="#" target="_blank">
-                <h3>Woodland Conservation Website</h3>
-            </a>
-            <p>A website for a conservation site built as part of a Software Engineering group project.</p>
-        </div>
-        <div class="project-item">
-            <a href="#" target="_blank">
-                <h3>Woodland Conservation Website</h3>
-            </a>
-            <p>A website for a conservation site built as part of a Software Engineering group project.</p>
-        </div>
-    </div>
-    <div class="contact-card-container">
-        <a href="assets/Ali Alhusseini.vcf" download="Ali Alhusseini.vcf">
-            <button class="save-button">
-                <span>save to contacts</span>
-                <span>
-                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none"
-                        stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"
-                        class="feather feather-save">
-                        <path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path>
-                        <polyline points="17 21 17 13 7 13 7 21"></polyline>
-                        <polyline points="7 3 7 8 15 8"></polyline>
-                    </svg>
-                </span>
-            </button>
-        </a>
-    </div>
-
-    <footer>
-        <p>© 2025 Ali Alhusseini. All rights reserved.</p>
-    </footer>
-    <div class="cursor"></div>
+  <h1 class="text-3xl font-bold underline">
+    Hello world!
+  </h1>
+  <script type="module" src="/src/main.js"></script>
 </body>
 
 </html>
