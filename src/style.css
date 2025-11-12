@@ -1,0 +1,19 @@
+@import "tailwindcss";
+
+/* Simple reveal animations */
+.reveal {
+  transform: translateY(28px);
+  opacity: 0;
+  transition: transform .7s cubic-bezier(.2, .9, .2, 1), opacity .6s ease;
+}
+
+.reveal.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+/* Frosted navbar when scrolled */
+.nav-frost {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+}
