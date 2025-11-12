@@ -8,7 +8,7 @@
   <title>Ali Alhusseini - Web Developer</title>
 </head>
 
-<body class="antialiased text-gray-900 bg-white">
+<body class="antialiased text-blue-700 bg-gray-100">
   <!-- navigation bar -->
   <header id="top" class="fixed inset-x-0 top-4 z-40">
     <nav id="nav"
@@ -20,8 +20,6 @@
         <a href="#contact" class="nav-link">Contact</a>
       </div>
       <div class="flex items-center gap-3">
-        <button id="themeToggle" aria-label="Toggle dark mode"
-          class="rounded-full p-2 hover:bg-gray-100 transition">🌓</button>
         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
           class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm">Say hello</button>
         <button class="md:hidden ml-2" id="menuBtn">☰</button>
@@ -34,23 +32,19 @@
     <h1 class="text-4xl md:text-4xl font-semibold mb-4" data-i18n="hero.title">Developing and designing clean,
       user-focused digital experiences.
     </h1>
-    <p class="text-sm md:text-lg max-w-xl" data-i18n="hero.subtitle">I'm a computer science graduate with a passion for
+    <p class="text-sm md:text-lg max-w-xl font-serif" data-i18n="hero.subtitle">I'm a computer science graduate with a
+      passion for
       creating
       responsive, accessible web solutions that feel effortless.</p>
     <div class="mt-4 flex gap-3 items-center">
       <a href=""
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-white text-sm shadow-lg">Resume
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg">Resume
         ↓</a>
-      <a href="https://github.com/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
-        class="inline-flex items-center gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">GitHub ↗</a>
-      <a href="https://www.linkedin.com/in/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
-        rel="nonopener nonreferrer"
-        class="inline-flex items-center gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">LinkedIn ↗</a>
     </div>
   </section>
 
   <!-- projects section -->
-  <section id="work" class="mx-auto max-w-6xl px-4 py-20">
+  <section id="work" class="mx-auto max-w-6xl px-4 py-10">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">Recent Work</h2>
     <p class="mb-4 text-gray-600">A selection of projects I have done over the years, some as part of my Computer
       Science degree, others to master new skills.</p>
@@ -61,7 +55,7 @@
           <p class="text-sm text-gray-600 mb-3 project-desc"></p>
           <div class="project-tech flex flex-wrap mb-4"></div>
           <div class="flex gap-2">
-            <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm hover:bg-gray-800 hover:text-gray-50"
+            <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm hover:bg-blue-700 hover:text-gray-50"
               target="_blank" rel="noopener noreferrer">View ↗</a>
           </div>
         </article>
@@ -70,16 +64,56 @@
   </section>
 
   <!-- about section -->
-  <section id="about" class="mx-auto max-w-6xl px-6 py-20 border-t border-gray-100">
+  <section id="about" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title">About</h2>
     <p class="mb-4 text-gray-600" data-i18n="about.content">I'm Ali, a web developer with a passion for creating clean,
       user-focused digital experiences. With a background in computer science, I specialize in building responsive and
       accessible web solutions that prioritize usability and performance.</p>
+    <p class="mb-4 text-gray-600" data-i18n="about.content2">When I'm not coding, you can find me exploring the
+      outdoors,
+      reading tech blogs, or experimenting with new web technologies. I'm always eager to learn and take on new
+      challenges.</p>
+  </section>
+
+  <!-- contact section -->
+  <section id="contact" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title">Get in Touch</h2>
+    <p class="mb-4 text-gray-600" data-i18n="contact.content">I'm always open to discussing new projects, creative
+      ideas, or opportunities to be part of your visions. Feel free to reach out! </p>
+    <div class="flex flex-col md:flex-row gap-4">
+      <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg font-mono"
+        href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;">
+        &#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;
+      </a>
+      <a href="https://www.linkedin.com/in/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
+        rel="nonopener nonreferrer"
+        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">
+        <span>LinkedIn ↗</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+          <rect x="2" y="9" width="4" height="12"></rect>
+          <circle cx="4" cy="4" r="2"></circle>
+        </svg>
+      </a>
+      <a href="https://github.com/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
+        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">
+        <span>GitHub ↗</span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+          stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
+          <path
+            d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0
+             0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 
+             5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+          </path>
+        </svg>
+      </a>
+    </div>
   </section>
 
   <!-- footer -->
-  <footer class="mx-auto max-w-6xl px-6 py-12 text-center text-sm text-gray-500">
-    <div>© <span id="year"></span> Ali Alhusseini — Designed and Developed with love in Halifax, NS.</div>
+  <footer class="mx-auto max-w-6xl px-6 py-12 text-sm text-gray-500">
+    <div>© <span id="year"></span> Ali Alhusseini — Made with ♡ in Halifax, NS</div>
   </footer>
   <script type="module" src="/src/main.js"></script>
 </body>
