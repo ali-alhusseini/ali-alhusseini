@@ -12,7 +12,7 @@ const projects = [
   {
     title: 'Accessible Blogging Site',
     description: 'A blooging platform focused on accessibility for motor impaired users to post and share blogs.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'JQuery', 'Bootstrap'],
+    technologies: ['JavaScript', 'JQuery', 'Bootstrap'],
     url: 'https://github.com/ali-alhusseini/woodland-conservation'
   },
   {
@@ -65,7 +65,6 @@ function renderProjects(list) {
       techEl.textContent = tech;
       technologies.appendChild(techEl);
     });
-    
     projectsEl.appendChild(node);
   });
 }

@@ -43,26 +43,29 @@
     </div>
   </section>
 
+  <!-- projects section -->
   <section id="work" class="mx-auto max-w-6xl px-4 py-20">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">Recent Work</h2>
     <p class="mb-4 text-gray-600">A selection of projects I have done over the years, some as part of my Computer Science degree, others to master new skills.</p>
     <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
-      <!-- Projects will be dynamically inserted here -->
       <template id="project-template">
-        <article class="p-4 border rounded-lg bg-white shadow-sm">
+        <article class="p-4 border rounded-lg shadow-sm">
           <h3 class="text-lg font-semibold mb-1 project-title"></h3>
           <p class="text-sm text-gray-600 mb-3 project-desc"></p>
-          <ul class="project-tech-list flex flex-wrap gap-2 mb-4">
-            <li class="text-xs text-gray-500 italic project-tech"></li>
-          </ul>
+          <div class="project-tech flex flex-wrap mb-4"></div>
           <div class="flex gap-2">
-            <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm" target="_blank" rel="noopener noreferrer">View ↗</a>
+            <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm hover:bg-gray-800 hover:text-gray-50" target="_blank" rel="noopener noreferrer">View ↗</a>
           </div>
         </article>
       </template>
     </div>
   </section>
 
+  <!-- about section -->
+  <section id="about" class="mx-auto max-w-6xl px-6 py-20 border-t border-gray-100">
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title">About</h2>
+    <p class="mb-4 text-gray-600" data-i18n="about.content">I'm Ali, a web developer with a passion for creating clean, user-focused digital experiences. With a background in computer science, I specialize in building responsive and accessible web solutions that prioritize usability and performance.</p>
+  </section>  
   <script type="module" src="/src/main.js"></script>
 </body>
 
