@@ -8,10 +8,61 @@
   <title>Ali Alhusseini - Web Developer</title>
 </head>
 
-<body>
-  <h1 class="text-3xl font-bold underline">
-    Hello world!
-  </h1>
+<body class="antialiased text-gray-900 bg-white">
+  <!-- navigation bar -->
+  <header id="top" class="fixed inset-x-0 top-4 z-40">
+    <nav id="nav"
+      class="mx-2 md:mx-auto max-w-6xl px-6 py-2 flex items-center justify-between rounded-2xl transition-all duration-300">
+      <a href="#top" class="text-xl font-semibold tracking-tight">Ali Alhusseini</a>
+      <div class="hidden md:flex gap-8 items-center text-sm">
+        <a href="#work" class="nav-link">Work</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </div>
+      <div class="flex items-center gap-3">
+        <button id="themeToggle" aria-label="Toggle dark mode"
+          class="rounded-full p-2 hover:bg-gray-100 transition">🌓</button>
+        <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
+          class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm">Say hello</button>
+        <button class="md:hidden ml-2" id="menuBtn">☰</button>
+      </div>
+    </nav>
+  </header>
+
+  <!-- hero section -->
+  <section class="h-screen flex flex-col justify-center items-center text-center px-4" id="home">
+    <h1 class="text-4xl md:text-4xl font-semibold mb-4" data-i18n="hero.title">Developing and designing clean,
+      user-focused digital experiences.
+    </h1>
+    <p class="text-sm md:text-lg max-w-xl" data-i18n="hero.subtitle">I'm a computer science graduate with a passion for creating
+      responsive, accessible web solutions that feel effortless.</p>
+    <div class="mt-4 flex gap-3 items-center">
+      <a href="" class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-800 text-white text-sm shadow-lg">Resume ↓</a>
+        <a href="https://github.com/ali-alhusseini/" rel="nonreferrer noopener" target="_blank" class="inline-flex items-center gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">GitHub ↗</a>
+        <a href="https://www.linkedin.com/in/ali-alhusseini/" rel="nonreferrer noopener" target="_blank" rel="nonopener nonreferrer" class="inline-flex items-center gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">LinkedIn ↗</a>
+    </div>
+  </section>
+
+  <section id="work" class="mx-auto max-w-6xl px-4 py-20">
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">Recent Work</h2>
+    <p class="mb-4 text-gray-600">A selection of projects I have done over the years, some as part of my Computer Science degree, others to master new skills.</p>
+    <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+      <!-- Projects will be dynamically inserted here -->
+      <template id="project-template">
+        <article class="p-4 border rounded-lg bg-white shadow-sm">
+          <h3 class="text-lg font-semibold mb-1 project-title"></h3>
+          <p class="text-sm text-gray-600 mb-3 project-desc"></p>
+          <ul class="project-tech-list flex flex-wrap gap-2 mb-4">
+            <li class="text-xs text-gray-500 italic project-tech"></li>
+          </ul>
+          <div class="flex gap-2">
+            <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm" target="_blank" rel="noopener noreferrer">View ↗</a>
+          </div>
+        </article>
+      </template>
+    </div>
+  </section>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 

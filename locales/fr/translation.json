@@ -1,0 +1,35 @@
+{
+  "header": {
+    "title": "ALI ALHUSSEINI"
+  },
+  "about": {
+    "text": "Je suis un développeur logiciel passionné basé à Halifax, en Nouvelle-Écosse. J'aime concevoir et développer de belles interfaces et expériences utilisateur. J'étudie actuellement l'informatique et le français à l'Université Saint Mary's.",
+    "resume": "CV"
+  },
+  "social": {
+    "linkedin": "LinkedIn",
+    "github": "GitHub",
+    "instagram": "Instagram"
+  },
+  "connect": {
+    "title": "Contact",
+    "email": "hello@alialhusseini.com"
+  },
+  "projects": {
+    "title": "Projets",
+    "blog": {
+      "title": "Site de publication de blog",
+      "desc": "Blog accessible pour les utilisateurs ayant des troubles moteurs."
+    },
+    "woodland": {
+      "title": "Site de conservation Woodland",
+      "desc": "Un site web pour un projet de conservation réalisé dans le cadre d'un projet de groupe en génie logiciel."
+    }
+  },
+  "contact": {
+    "save": "enregistrer dans les contacts"
+  },
+  "footer": {
+    "text": "© 2025 Ali Alhusseini. Tous droits réservés."
+  }
+}
