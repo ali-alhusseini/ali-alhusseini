@@ -1,32 +1,45 @@
 // Cursor 
 document.addEventListener("DOMContentLoaded", function(event) {
     var cursor = document.querySelector('.cursor');
-    var links = document.querySelectorAll("a");
     var initCursor = false;
+    var mouseX = 0;
+    var mouseY = 0;
+    var cursorX = 0;
+    var cursorY = 0;
 
-    for (var i = 0; i < links.length; i++) {
-        var selfLink = links[i];
+    // Use event delegation for link hover effects instead of individual listeners
+    document.addEventListener("mouseover", function(e) {
+        if (e.target.closest("a")) {
+            cursor.classList.add("cursor-link");
+        }
+    });
     
-        selfLink.addEventListener("mouseover", function() {
-          cursor.classList.add("cursor-link");
-        });
-        selfLink.addEventListener("mouseout", function() {
-          cursor.classList.remove("cursor-link");
-        });
-      }
+    document.addEventListener("mouseout", function(e) {
+        if (e.target.closest("a")) {
+            cursor.classList.remove("cursor-link");
+        }
+    });
 
+    // Store mouse position without updating DOM
     window.onmousemove = function(e) {
-        var mouseX = e.clientX;
-        var mouseY = e.clientY;
+        mouseX = e.clientX;
+        mouseY = e.clientY;
 
         if (!initCursor) {
             cursor.style.opacity = 1;
             initCursor = true;
         }
-
-        cursor.style.left = mouseX + "px";
-        cursor.style.top = mouseY + "px";
     }
+
+    // Use requestAnimationFrame for smooth cursor movement
+    function updateCursor() {
+        cursorX = mouseX;
+        cursorY = mouseY;
+        cursor.style.left = cursorX + "px";
+        cursor.style.top = cursorY + "px";
+        requestAnimationFrame(updateCursor);
+    }
+    requestAnimationFrame(updateCursor);
 
     window.onmousedown = function(e) {
         cursor.style.opacity = 0;
@@ -36,13 +49,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
 // Switch Sound
 function playSwitchSound() {
-    if (switchAudio.readyState === 4) {
-        switchAudio.volume = 0.2;
-        switchAudio.play();
-    } else {
-        switchAudio.addEventListener('canplaythrough', () => {
-            switchAudio.volume = 0.2;
-            switchAudio.play();
+    switchAudio.volume = 0.2;
+    // Use play() which returns a promise
+    var playPromise = switchAudio.play();
+    if (playPromise !== undefined) {
+        playPromise.catch(function(error) {
+            // Auto-play was prevented, silently handle
+            console.log('Audio play prevented:', error);
         });
     }
 }
@@ -68,8 +81,8 @@ darkModeBtn.addEventListener('click', () => {
 
 // Header Time
 function updateTime() {
-    const date = Date();
-    let time = date.slice(16, 24);
+    const now = new Date();
+    const time = now.toLocaleTimeString('en-US', { hour12: false });
     document.getElementById('time').innerHTML = "Time: " + time;
 }
 
