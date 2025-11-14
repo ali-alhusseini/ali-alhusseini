@@ -18,13 +18,13 @@ const projects = [
   {
     title: 'Radiohead Fan Site',
     description: 'A frontend website built to showcase the band Radiohead.',
-    technologies: ['HTML', 'CSS'],
+    technologies: ['HTML', 'CSS', 'JavaScript'],
     url: 'http://web.cs-smu.ca/~u04/submissions/submission01/home_page.html'
   },
   {
     title: 'Woodland Conservation Site',
     description: 'A website built for a local conservation site. Designed to be accessible and responsive and it incorporates APIs such as cloudinary, Google Maps, and Formspree.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Restful APIs'],
     url: 'https://github.com/ali-alhusseini/woodland-conservation'
   },
   {
