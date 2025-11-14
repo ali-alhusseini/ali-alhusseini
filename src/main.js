@@ -31,3 +31,23 @@ menuBtn.addEventListener('click', () => {
     document.body.appendChild(wrap);
   } else navLinks.remove();
 });
+
+// // Switch Sound
+// const switchAudio = document.getElementById('switch-audio');
+// const lightModeBtn = document.getElementById('light-mode-btn');
+
+// function playSwitchSound() {
+//     switchAudio.volume = 0.2;
+//     // Use play() which returns a promise
+//     var playPromise = switchAudio.play();
+//     if (playPromise !== undefined) {
+//         playPromise.catch(function(error) {
+//             // Auto-play was prevented, silently handle
+//             console.log('Audio play prevented:', error);
+//         });
+//     }
+// }
+
+// lightModeBtn.addEventListener('click', () => {
+//     playSwitchSound();
+// });
