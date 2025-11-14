@@ -13,8 +13,8 @@ const translations = {
         hero: {
             title: 'Designing and developing clean, user-focused digital experiences.',
             subtitle: 'I\'m a computer science graduate with a passion for creating responsive, accessible web solutions that feel effortless.',
-            resume: "Download Resume",
-            scroll: "Scroll Down ↓"
+            resume: "Download Resume ↓",
+            scroll: "Scroll Down ⇓"
         },
         work: {
             title: "Recent Work",
@@ -57,7 +57,7 @@ const translations = {
             title: 'Conception et développement d\'expériences numériques épurées et centrées sur l\'utilisateur.',
             subtitle: 'Je suis un diplômé en informatique passionné par la création de solutions web réactives et accessibles qui semblent sans effort.',
             resume: "Télécharger le CV ↓",
-            scroll: "Faites défiler vers le bas ↓"
+            scroll: "Faites défiler vers le bas ⇓"
         },
         work: {
             title: "Travaux récents",
