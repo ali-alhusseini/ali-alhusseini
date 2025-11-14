@@ -1,5 +1,6 @@
 import './style.css'
 import './projects.js'
+import './i18n.js'
 
 const year = new Date().getFullYear();
 document.getElementById('year').textContent = year;
