@@ -19,13 +19,13 @@
       class="mx-2 md:mx-auto max-w-6xl px-6 py-2 flex items-center justify-between rounded-2xl transition-all duration-300">
       <a href="#top" class="text-xl font-semibold tracking-tight">Ali Alhusseini</a>
       <div class="hidden md:flex gap-8 items-center text-sm">
-        <a href="#work" class="nav-link">Work</a>
-        <a href="#about" class="nav-link">About</a>
-        <a href="#contact" class="nav-link">Contact</a>
+        <a href="#work" class="nav-link hover:text-blue-600">Work</a>
+        <a href="#about" class="nav-link hover:text-blue-600">About</a>
+        <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
       </div>
       <div class="flex items-center gap-3">
         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
-          class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer">Say hello</button>
+          class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer hover:shadow-sm">Say hello</button>
         <button class="md:hidden ml-2" id="menuBtn">☰</button>
       </div>
     </nav>
@@ -50,8 +50,7 @@
   <!-- projects section -->
   <section id="work" class="mx-auto max-w-6xl px-4 py-10">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">Recent Work</h2>
-    <p class="mb-4 text-gray-600">A selection of projects I have done over the years, some as part of my Computer
-      Science degree, others to master new skills.</p>
+    <p class="mb-4 text-gray-600">A selection of projects I have done over the years, some of which have been part of my Computer Science degree, otheres to learn new skills and experiment with new technologies.</p>
     <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <template id="project-template">
         <article class="p-4 border rounded-lg shadow-sm">
@@ -79,19 +78,37 @@
       challenges.</p>
   </section>
 
+  <!-- experience section  -->
+  <section id="experience" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="experience.title">Experience</h2>
+    <ul class="list-inside text-gray-600">
+      <li class="mb-3">
+        <strong>Apple — Specialist</strong> (Oct 2021 - Present)
+        <p class="text-sm font-serif">Delivering exceptional customer experiences by guiding customers through Apple products and services, upholding the highest standards, and collaborating closely with colleagues.</p>
+      </li>
+      <li class="mb-3">
+        <strong>Nova Scotia Power — Digital Experience Co-Op </strong> (Sept 2024 - Apr 2025)
+        <p class="text-sm font-serif">Maintained and updated nspower.ca using the CMS and Bootstrap across two consecutive terms, applying accessibility and responsive design best practices. Authored a governance document to standardize and streamline future website updates.</p>
+      </li>
+      <li class="mb-3">
+        <strong>Best Buy — Computing Solutions Advisor</strong> (Oct 2019 - Mar 2021)
+        <p class="text-sm font-serif">Assisted customers in selecting and purchasing complete computing solutions, providing expert advice on hardware and software options to meet their needs.</p>
+      </li>
+    </ul>
+  </section>
+
   <!-- contact section -->
   <section id="contact" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title">Get in Touch</h2>
-    <p class="mb-4 text-gray-600" data-i18n="contact.content">I'm always open to discussing new projects, creative
-      ideas, or opportunities to be part of your visions. Feel free to reach out! </p>
+    <p class="mb-4 text-gray-600" data-i18n="contact.content">Feel free to reach out, I'm always open to new opportunities, collaborations, and projects.</p>
     <div class="flex flex-col md:flex-row gap-4">
-      <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg font-mono"
+      <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg font-mono hover:shadow-xl"
         href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;">
         &#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;
       </a>
       <a href="https://www.linkedin.com/in/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
         rel="nonopener nonreferrer"
-        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">
+        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-sm hover:shadow-md">
         <span>LinkedIn ↗</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -101,7 +118,7 @@
         </svg>
       </a>
       <a href="https://github.com/ali-alhusseini/" rel="nonreferrer noopener" target="_blank"
-        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-lg">
+        class="inline-flex items-center justify-between gap-2 px-6 py-1.5 border rounded-full text-sm shadow-sm hover:shadow-md">
         <span>GitHub ↗</span>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
           stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
@@ -117,7 +134,7 @@
 
   <!-- footer -->
   <footer class="mx-auto max-w-6xl px-6 py-12 text-sm text-gray-500">
-    <div>© <span id="year"></span> Ali Alhusseini — Portfolio v2 <span class="text-blue-700">Halifax, Canada</span></div>
+    <div>© <span id="year"></span> Ali Alhusseini — Portfolio v2.0 <span class="text-blue-700">Halifax, Canada</span></div>
   </footer>
 </body>
 
