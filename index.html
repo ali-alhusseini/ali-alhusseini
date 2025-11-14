@@ -11,7 +11,7 @@
   <link rel="apple-touch-icon" href="/ios-icon.png" />
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
-  <title>Ali Alhusseini - Web Developer</title>
+  <title data-i18n="title">Ali Alhusseini - Web Developer</title>
 </head>
 
 <body class="antialiased text-blue-700 bg-gray-100">
@@ -26,13 +26,13 @@
       class="mx-2 md:mx-auto max-w-6xl px-6 py-2 flex items-center justify-between rounded-2xl transition-all duration-300">
       <a href="#top" class="text-xl font-semibold tracking-tight">Ali Alhusseini</a>
       <div class="hidden md:flex gap-8 items-center text-sm">
-        <a href="#work" class="nav-link hover:text-blue-600">Work</a>
-        <a href="#about" class="nav-link hover:text-blue-600">About</a>
-        <a href="#contact" class="nav-link hover:text-blue-600">Contact</a>
+        <a href="#work" class="nav-link hover:text-blue-600" data-i18n="nav.work">Work</a>
+        <a href="#about" class="nav-link hover:text-blue-600" data-i18n="nav.about">About</a>
+        <a href="#contact" class="nav-link hover:text-blue-600" data-i18n="nav.contact">Contact</a>
       </div>
       <div class="flex items-center gap-3">
         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
-          class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer hover:shadow-sm">
+          class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer hover:shadow-sm" data-i18n="nav.hello">
           Say hello
         </button>
         <button class="md:hidden ml-2" id="menuBtn">☰</button>
@@ -51,10 +51,10 @@
     </p>
     <div class="mt-4 flex gap-3 items-center">
       <a href="/Ali Alhusseini - Resume.pdf" download
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg">Download
+        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-white text-sm shadow-lg" data-i18n="here.resume">Download
         Resume ↓</a>
     </div>
-    <p class="absolute bottom-6 text-xs md:text-sm text-gray-600 animate-pulse duration-500 ease-in-out hover:animate-none">
+    <p class="absolute bottom-6 text-xs md:text-sm text-gray-600 animate-pulse duration-500 ease-in-out hover:animate-none" data-i18n="hero.scroll">
       ↓ Scroll Down
     </p>
   </section>
@@ -64,7 +64,7 @@
     <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">
       Recent Work
     </h2>
-    <p class="mb-4 text-gray-600">
+    <p class="mb-4 text-gray-600" data-i18n="work.content">
       A selection of projects I have done over the years, some of which have
       been part of my Computer Science degree, otheres to learn new skills and
       experiment with new technologies.
@@ -107,17 +107,16 @@
     </h2>
     <ul class="list-inside text-gray-600">
       <li class="mb-3">
-        <strong>Apple — Specialist</strong> (Oct 2021 - Present)
-        <p class="text-sm">
+        <p data-i18n="experience.apple-title"><strong>Apple — Specialist</strong> (Oct 2021 - Present)</p>
+        <p class="text-sm" data-i18n="experience.apple-content">
           Delivering exceptional customer experiences by guiding customers
           through Apple products and services, upholding the highest
           standards, and collaborating closely with colleagues.
         </p>
       </li>
       <li class="mb-3">
-        <strong>Nova Scotia Power — Digital Experience Co-Op </strong> (Sept
-        2024 - Apr 2025)
-        <p class="text-sm">
+        <p dir="experience.nsp-title"><strong>Nova Scotia Power — Digital Experience Co-Op </strong> (Sept 2024 - Apr 2025)</p>
+        <p class="text-sm" dir="experience.nsp-content">
           Maintained and updated nspower.ca using the CMS and Bootstrap across
           two consecutive terms, applying accessibility and responsive design
           best practices. Authored a governance document to standardize and
@@ -125,9 +124,8 @@
         </p>
       </li>
       <li class="mb-3">
-        <strong>Best Buy — Computing Solutions Advisor</strong> (Oct 2019 -
-        Mar 2021)
-        <p class="text-sm">
+        <p data-i18n="experience.bestbuy-title"><strong>Best Buy — Sales Associate</strong> (Jun 2019 - Oct 2021)</p>
+        <p class="text-sm" data-i18n="experience.bestbuy-content">
           Assisted customers in selecting and purchasing complete computing
           solutions, providing expert advice on hardware and software options
           to meet their needs.
@@ -188,7 +186,7 @@
   <footer class="mx-auto max-w-6xl px-6 py-12 text-sm text-gray-500">
     <div>
       © <span id="year"></span> Ali Alhusseini — Portfolio v2.0
-      <span class="text-blue-700">Halifax, Canada</span>
+      <span class="text-blue-700">Halifax, NS</span>
     </div>
   </footer>
 </body>
