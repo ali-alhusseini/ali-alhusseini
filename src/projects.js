@@ -23,7 +23,7 @@ const projects = [
   },
   {
     title: 'Woodland Conservation Site',
-    description: 'A website built for a local conservation group to help promote their cause.',
+    description: 'A website built for a local conservation site. Designed to be accessible and responsive and it incorporates APIs such as cloudinary, Google Maps, and Formspree.',
     technologies: ['HTML', 'CSS', 'JavaScript'],
     url: 'https://github.com/ali-alhusseini/woodland-conservation'
   },
