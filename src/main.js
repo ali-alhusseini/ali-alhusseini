@@ -23,42 +23,31 @@ document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 // mobile menu
 const menuBtn = document.getElementById('menuBtn');
 const closeBtn = document.getElementById('closeBtn');
-const navLinks = document.querySelector('.nav-links');
+const navLinks = document.getElementById('nav-links');
+const navBtnLinks = document.querySelectorAll('.nav-btn');
 
 menuBtn.style.transition = 'transform 0.2s ease-in-out';
-menuBtn.addEventListener('mouseover', () => {
-  menuBtn.style.transform = 'scale(1.1)';
-});
-menuBtn.addEventListener('mouseout', () => {
-  menuBtn.style.transform = 'scale(1)';
-});
-
 closeBtn.style.transition = 'transform 0.2s ease-in-out';
-closeBtn.addEventListener('mouseover', () => {
-  closeBtn.style.transform = 'scale(1.1)';
-});
-closeBtn.addEventListener('mouseout', () => {
-  closeBtn.style.transform = 'scale(1)';
+
+navBtnLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    closeBtn.classList.add('hidden');
+    menuBtn.classList.remove('hidden');
+    navLinks.classList.add('hidden');
+  });
 });
 
 closeBtn.addEventListener('click', () => {
   closeBtn.classList.add('hidden');
   menuBtn.classList.remove('hidden');
-  const navLinks = document.querySelector('.nav-links');
-  if (navLinks) navLinks.remove();
+  navLinks.classList.add('hidden');
 });
 
 menuBtn.addEventListener('click', () => {
   closeBtn.classList.remove('hidden');
   menuBtn.classList.add('hidden');
-  if (!navLinks) {
-    const wrap = document.createElement('div');
-    wrap.className = 'nav-links fixed inset-x-6 top-20 bg-gray-100/90 text-blue-700 dark:bg-slate-950/90 dark:text-gray-100 p-6 rounded-2xl shadow-md dark:shadow-slate-900 nav-frost z-50';
-    wrap.innerHTML = '<a class="block py-2" href="#work">Work</a><a class="block py-2" href="#about">About</a><a class="block py-2" href="#contact">Contact</a>';
-    document.body.appendChild(wrap);
-  } else navLinks.remove();
+  navLinks.classList.remove('hidden');
 });
-
 
 
 // // Switch Sound

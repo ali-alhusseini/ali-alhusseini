@@ -25,11 +25,6 @@
     <nav id="nav"
       class="mx-2 md:mx-auto max-w-6xl px-6 py-2 flex items-center justify-between rounded-2xl transition-all duration-300">
       <a href="#top" class="text-xl font-semibold tracking-tight">Ali Alhusseini</a>
-      <div class="hidden md:flex gap-8 items-center text-sm">
-        <!-- <a href="#work" class="nav-link hover:text-blue-600" data-i18n="nav.work">Work</a> -->
-        <!-- <a href="#about" class="nav-link hover:text-blue-600" data-i18n="nav.about">About</a> -->
-        <!-- <a href="#contact" class="nav-link hover:text-blue-600" data-i18n="nav.contact">Contact</a> -->
-      </div>
       <div class="flex items-center gap-3">
         <button id="language-toggle"
           class="text-xs md:text-sm border rounded-full px-2 md:px-3 py-1 shadow-sm hover:bg-blue-700 hover:text-gray-100 hover:dark:bg-gray-700 cursor-pointer">En</button>
@@ -41,6 +36,13 @@
       </div>
     </nav>
   </header>
+
+  <!-- mobile menu -->
+   <div class="hidden fixed inset-x-6 top-20 bg-gray-100/90 text-blue-700 dark:bg-slate-950/90 dark:text-gray-100 p-6 rounded-2xl shadow-md dark:shadow-slate-900 nav-frost z-50 transition-discrete" id="nav-links">
+      <button class="nav-btn block py-2" data-i18n="nav.work" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})"></button>
+      <button class="nav-btn block py-2" data-i18n="nav.about" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"></button>
+      <button class="nav-btn block py-2" data-i18n="nav.contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"></button>
+   </div>
 
   <!-- hero section -->
   <section class="h-screen flex flex-col justify-center items-center text-center px-8 md:px-40" id="home">
