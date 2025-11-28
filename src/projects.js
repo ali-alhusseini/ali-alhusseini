@@ -54,7 +54,7 @@ function renderProjects(list) {
     if (p.url.includes('github.com')) {
       a.innerHTML = `GitHub ${arrowUpIcon}`;
     } else if (p.url) {
-      a.innerHTML = `live ${arrowUpIcon}`;
+      a.innerHTML = `Live ${arrowUpIcon}`;
     } else {
       a.textContent = 'Details';
     }
