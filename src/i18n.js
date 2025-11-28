@@ -17,7 +17,7 @@ const translations = {
         },
         work: {
             title: "Recent Work",
-            content: "A selection of projects I have done over the years, some of which have been part of my Computer Science degree, otheres to learn new skills and experiment with new technologies.",
+            content: "A selection of projects I have done over the years, some of which have been part of my Computer Science degree, others to learn new skills and experiment with new technologies.",
             view: "View ↗"
         },
         about: {
