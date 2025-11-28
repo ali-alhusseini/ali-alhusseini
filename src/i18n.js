@@ -13,10 +13,10 @@ const translations = {
         hero: {
             title: "Designing and developing clean, user-focused digital experiences.",
             subtitle: 'Software developer and recent Computer Science graduate.',
-            resume: 'Download Resume ↓'
+            resume: 'Download Resume '
         },
         work: {
-            title: "Recent Work",
+            title: "Recent Projects",
             content: "A selection of projects I have done over the years, some of which have been part of my Computer Science degree, others to learn new skills and experiment with new technologies.",
             view: "View ↗"
         },

@@ -1,6 +1,7 @@
 // projects rendering
 const projectsEl = document.getElementById('projects');
 const tpl = document.getElementById('project-template');
+const arrowUpIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-up-right"><line x1="7" y1="17" x2="17" y2="7"></line><polyline points="7 7 17 7 17 17"></polyline></svg>';
 
 const projects = [
   {
@@ -51,9 +52,9 @@ function renderProjects(list) {
     a.href = p.url || '#';
 
     if (p.url.includes('github.com')) {
-      a.textContent = 'GitHub ↗';
+      a.innerHTML = `GitHub ${arrowUpIcon}`;
     } else if (p.url) {
-      a.textContent = 'Live ↗';
+      a.innerHTML = `live ${arrowUpIcon}`;
     } else {
       a.textContent = 'Details';
     }
