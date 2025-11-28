@@ -1,7 +1,7 @@
 import './style.css'
 import './projects.js'
 import './i18n.js'
-import { gsap } from "gsap";
+import './animations.js'
 
 const year = new Date().getFullYear();
 document.getElementById('year').textContent = year;
@@ -49,7 +49,6 @@ menuBtn.addEventListener('click', () => {
   menuBtn.classList.add('hidden');
   navLinks.classList.remove('hidden');
 });
-
 
 // // Switch Sound
 // const switchAudio = document.getElementById('switch-audio');
