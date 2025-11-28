@@ -55,12 +55,11 @@ const translations = {
         hero: {
             title: "Concevoir et développer des expériences numériques claires et centrées sur l'utilisateur.",
             subtitle: 'Développeur de logiciels et récent diplômé en informatique.',
-            resume: 'Télécharger le CV ↓'
+            resume: 'Télécharger le CV'
         },
         work: {
             title: "Projets récents",
             content: "Une sélection de projets que j'ai réalisés au fil des ans, dont certains dans le cadre de mon diplôme en informatique, d'autres pour apprendre de nouvelles compétences et expérimenter de nouvelles technologies.",
-            view: "Voir ↗"
         },
         about: {
             title: 'À propos',
