@@ -61,7 +61,7 @@ function renderProjects(list) {
     const technologies = node.querySelector('.project-tech');
     p.technologies.forEach(tech => {
       const techEl = document.createElement('span');
-      techEl.className = 'inline-block bg-gray-200 text-gray-800 text-xs px-2 py-1 rounded-full mr-2 mb-2';
+      techEl.className = 'inline-block bg-gray-200 text-gray-800 dark:bg-slate-800 dark:text-slate-300 text-xs px-2 py-1 rounded-full mr-2 mb-2';
       techEl.textContent = tech;
       technologies.appendChild(techEl);
     });

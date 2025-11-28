@@ -3,7 +3,7 @@ let currentLanguage = localStorage.getItem('lang') || 'en';
 
 const translations = {
     en: {
-        title: "Ali Alhusseini — Web Developer",
+        title: "Ali Alhusseini — Software Developer",
         nav: {
             work : "Work",
             about: "About",
@@ -11,10 +11,9 @@ const translations = {
             hello: "Say hello"
         },
         hero: {
-            title: 'Designing and developing clean, user-focused digital experiences.',
-            subtitle: 'I\'m a computer science graduate with a passion for creating responsive, accessible web solutions that feel effortless.',
-            resume: "Download Resume ↓",
-            scroll: "Scroll Down ⇓"
+            title: "Designing and developing clean, user-focused digital experiences.",
+            subtitle: 'Software developer and recent Computer Science graduate.',
+            resume: 'Download Resume ↓'
         },
         work: {
             title: "Recent Work",
@@ -23,7 +22,7 @@ const translations = {
         },
         about: {
             title: 'About',
-            content: 'I\'m a web developer with a passion for creating clean, user-focused digital experiences. With a background in computer science, I specialize in building responsive and accessible web solutions that prioritize usability and performance.',
+            content: 'I\'m a software developer with a passion for creating clean, user-focused digital experiences. With a background in computer science, I specialize in building responsive and accessible solutions that prioritize usability and performance.',
             content2: 'When I\'m not coding, you can find me exploring the outdoors, reading books, or experimenting with new web technologies. I\'m always eager to learn and take on new challenges.'
         },
         experience: {
@@ -46,28 +45,27 @@ const translations = {
         }
     },
     fr: {
-        title: "Ali Alhusseini — Développeur Web",
+        title: "Ali Alhusseini — Développeur de logiciels",
         nav: {
             work : "Projets",
             about: "À propos",
             contact: "Contact",
-            hello: "Dis bonjour"
+            hello: "Dire bonjour"
         },
         hero: {
-            title: 'Conception et développement d\'expériences numériques épurées et centrées sur l\'utilisateur.',
-            subtitle: 'Je suis un diplômé en informatique passionné par la création de solutions web réactives et accessibles qui semblent sans effort.',
-            resume: "Télécharger le CV ↓",
-            scroll: "Faites défiler vers le bas ⇓"
+            title: "Concevoir et développer des expériences numériques claires et centrées sur l'utilisateur.",
+            subtitle: 'Développeur de logiciels et récent diplômé en informatique.',
+            resume: 'Télécharger le CV ↓'
         },
         work: {
-            title: "Travaux récents",
+            title: "Projets récents",
             content: "Une sélection de projets que j'ai réalisés au fil des ans, dont certains dans le cadre de mon diplôme en informatique, d'autres pour apprendre de nouvelles compétences et expérimenter de nouvelles technologies.",
             view: "Voir ↗"
         },
         about: {
             title: 'À propos',
-            content: 'Je suis un développeur web passionné par la création d\'expériences numériques épurées et centrées sur l\'utilisateur. Avec une formation en informatique, je me spécialise dans la création de solutions web réactives et accessibles qui privilégient la convivialité et la performance.',
-            content2: 'Lorsque je ne code pas, vous pouvez me trouver en train d\'explorer la nature, de lire des livres ou d\'expérimenter de nouvelles technologies web. Je suis toujours désireux d\'apprendre et de relever de nouveaux défis.'
+            content: 'Je suis un développeur de logiciels passionné par la création d\'expériences numériques épurées et centrées sur l\'utilisateur. Avec une formation en informatique, je me spécialise dans la création de solutions interactives et accessibles qui privilégient la facilité d\'utilisation et la performance.',
+            content2: 'Lorsque je ne code pas, vous pouvez me trouver en train d\'explorer la nature, de lire des livres ou d\'expérimenter de nouvelles technologies web. J\'ai toujours hâte d\'apprendre et de relever de nouveaux défis.'
         },
         experience: {
             title: 'Expérience',
@@ -84,7 +82,7 @@ const translations = {
             bestbuyDates: '(Juin 2019 - Oct 2021)'
         },
         contact: {
-            title: 'Entrer en contact',
+            title: 'Contactez-moi',
             content: 'N\'hésitez pas à me contacter, je suis toujours ouvert à de nouvelles opportunités, collaborations et projets.'
         }
     }

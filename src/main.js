@@ -20,7 +20,7 @@ const io = new IntersectionObserver((entries) => {
 }, { threshold: 0.12 });
 document.querySelectorAll('.reveal').forEach(el => io.observe(el));
 
-// mobile menu (very small example)
+// mobile menu
 const menuBtn = document.getElementById('menuBtn');
 menuBtn.addEventListener('click', () => {
   const navLinks = document.querySelector('.nav-links');
