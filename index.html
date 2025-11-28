@@ -36,7 +36,8 @@
         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
           class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer hover:shadow-md hover:dark:bg-gray-100 hover:dark:text-slate-950"
           data-i18n="nav.hello"></button>
-        <button class="md:hidden ml-2" id="menuBtn">☰</button>
+        <button class="md:hidden ml-2" id="menuBtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        <button class="hidden md:hidden m1-2" id="closeBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
       </div>
     </nav>
   </header>
@@ -53,9 +54,7 @@
 
   <!-- projects section -->
   <section id="work" class="mx-auto max-w-6xl px-4 py-10">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">
-      Recent Work
-    </h2>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title"></h2>
     <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="work.content"></p>
     <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <template id="project-template">
@@ -74,16 +73,14 @@
 
   <!-- about section -->
   <section id="about" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title">About</h2>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title"></h2>
     <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content"></p>
     <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content2"></p>
   </section>
 
   <!-- contact section -->
   <section id="contact" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title">
-      Get in Touch
-    </h2>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title"></h2>
     <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="contact.content"></p>
     <div class="flex flex-col md:flex-row gap-4">
       <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-gray-100 dark:bg-gray-100 dark:text-slate-950 text-sm shadow-lg font-mono hover:shadow-xl"
