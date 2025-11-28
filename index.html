@@ -12,8 +12,8 @@
   <link rel="icon" type="image/svg+xml" href="/logo.svg" />
 
   <title data-i18n="title">Ali Alhusseini - Software Developer</title>
-  <script type="module" crossorigin src="/assets/index-DLVuPjh3.js"></script>
-  <link rel="stylesheet" crossorigin href="/assets/index-Dj5kSOCP.css">
+  <script type="module" crossorigin src="/assets/index-CJgI713f.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-C9kOwi8E.css">
 </head>
 
 <body class="antialiased text-blue-700 bg-gray-100 dark:bg-slate-950 dark:text-gray-100">
@@ -26,50 +26,41 @@
     <nav id="nav"
       class="mx-2 md:mx-auto max-w-6xl px-6 py-2 flex items-center justify-between rounded-2xl transition-all duration-300">
       <a href="#top" class="text-xl font-semibold tracking-tight">Ali Alhusseini</a>
-      <div class="hidden md:flex gap-8 items-center text-sm">
-        <!-- <a href="#work" class="nav-link hover:text-blue-600" data-i18n="nav.work">Work</a> -->
-        <!-- <a href="#about" class="nav-link hover:text-blue-600" data-i18n="nav.about">About</a> -->
-        <!-- <a href="#contact" class="nav-link hover:text-blue-600" data-i18n="nav.contact">Contact</a> -->
-      </div>
       <div class="flex items-center gap-3">
         <button id="language-toggle"
           class="text-xs md:text-sm border rounded-full px-2 md:px-3 py-1 shadow-sm hover:bg-blue-700 hover:text-gray-100 hover:dark:bg-gray-700 cursor-pointer">En</button>
         <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})"
           class="hidden md:inline-block px-4 py-2 rounded-full border border-gray-200 text-sm cursor-pointer hover:shadow-md hover:dark:bg-gray-100 hover:dark:text-slate-950"
-          data-i18n="nav.hello">
-          Say hello
-        </button>
-        <button class="md:hidden ml-2" id="menuBtn">☰</button>
+          data-i18n="nav.hello"></button>
+        <button class="md:hidden ml-2" id="menuBtn"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-menu"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg></button>
+        <button class="hidden md:hidden m1-2" id="closeBtn"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x"><line x1="18" y1="6" x2="6" y2="18"></line><line x1="6" y1="6" x2="18" y2="18"></line></svg></button>
       </div>
     </nav>
   </header>
 
+  <!-- mobile menu -->
+   <div class="hidden fixed inset-x-6 top-20 bg-gray-100/90 text-blue-700 dark:bg-slate-950/90 dark:text-gray-100 p-6 rounded-2xl shadow-md dark:shadow-slate-900 nav-frost z-50 transition-discrete" id="nav-links">
+      <button class="nav-btn block py-2" data-i18n="nav.work" onclick="document.getElementById('work').scrollIntoView({behavior: 'smooth'})"></button>
+      <button class="nav-btn block py-2" data-i18n="nav.about" onclick="document.getElementById('about').scrollIntoView({behavior: 'smooth'})"></button>
+      <button class="nav-btn block py-2" data-i18n="nav.contact" onclick="document.getElementById('contact').scrollIntoView({behavior: 'smooth'})"></button>
+   </div>
+
   <!-- hero section -->
   <section class="h-screen flex flex-col justify-center items-center text-center px-8 md:px-40" id="home">
-    <h1 class="text-3xl md:text-4xl font-semibold mb-4" data-i18n="hero.title">
-      Designing and developing clean, user-focused digital experiences.
-    </h1>
-    <p class="text-sm md:text-lg max-w-xl font-serif" data-i18n="hero.subtitle">
-      I'm a computer science graduate with a passion for creating responsive,
-      accessible web solutions that feel effortless.
-    </p>
+    <h1 class="text-3xl md:text-4xl font-semibold mb-4" data-i18n="hero.title"></h1>
+    <p class="text-sm md:text-lg max-w-xl font-serif" data-i18n="hero.subtitle"></p>
     <div class="mt-4 flex gap-3 items-center">
-      <a href="/Ali Alhusseini - Resume.pdf" download
-        class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-gray-100 dark:bg-gray-100 dark:text-slate-950 text-sm shadow-md hover:shadow-lg" data-i18n="hero.resume">Download
-        Resume ↓</a>
+      <a href="/Ali Alhusseini - Resume.pdf" download class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-gray-100 dark:bg-gray-100 dark:text-slate-950 text-sm shadow-md hover:shadow-lg">
+        <span data-i18n="hero.resume"></span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-arrow-down"><line x1="12" y1="5" x2="12" y2="19"></line><polyline points="19 12 12 19 5 12"></polyline></svg>
+      </a>
     </div>
   </section>
 
   <!-- projects section -->
   <section id="work" class="mx-auto max-w-6xl px-4 py-10">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">
-      Recent Work
-    </h2>
-    <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="work.content">
-      A selection of projects I have done over the years, some of which have
-      been part of my Computer Science degree, otheres to learn new skills and
-      experiment with new technologies.
-    </p>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title"></h2>
+    <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="work.content"></p>
     <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <template id="project-template">
         <article class="p-4 border dark:border-gray-400 rounded-lg shadow-sm">
@@ -78,7 +69,7 @@
           <div class="project-tech flex flex-wrap mb-4"></div>
           <div class="flex gap-2">
             <a class="project-link inline-flex items-center gap-2 px-3 py-1.5 border rounded-full text-sm hover:shadow-md hover:bg-gray-200 hover:dark:bg-gray-700"
-              target="_blank" rel="noopener noreferrer">View ↗</a>
+              target="_blank" rel="noopener noreferrer"></a>
           </div>
         </article>
       </template>
@@ -87,29 +78,15 @@
 
   <!-- about section -->
   <section id="about" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title">About</h2>
-    <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content">
-      I'm a software developer with a passion for creating clean, user-focused
-      digital experiences. With a background in computer science, I specialize
-      in building responsive and accessible web solutions that prioritize
-      usability and performance.
-    </p>
-    <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content2">
-      When I'm not coding, you can find me exploring the outdoors, reading
-      books, or experimenting with new web technologies. I'm always eager
-      to learn and take on new challenges.
-    </p>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="about.title"></h2>
+    <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content"></p>
+    <p class="mb-4 text-gray-600 dark:text-gray-400 font-serif" data-i18n="about.content2"></p>
   </section>
 
   <!-- contact section -->
   <section id="contact" class="mx-auto max-w-6xl px-6 py-10 border-t border-gray-300">
-    <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title">
-      Get in Touch
-    </h2>
-    <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="contact.content">
-      Feel free to reach out, I'm always open to new opportunities,
-      collaborations, and projects.
-    </p>
+    <h2 class="text-2xl font-semibold mb-4" data-i18n="contact.title"></h2>
+    <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="contact.content"></p>
     <div class="flex flex-col md:flex-row gap-4">
       <a class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-blue-700 text-gray-100 dark:bg-gray-100 dark:text-slate-950 text-sm shadow-lg font-mono hover:shadow-xl"
         href="&#109;&#097;&#105;&#108;&#116;&#111;&#58;&#104;&#101;&#108;&#108;&#111;&#64;&#97;&#108;&#105;&#97;&#108;&#104;&#117;&#115;&#115;&#101;&#105;&#110;&#105;&#46;&#99;&#111;&#109;">
