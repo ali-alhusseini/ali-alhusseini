@@ -7,7 +7,7 @@ const projects = [
   {
     title: 'Portfolio Website',
     description: 'Responsive portfolio built with HTML, Tailwind and vanilla JS.',
-    technologies: ['HTML', 'CSS', 'JavaScript', 'Tailwind'],
+    technologies: ['JavaScript', 'HTML', 'TailwindCSS', 'Vite'],
     url: 'https://github.com/ali-alhusseini/ali-alhusseini'
   },
   {
@@ -31,13 +31,13 @@ const projects = [
   {
     title: 'MySQL and Flask Database App',
     description: 'A web application using Flask, MySQL, and Bootstrap to manage and display data for a fictional car dealership.',
-    technologies: ['Flask', 'MySQL', 'Bootstrap', 'Python'],
+    technologies: ['Python', 'Flask', 'MySQL', 'Bootstrap'],
     url: 'https://github.com/ali-alhusseini/flask_mysql_app'
   },
   {
     title: 'Traffic Manager',
     description: 'Semaphore-based intersection control to prevent deadlock and starvation in a multi-threaded environment.',
-    technologies: ['C', 'Pthreads'],
+    technologies: ['C', 'Pthreads', 'OS Concepts'],
     url: 'https://github.com/ali-alhusseini/traffic-manager'
   },
 ];
