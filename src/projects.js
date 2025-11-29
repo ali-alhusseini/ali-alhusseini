@@ -26,7 +26,7 @@ const projects = [
     title: 'Woodland Conservation Site',
     description: 'A website built for a local conservation site. Designed to be accessible and responsive and it incorporates APIs such as cloudinary, Google Maps, and Formspree.',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Restful APIs'],
-    url: 'https://github.com/ali-alhusseini/woodland-conservation'
+    url: 'http://web.cs-smu.ca/~u04/woodland-conservation/index.html'
   },
   {
     title: 'MySQL and Flask Database App',
