@@ -68,7 +68,48 @@ copyEmailBtn.addEventListener('click', () => {
   });
 });
 
+// calculate experience duration 
+function calculateDuration(startDateStr, endDateStr) {
+  const startDate = new Date(startDateStr);
+  const endDate = endDateStr.toLowerCase() === 'present' ? new Date() : new Date(endDateStr);
+  let years = endDate.getFullYear() - startDate.getFullYear();
+  let months = (endDate.getMonth() - startDate.getMonth()) + 1;
+
+  if (months < 0) {
+    years--;
+    months += 12;
+  }
+  
+  let durationStr = ''; 
+  if (years > 0) {
+    durationStr += years + (years === 1 ? ' yr' : ' yrs');
+  }
+  if (months > 0) {
+    if (years > 0) durationStr += ' ';
+    durationStr += months + (months === 1 ? ' mo' : ' mos');
+  }
+
+  const monthNames = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+  const formattedStart = `${monthNames[startDate.getMonth() + 1]} ${startDate.getFullYear()}`;
+  const formattedEnd = endDateStr.toLowerCase() === 'present' ? 'Present' : `${monthNames[endDate.getMonth() + 1]} ${endDate.getFullYear()}`;
+
+  return formattedStart + ' - ' + formattedEnd + ' (' + durationStr + ')';
+}
+
+function updateExperienceDurations() {
+  const experienceElements = document.querySelectorAll('[date-start][date-end]');
+  experienceElements.forEach(el => {
+    const start = el.getAttribute('date-start');
+    const end = el.getAttribute('date-end');
+    el.textContent = calculateDuration(start, end);
+  });
+}
+
+updateExperienceDurations();
+
 // // Switch Sound
+
 // const switchAudio = document.getElementById('switch-audio');
 // const lightModeBtn = document.getElementById('light-mode-btn');
 
