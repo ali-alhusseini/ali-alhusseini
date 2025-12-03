@@ -2,6 +2,7 @@ import './style.css'
 import './projects.js'
 import './i18n.js'
 import './animations.js'
+import './cards.js'
 
 // set current year in footer
 const year = new Date().getFullYear();
