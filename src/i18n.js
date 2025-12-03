@@ -27,17 +27,19 @@ const translations = {
         },
         experience: {
             title: 'Experience',
-            appleTitle: 'Apple — Specialist',
-            appleContent: 'Delivering exceptional customer experiences by guiding customers through Apple products and services, upholding the highest standards, and collaborating closely with colleagues.',
-            appleDates: '(Oct 2021 - Present)',
-
-            nspTitle: 'Nova Scotia Power — Digital Experience Co-Op ',
-            nspContent: 'Maintained and updated nspower.ca using the CMS and Bootstrap across two consecutive terms, applying accessibility and responsive design best practices. Authored a governance document to standardize and streamline future website updates.',
-            nspDates: '(Sept 2024 - Apr 2025)',
-
-            bestbuyTitle: 'Best Buy — Computing Solutions Advisor',
-            bestbuyContent: 'Assisted customers in selecting and purchasing complete computing solutions, providing expert advice on hardware and software options to meet their needs.',
-            bestbuyDates: '(Jun 2019 - Oct 2021)'
+            overview: 'Overview',
+            apple: {
+                role: 'Specialist',
+                summary:'At Apple, I work as a Specialist helping customers choose the right products, set up their devices, and solve technical issues in a clear, approachable way. This role has strengthened my ability to translate complex concepts into simple language, stay calm under pressure, and collaborate closely with a large, fast-paced team. It has also deepened my appreciation for polished user experiences, which directly influences how I design and build digital products.'
+            },
+            nsp: {
+                role: 'Digital Experience Co-Op',
+                summary: 'At Nova Scotia Power, I completed two Digital Experience co-op terms focused on improving the usability and consistency of the company\'s web presence. I worked on enhancing site functionality and accessibility, as well as contributing to governance documentation that helped standardize how content is managed across teams. This experience connected my technical skills with real business needs and taught me how thoughtful digital experiences can support both customers and internal stakeholders.'
+            },
+            bestbuy: {
+                role: 'Computing Solutions Advisor',
+                summary: 'At Best Buy, I worked as a Computing Solutions Advisor, helping customers find the right laptops, accessories, and services based on their individual needs. The role required strong product knowledge, attentive listening, and the ability to explain trade-offs between different technical options. It gave me a solid foundation in customer service and solution-oriented thinking that continues to shape how I approach both technical problems and user experience design.'
+            }
         },
         contact: {
             title: 'Get in Touch',
@@ -68,17 +70,19 @@ const translations = {
         },
         experience: {
             title: 'Expérience',
-            appleTitle: 'Apple — Spécialiste',
-            appleContent: 'Offrir des expériences client exceptionnelles en guidant les clients à travers les produits et services Apple, en respectant les normes les plus élevées et en collaborant étroitement avec les collègues.',
-            appleDates: '(Oct 2021 - Présent)',
-            
-            nspTitle: 'Nova Scotia Power — Coopérative d\'expérience numérique ',
-            nspContent: 'Maintien et mise à jour de nspower.ca en utilisant le CMS et Bootstrap sur deux mandats consécutifs, en appliquant les meilleures pratiques en matière d\'accessibilité et de conception réactive. Rédaction d\'un document de gouvernance pour standardiser et rationaliser les futures mises à jour du site Web.',
-            nspDates: '(Sept 2024 - Avr 2025)',
-
-            bestbuyTitle: 'Best Buy — Conseiller en solutions informatiques',
-            bestbuyContent: 'Aider les clients à sélectionner et à acheter des solutions informatiques complètes, en fournissant des conseils d\'expert sur les options matérielles et logicielles pour répondre à leurs besoins.',
-            bestbuyDates: '(Juin 2019 - Oct 2021)'
+            overview: 'Aperçu',
+            apple: {
+                role: 'Spécialiste',
+                summary:'Chez Apple, je travaille comme spécialiste en aidant les clients à choisir les bons produits, à configurer leurs appareils et à résoudre leurs problèmes techniques de manière claire et accessible. Ce rôle a renforcé ma capacité à vulgariser des concepts complexes, à rester calme sous pression et à collaborer au sein d\'une grande équipe dynamique. Il a aussi approfondi mon appréciation pour les expériences utilisateur soignées, ce qui influence directement la façon dont je conçois et développe des produits numériques.'
+            },
+            nsp: {
+                role: 'Stagiaire en expérience numérique',
+                summary: 'Chez Nova Scotia Power, j\'ai effectué deux stages coopératifs au sein de l\'équipe Expérience numérique, axés sur l\'amélioration de la convivialité et de la cohérence du site web de l\'entreprise. J\'ai contribué à l\'optimisation des fonctionnalités et de l\'accessibilité du site, ainsi qu\'à la rédaction de documents de gouvernance pour standardiser la gestion du contenu entre les équipes. Cette expérience m\'a permis de lier mes compétences techniques à de vrais besoins d\'affaires et de comprendre comment des expériences numériques réfléchies peuvent soutenir à la fois les clients et les parties prenantes internes.'
+            },
+            bestbuy: {
+                role: 'Conseiller en solutions informatiques',
+                summary: 'Chez Best Buy, j\'ai travaillé comme conseiller en solutions informatiques, en aidant les clients à trouver les ordinateurs, accessoires et services les mieux adaptés à leurs besoins. Ce poste exigeait une solide connaissance des produits, une grande capacité d\'écoute et la faculté d\'expliquer clairement les compromis entre différentes options techniques. Il m\'a donné une base solide en service à la clientèle et en réflexion orientée solution, qui continue d\'influencer ma façon d\'aborder les problèmes techniques et la conception d\'expériences utilisateur.'
+            }
         },
         contact: {
             title: 'Contactez-moi',
