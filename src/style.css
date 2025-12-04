@@ -60,14 +60,23 @@ body {
 }
 
 .apple-gradient {
-  background: linear-gradient(to bottom, rgba(55, 65, 81, 0.9), rgba(17, 24, 39, 0.95));
+  background: 
+    radial-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(55, 65, 81, 0.9), rgba(17, 24, 39, 0.95));
+  background-size: 20px 20px, 100% 100%;
 }
 
 .nspower-gradient {
-  background: linear-gradient(to bottom right, rgba(217, 119, 6, 0.9), rgba(8, 47, 73, 0.95));
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom right, rgba(217, 119, 6, 0.9), rgba(8, 47, 73, 0.95));
+  background-size: 30px 30px, 30px 30px, 100% 100%;
 }
 
 .bestbuy-gradient {
-  background: linear-gradient(to bottom, rgba(30, 64, 175, 0.9), rgba(23, 37, 84, 0.95));
+  background: 
+    linear-gradient(to bottom, rgba(30, 64, 175, 0.9), rgba(23, 37, 84, 0.95)),
+    linear-gradient(rgba(255, 255, 255, 0.5) 1px, transparent 1px);
+  background-size: 100% 100%, 10px 10px;
 }
-    
