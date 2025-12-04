@@ -28,6 +28,7 @@ const translations = {
         experience: {
             title: 'Experience',
             overview: 'Overview',
+            skills: 'Key Skills',
             apple: {
                 role: 'Specialist',
                 point1: 'Mentor and train new team members, improving team knowledge and performance.',
@@ -78,6 +79,7 @@ const translations = {
         experience: {
             title: 'Expérience',
             overview: 'Aperçu',
+            skills: 'Compétences clés',
             apple: {
                 role: 'Spécialiste',
                 point1: 'Encadrer et former les nouveaux membres de l\'équipe, améliorant ainsi les connaissances et les performances de l\'équipe.',
