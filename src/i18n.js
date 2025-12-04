@@ -34,6 +34,12 @@ const translations = {
                 point1: 'Mentor and train new team members, improving team knowledge and performance.',
                 point2: 'Deliver exceptional customer experiences, consistently driving satisfaction and brand loyalty.',
                 point3: 'Provide tailored technical advice and troubleshooting for Apple products.',
+                skill: {
+                    communication: 'Communication',
+                    problemSolving: 'Problem Solving',
+                    teamwork: 'Teamwork',
+                    leadership: 'Leadership'
+                }
             },
             nsp: {
                 role: 'Digital Experience Co-Op',
@@ -41,12 +47,29 @@ const translations = {
                 point2: 'Authored governance documentation to streamline web content management processes across teams.',
                 point3: 'Collaborated cross-functionally with designers, developers, and stakeholders to deliver effective digital solutions.',
                 point4: 'Analyzed user feedback and analytics to prioritize feature updates.'
+            ,
+            skill: {
+                webDevelopment: 'Web Development',
+                accessibility: 'Accessibility',
+                uxDesign: 'UX Design',
+                javascript: 'JavaScript',
+                bootstrap: 'Bootstrap',
+                processDocumentation: 'Process Documentation'
+            }
             },
             bestbuy: {
                 role: 'Computing Solutions Advisor',
                 point1: 'Delivered personalized technology solutions based on customer needs and preferences.',
                 point2: 'Communicated complex technical concepts clearly to non-technical customers.',
                 point3: 'Balanced sales targets with a strong customer-first approach.'
+            ,
+            skill: {
+                sales: 'Sales',
+                customerService: 'Customer Service',
+                technicalKnowledge: 'Technical Knowledge',
+                communication: 'Communication',
+                problemSolving: 'Problem Solving'
+            }
             }
         },
         contact: {
@@ -79,12 +102,18 @@ const translations = {
         experience: {
             title: 'Expérience',
             overview: 'Aperçu',
-            skills: 'Compétences clés',
+            skills: 'Compétences Clés',
             apple: {
                 role: 'Spécialiste',
                 point1: 'Encadrer et former les nouveaux membres de l\'équipe, améliorant ainsi les connaissances et les performances de l\'équipe.',
                 point2: 'Offrir des expériences client exceptionnelles, favorisant fidélité et satisfaction constantes.',
-                point3: 'Fournis des conseils techniques personnalisés et dépannage pour les produits Apple.'
+                point3: 'Fournis des conseils techniques personnalisés et dépannage pour les produits Apple.',
+                skill: {
+                    communication: 'Communication',
+                    problemSolving: 'Résolution de problèmes',
+                    teamwork: 'Travail d\'équipe',
+                    leadership: 'Leadership'
+                }
             },
             nsp: {
                 role: 'Stagiaire en expérience numérique',
@@ -92,12 +121,29 @@ const translations = {
                 point2: 'Ai rédigé des documents de gouvernance pour optimiser la gestion de contenu web entre équipes.',
                 point3: 'Ai collaboré avec designers, développeurs et parties prenantes pour des solutions numériques efficaces.',
                 point4: 'Ai analysé retours utilisateurs et données pour prioriser les mises à jour.'
+            ,
+            skill: {
+                webDevelopment: 'Développement Web',
+                accessibility: 'Accessibilité',
+                uxDesign: 'Conception UX',
+                javascript: 'JavaScript',
+                bootstrap: 'Bootstrap',
+                processDocumentation: 'Documentation des processus'
+            }
             },
             bestbuy: {
                 role: 'Conseiller en solutions informatiques',
                 point1: 'Ai fourni des solutions technologiques personnalisées selon les besoins clients.',
                 point2: 'Ai communiqué des concepts techniques complexes de manière claire aux non-techniciens.',
                 point3: 'Ai équilibré objectifs de vente et approche centrée client.'
+            ,
+            skill: {
+                sales: 'Ventes',
+                customerService: 'Service client',
+                technicalKnowledge: 'Connaissances techniques',
+                communication: 'Communication',
+                problemSolving: 'Résolution de problèmes'
+            }
             }
         },
         contact: {
