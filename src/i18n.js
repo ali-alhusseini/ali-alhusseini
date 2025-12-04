@@ -30,15 +30,22 @@ const translations = {
             overview: 'Overview',
             apple: {
                 role: 'Specialist',
-                summary:'At Apple, I work as a Specialist helping customers choose the right products, set up their devices, and solve technical issues in a clear, approachable way. This role has strengthened my ability to translate complex concepts into simple language, stay calm under pressure, and collaborate closely with a large, fast-paced team. It has also deepened my appreciation for polished user experiences, which directly influences how I design and build digital products.'
+                point1: 'Mentor and train new team members, improving team knowledge and performance.',
+                point2: 'Deliver exceptional customer experiences, consistently driving satisfaction and brand loyalty.',
+                point3: 'Provide tailored technical advice and troubleshooting for Apple products.',
             },
             nsp: {
                 role: 'Digital Experience Co-Op',
-                summary: 'At Nova Scotia Power, I completed two Digital Experience co-op terms focused on improving the usability and consistency of the company\'s web presence. I worked on enhancing site functionality and accessibility, as well as contributing to governance documentation that helped standardize how content is managed across teams. This experience connected my technical skills with real business needs and taught me how thoughtful digital experiences can support both customers and internal stakeholders.'
+                point1: 'Led usability and accessibility improvements to enhance digital experience for thousands of users.',
+                point2: 'Authored governance documentation to streamline web content management processes across teams.',
+                point3: 'Collaborated cross-functionally with designers, developers, and stakeholders to deliver effective digital solutions.',
+                point4: 'Analyzed user feedback and analytics to prioritize feature updates.'
             },
             bestbuy: {
                 role: 'Computing Solutions Advisor',
-                summary: 'At Best Buy, I worked as a Computing Solutions Advisor, helping customers find the right laptops, accessories, and services based on their individual needs. The role required strong product knowledge, attentive listening, and the ability to explain trade-offs between different technical options. It gave me a solid foundation in customer service and solution-oriented thinking that continues to shape how I approach both technical problems and user experience design.'
+                point1: 'Delivered personalized technology solutions based on customer needs and preferences.',
+                point2: 'Communicated complex technical concepts clearly to non-technical customers.',
+                point3: 'Balanced sales targets with a strong customer-first approach.'
             }
         },
         contact: {
@@ -73,15 +80,22 @@ const translations = {
             overview: 'Aperçu',
             apple: {
                 role: 'Spécialiste',
-                summary:'Chez Apple, je travaille comme spécialiste en aidant les clients à choisir les bons produits, à configurer leurs appareils et à résoudre leurs problèmes techniques de manière claire et accessible. Ce rôle a renforcé ma capacité à vulgariser des concepts complexes, à rester calme sous pression et à collaborer au sein d\'une grande équipe dynamique. Il a aussi approfondi mon appréciation pour les expériences utilisateur soignées, ce qui influence directement la façon dont je conçois et développe des produits numériques.'
+                point1: 'Encadrer et former les nouveaux membres de l\'équipe, améliorant ainsi les connaissances et les performances de l\'équipe.',
+                point2: 'Offrir des expériences client exceptionnelles, favorisant fidélité et satisfaction constantes.',
+                point3: 'Fournis des conseils techniques personnalisés et dépannage pour les produits Apple.'
             },
             nsp: {
                 role: 'Stagiaire en expérience numérique',
-                summary: 'Chez Nova Scotia Power, j\'ai effectué deux stages coopératifs au sein de l\'équipe Expérience numérique, axés sur l\'amélioration de la convivialité et de la cohérence du site web de l\'entreprise. J\'ai contribué à l\'optimisation des fonctionnalités et de l\'accessibilité du site, ainsi qu\'à la rédaction de documents de gouvernance pour standardiser la gestion du contenu entre les équipes. Cette expérience m\'a permis de lier mes compétences techniques à de vrais besoins d\'affaires et de comprendre comment des expériences numériques réfléchies peuvent soutenir à la fois les clients et les parties prenantes internes.'
+                point1: 'Ai dirigé des améliorations d\'utilisabilité et d\'accessibilité pour des milliers d\'utilisateurs.',
+                point2: 'Ai rédigé des documents de gouvernance pour optimiser la gestion de contenu web entre équipes.',
+                point3: 'Ai collaboré avec designers, développeurs et parties prenantes pour des solutions numériques efficaces.',
+                point4: 'Ai analysé retours utilisateurs et données pour prioriser les mises à jour.'
             },
             bestbuy: {
                 role: 'Conseiller en solutions informatiques',
-                summary: 'Chez Best Buy, j\'ai travaillé comme conseiller en solutions informatiques, en aidant les clients à trouver les ordinateurs, accessoires et services les mieux adaptés à leurs besoins. Ce poste exigeait une solide connaissance des produits, une grande capacité d\'écoute et la faculté d\'expliquer clairement les compromis entre différentes options techniques. Il m\'a donné une base solide en service à la clientèle et en réflexion orientée solution, qui continue d\'influencer ma façon d\'aborder les problèmes techniques et la conception d\'expériences utilisateur.'
+                point1: 'Ai fourni des solutions technologiques personnalisées selon les besoins clients.',
+                point2: 'Ai communiqué des concepts techniques complexes de manière claire aux non-techniciens.',
+                point3: 'Ai équilibré objectifs de vente et approche centrée client.'
             }
         },
         contact: {
