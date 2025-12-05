@@ -185,3 +185,11 @@ languageToggle.addEventListener('click', () => {
     languageToggle.textContent = currentLanguage === 'en' ? 'FR' : 'EN';
     fadeAndUpdateLanguage(currentLanguage);
 });
+
+// resume download link update
+const resumeLink = document.getElementById('resume-link');
+resumeLink.href = currentLanguage === 'en' ? 'assets/Ali_Alhusseini_Resume.pdf' : 'assets/Ali_Alhusseini_Resume.pdf';
+
+languageToggle.addEventListener('click', () => {
+    resumeLink.href = currentLanguage === 'en' ? 'assets/Ali_Alhusseini_Resume.pdf' : 'assets/Ali_Alhusseini_Resume.pdf';
+});
