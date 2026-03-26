@@ -51,7 +51,18 @@ function renderProjects(list) {
     const a = node.querySelector('.project-link');
     a.href = p.url || '#';
 
-    if (p.url.includes('github.com')) {
+    let isGitHubLink = false;
+    if (p.url) {
+      try {
+        const parsedUrl = new URL(p.url, window.location && window.location.origin ? window.location.origin : undefined);
+        const hostname = parsedUrl.hostname;
+        isGitHubLink = hostname === 'github.com' || hostname.endsWith('.github.com');
+      } catch (e) {
+        isGitHubLink = false;
+      }
+    }
+
+    if (isGitHubLink) {
       a.innerHTML = `GitHub ${arrowUpIcon}`;
     } else if (p.url) {
       a.innerHTML = `Live ${arrowUpIcon}`;
