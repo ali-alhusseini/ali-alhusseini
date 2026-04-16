@@ -12,8 +12,7 @@ const translations = {
         },
         hero: {
             title: "Designing and developing clean, user-focused digital experiences.",
-            subtitle: 'Software developer and recent Computer Science graduate.',
-            resume: 'Download Resume '
+            subtitle: 'Software developer and recent Computer Science graduate.'
         },
         work: {
             title: "Recent Projects",
@@ -87,8 +86,7 @@ const translations = {
         },
         hero: {
             title: "Concevoir et développer des expériences numériques claires et centrées sur l'utilisateur.",
-            subtitle: 'Développeur de logiciels et récent diplômé en informatique.',
-            resume: 'Télécharger le CV'
+            subtitle: 'Développeur de logiciels et récent diplômé en informatique.'
         },
         work: {
             title: "Projets récents",
@@ -177,19 +175,27 @@ function fadeAndUpdateLanguage(lang) {
 }
 
 currentLanguage = currentLanguage || 'en';
-languageToggle.textContent = currentLanguage === 'en' ? 'FR' : 'EN';
-applyTranslations(currentLanguage);
-
-languageToggle.addEventListener('click', () => {
-    currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+if (languageToggle) {
     languageToggle.textContent = currentLanguage === 'en' ? 'FR' : 'EN';
-    fadeAndUpdateLanguage(currentLanguage);
-});
+    applyTranslations(currentLanguage);
+
+    languageToggle.addEventListener('click', () => {
+        currentLanguage = currentLanguage === 'en' ? 'fr' : 'en';
+        languageToggle.textContent = currentLanguage === 'en' ? 'FR' : 'EN';
+        fadeAndUpdateLanguage(currentLanguage);
+    });
+} else {
+    applyTranslations(currentLanguage);
+}
 
 // resume download link update
 const resumeLink = document.getElementById('resume-link');
-resumeLink.href = currentLanguage === 'en' ? 'assets/Ali_Alhusseini_Resume.pdf' : 'assets/Ali_Alhusseini_Resume.pdf';
-
-languageToggle.addEventListener('click', () => {
+if (resumeLink) {
     resumeLink.href = currentLanguage === 'en' ? 'assets/Ali_Alhusseini_Resume.pdf' : 'assets/Ali_Alhusseini_Resume.pdf';
-});
+
+    if (languageToggle) {
+        languageToggle.addEventListener('click', () => {
+            resumeLink.href = currentLanguage === 'en' ? 'assets/Ali_Alhusseini_Resume.pdf' : 'assets/Ali_Alhusseini_Resume.pdf';
+        });
+    }
+}
