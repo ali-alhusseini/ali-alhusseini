@@ -72,7 +72,7 @@ const translations = {
             }
         },
         contact: {
-            title: 'Get in Touch',
+            title: 'Get In Touch',
             content: 'Feel free to reach out, I\'m always open to new opportunities, collaborations, and projects.'
         }
     },
