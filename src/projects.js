@@ -6,7 +6,7 @@ const arrowUpIcon = '<svg xmlns="http://www.w3.org/2000/svg" width="20" height="
 const projects = [
   {
     title: 'Portfolio Website',
-    description: 'Responsive portfolio built with HTML, Tailwind and vanilla JS.',
+    description: 'Responsive portfolio built with HTML, Tailwind CSS and vanilla JS.',
     technologies: ['JavaScript', 'HTML', 'TailwindCSS', 'Vite'],
     url: 'https://github.com/ali-alhusseini/ali-alhusseini'
   },
@@ -15,12 +15,6 @@ const projects = [
     description: 'A blooging platform focused on accessibility for motor impaired users to post and share blogs.',
     technologies: ['JavaScript', 'JQuery', 'Bootstrap'],
     url: 'https://github.com/ali-alhusseini/woodland-conservation'
-  },
-  {
-    title: 'Radiohead Fan Site',
-    description: 'A frontend website built to showcase the band Radiohead.',
-    technologies: ['HTML', 'CSS', 'JavaScript'],
-    url: 'http://web.cs-smu.ca/~u04/submissions/submission01/home_page.html'
   },
   {
     title: 'Woodland Conservation Site',
@@ -40,6 +34,12 @@ const projects = [
     technologies: ['C', 'Pthreads', 'OS Concepts'],
     url: 'https://github.com/ali-alhusseini/traffic-manager'
   },
+  {
+    title: 'Radiohead Fan Site',
+    description: 'A frontend website built to showcase the band Radiohead.',
+    technologies: ['HTML', 'CSS', 'JavaScript'],
+    url: 'http://web.cs-smu.ca/~u04/submissions/submission01/home_page.html'
+  }
 ];
 
 function renderProjects(list) {

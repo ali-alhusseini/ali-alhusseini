@@ -8,7 +8,7 @@ const translations = {
             work : "Work",
             about: "About",
             contact: "Contact",
-            hello: "Say hello"
+            hello: "Say Hello"
         },
         hero: {
             title: "Designing and developing clean, user-focused digital experiences.",
@@ -82,7 +82,7 @@ const translations = {
             work : "Projets",
             about: "À propos",
             contact: "Contact",
-            hello: "Dire bonjour"
+            hello: "Dire Bonjour"
         },
         hero: {
             title: "Concevoir et développer des expériences numériques claires et centrées sur l'utilisateur.",
