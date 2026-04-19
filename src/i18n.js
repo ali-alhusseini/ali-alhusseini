@@ -5,7 +5,7 @@ const translations = {
     en: {
         title: "Ali Alhusseini — Software Developer",
         nav: {
-            work : "Work",
+            work : "Projects",
             about: "About",
             contact: "Contact",
             hello: "Say Hello"
