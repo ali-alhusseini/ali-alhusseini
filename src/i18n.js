@@ -1,5 +1,6 @@
 const languageToggle = document.getElementById('language-toggle');
 let currentLanguage = localStorage.getItem('lang') || 'en';
+const LANGUAGE_CHANGE_EVENT = 'language:changed';
 
 const translations = {
     en: {
@@ -17,7 +18,42 @@ const translations = {
         work: {
             title: "Recent Projects",
             content: "A selection of projects I have done over the years, some of which have been part of my Computer Science degree, others to learn new skills and experiment with new technologies.",
-            view: "View ↗"
+            view: "View ↗",
+            cta: {
+                github: "GitHub",
+                live: "Live",
+                details: "Details"
+            },
+            projects: {
+                halifaxKurdishSocietyWebApp: {
+                    description: "A modern, bilingual web application for the Halifax Kurdish Society, dedicated to promoting Kurdish culture, language, and community in Halifax, Nova Scotia. Built with React, React Router V6, i18next for internationalization, TailwindCSS for styling, and Vite for fast development and build times.",
+                    imageAlt: "Halifax Kurdish Society web application interface"
+                },
+                portfolioWebsite: {
+                    description: "Responsive portfolio built with HTML, Tailwind CSS and vanilla JS.",
+                    imageAlt: "Portfolio website homepage"
+                },
+                accessibleBloggingSite: {
+                    description: "A blogging platform focused on accessibility for motor-impaired users to post and share blogs.",
+                    imageAlt: "Accessible blogging platform interface"
+                },
+                woodlandConservationSite: {
+                    description: "A website built for a local conservation site with APIs like Cloudinary, Google Maps, and Formspree.",
+                    imageAlt: "Woodland conservation website"
+                },
+                mysqlFlaskDatabaseApp: {
+                    description: "A web application using Flask, MySQL, and Bootstrap to manage and display data for a fictional car dealership.",
+                    imageAlt: "Flask MySQL database application interface"
+                },
+                trafficManager: {
+                    description: "Semaphore-based intersection control to prevent deadlock and starvation in a multithreaded environment.",
+                    imageAlt: "Traffic manager system diagram"
+                },
+                radioheadFanSite: {
+                    description: "A frontend website built to showcase the band Radiohead.",
+                    imageAlt: "Radiohead fan site"
+                }
+            }
         },
         about: {
             title: 'About',
@@ -91,6 +127,41 @@ const translations = {
         work: {
             title: "Projets récents",
             content: "Une sélection de projets que j'ai réalisés au fil des ans, dont certains dans le cadre de mon diplôme en informatique, d'autres pour apprendre de nouvelles compétences et expérimenter de nouvelles technologies.",
+            cta: {
+                github: "GitHub",
+                live: "Site",
+                details: "Détails"
+            },
+            projects: {
+                halifaxKurdishSocietyWebApp: {
+                    description: "Une application web moderne et bilingue pour la Halifax Kurdish Society, dédiée à la promotion de la culture, de la langue et de la communauté kurdes à Halifax, en Nouvelle-Écosse. Construite avec React, React Router V6, i18next pour l'internationalisation, TailwindCSS pour le style et Vite pour des temps de développement et de construction rapides.",
+                    imageAlt: "Interface de l'application web de la Société kurde de Halifax"
+                },
+                portfolioWebsite: {
+                    description: "Portfolio responsive développé avec HTML, Tailwind CSS et JavaScript vanilla.",
+                    imageAlt: "Page d'accueil du portfolio"
+                },
+                accessibleBloggingSite: {
+                    description: "Une plateforme de blog axée sur l'accessibilité pour permettre aux personnes ayant des limitations motrices de publier et partager des articles.",
+                    imageAlt: "Interface de la plateforme de blog accessible"
+                },
+                woodlandConservationSite: {
+                    description: "Un site créé pour une réserve naturelle locale avec des intégrations Cloudinary, Google Maps et Formspree.",
+                    imageAlt: "Site de conservation des bois"
+                },
+                mysqlFlaskDatabaseApp: {
+                    description: "Une application web avec Flask, MySQL et Bootstrap pour gérer et afficher des données d'un concessionnaire automobile fictif.",
+                    imageAlt: "Interface de l'application Flask MySQL"
+                },
+                trafficManager: {
+                    description: "Contrôle d'intersection basé sur des sémaphores pour éviter les interblocages et la famine dans un environnement multithread.",
+                    imageAlt: "Diagramme du système de gestion du trafic"
+                },
+                radioheadFanSite: {
+                    description: "Un site frontend créé pour présenter le groupe Radiohead.",
+                    imageAlt: "Site des fans de Radiohead"
+                }
+            }
         },
         about: {
             title: 'À propos',
@@ -172,6 +243,18 @@ function fadeAndUpdateLanguage(lang) {
         document.documentElement.style.pointerEvents = 'auto';
     }, 250);
     localStorage.setItem('lang', lang);
+    window.dispatchEvent(new CustomEvent(LANGUAGE_CHANGE_EVENT, { detail: { lang } }));
+}
+
+export { translations };
+export function getCurrentLanguage() {
+    return currentLanguage || 'en';
+}
+
+export function onLanguageChange(callback) {
+    window.addEventListener(LANGUAGE_CHANGE_EVENT, (event) => {
+        callback(event.detail.lang);
+    });
 }
 
 currentLanguage = currentLanguage || 'en';

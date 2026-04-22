@@ -80,3 +80,27 @@ body {
     linear-gradient(to bottom, rgba(30, 64, 175, 0.9), rgba(23, 37, 84, 0.95));
   background-size: 10px 10px, 100% 100%;
 }
+
+.projects-grid {
+  grid-auto-flow: row;
+}
+
+@media (min-width: 768px) {
+  .projects-grid {
+    grid-auto-flow: dense;
+  }
+
+  .project-card--wide,
+  .project-card--featured {
+    grid-column: span 2 / span 2;
+  }
+
+  .project-card--tall,
+  .project-card--featured {
+    grid-row: span 2 / span 2;
+  }
+}
+
+.project-image-wrapper {
+  display: none;
+}

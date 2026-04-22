@@ -70,9 +70,12 @@
   <section id="work" class="mx-auto max-w-6xl px-4 py-10">
     <h2 class="text-2xl font-semibold mb-4" data-i18n="work.title">Recent Projects</h2>
     <p class="mb-4 text-gray-600 dark:text-gray-400" data-i18n="work.content">A selection of projects I have done over the years, some of which have been part of my Computer Science degree, others to learn new skills and experiment with new technologies.</p>
-    <div id="projects" class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+    <div id="projects" class="projects-grid grid gap-8 md:grid-cols-2 lg:grid-cols-3">
       <template id="project-template">
-        <article class="p-4 border dark:border-gray-400 rounded-lg shadow-sm">
+        <article class="project-card p-4 border dark:border-gray-400 rounded-lg shadow-sm">
+          <div class="project-image-wrapper overflow-hidden rounded-md mb-4 bg-gray-200 dark:bg-slate-800">
+            <img class="project-image w-full h-full object-cover" alt="" />
+          </div>
           <h3 class="text-lg font-semibold mb-1 project-title"></h3>
           <p class="text-sm text-gray-600 dark:text-gray-400 mb-3 project-desc"></p>
           <div class="project-tech flex flex-wrap mb-4"></div>
