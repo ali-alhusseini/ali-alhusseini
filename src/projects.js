@@ -12,7 +12,7 @@ const projects = [
     technologies: ['React', 'React Router V6', 'i18next', 'TailwindCSS', 'Vite'],
     url: 'https://github.com/ali-alhusseini/halifax-kurdish',
     layout:'featured',
-    image: '../public/projects/halifax-kurdish-society-web-app-screenshot.webp',
+    image: '/projects/halifax-kurdish-society-web-app-screenshot.webp',
     imageAltKey: 'work.projects.halifaxKurdishSocietyWebApp.imageAlt'
   },
   {
@@ -21,7 +21,7 @@ const projects = [
     technologies: ['HTML', 'CSS', 'JavaScript'],
     url: 'http://web.cs-smu.ca/~u04/submissions/submission01/home_page.html',
     layout: 'tall',
-    image: '../public/projects/radiohead-website-demo.mov',
+    image: '/projects/radiohead-website-demo.mov',
     imageAltKey: 'work.projects.radioheadFanSite.imageAlt'
   },
   {
@@ -41,7 +41,7 @@ const projects = [
     descriptionKey: 'work.projects.woodlandConservationSite.description',
     technologies: ['HTML', 'CSS', 'JavaScript', 'Restful APIs'],
     url: 'http://web.cs-smu.ca/~u04/woodland-conservation/index.html',
-    image: '../public/projects/woodland-conservation-screenshot.webp',
+    image: '/projects/woodland-conservation-screenshot.webp',
     imageAltKey: 'work.projects.woodlandConservationSite.imageAlt',
     layout: 'wide'
   },
@@ -56,7 +56,7 @@ const projects = [
     descriptionKey: 'work.projects.trafficManager.description',
     technologies: ['C', 'Pthreads', 'OS Concepts'],
     url: 'https://github.com/ali-alhusseini/traffic-manager',
-    image: '../public/projects/traffic-manager-sceenshot.png',
+    image: '/projects/traffic-manager-sceenshot.png',
     imageAltKey: 'work.projects.trafficManager.imageAlt'
   }
 ];
