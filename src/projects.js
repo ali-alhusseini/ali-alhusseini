@@ -12,7 +12,7 @@ const projects = [
     technologies: ['React', 'React Router V6', 'i18next', 'TailwindCSS', 'Vite'],
     url: 'https://github.com/ali-alhusseini/halifax-kurdish',
     layout:'featured',
-    image: '../public/projects/halifax-kurdish-society-web-app.webp',
+    image: '../public/projects/halifax-kurdish-society-web-app-screenshot.webp',
     imageAltKey: 'work.projects.halifaxKurdishSocietyWebApp.imageAlt'
   },
   {
@@ -56,7 +56,7 @@ const projects = [
     descriptionKey: 'work.projects.trafficManager.description',
     technologies: ['C', 'Pthreads', 'OS Concepts'],
     url: 'https://github.com/ali-alhusseini/traffic-manager',
-    image: '../public/projects/traffic-manager-screenshot.png',
+    image: '../public/projects/traffic-manager-sceenshot.png',
     imageAltKey: 'work.projects.trafficManager.imageAlt'
   }
 ];
