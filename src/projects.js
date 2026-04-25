@@ -49,7 +49,7 @@ const projects = [
     title: 'Accessible Blogging Site',
     descriptionKey: 'work.projects.accessibleBloggingSite.description',
     technologies: ['JavaScript', 'JQuery', 'Bootstrap'],
-    url: 'https://github.com/ali-alhusseini/woodland-conservation'
+    url: 'https://github.com/ali-alhusseini/accessible-blog'
   },
   {
     title: 'Traffic Manager',
